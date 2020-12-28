@@ -1,0 +1,57 @@
+.xpeak-appstore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .title {
+    text-align: center;
+  }
+  a {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 1px #bdbdbd;
+    padding: 3px;
+    p {
+      margin: 0;
+      padding-left: 50px;
+      padding-right: 15px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .ios-downvote {
+      margin-right: 5px;
+    }
+    .android-downvote {
+      margin-left: 15px;
+    }
+  }
+  .ios-downvote {
+    margin-right: 15px;
+    background: url('../images/ic-ios.png') no-repeat #fff 10px 6px;
+  }
+  .android-downvote {
+    margin-left: 15px;
+    background: url("../images/ic-android.png") no-repeat #fff 10px 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .xpeak-appstore {
+    .content {
+      display: flex;
+      padding: 5px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .ios-downvote {
+        margin-right: 0;
+      }
+      .android-downvote {
+        margin-top: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+}

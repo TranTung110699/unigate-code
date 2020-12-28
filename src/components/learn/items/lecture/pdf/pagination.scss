@@ -1,0 +1,43 @@
+@import "../../../../../layouts/theme.scss";
+
+.lecture-pdf-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px 0 0;
+  @include themify($themes){
+    color: themed('l-button-pdf-cl');
+  }
+
+  .lecture-pdf-pagination__button {
+    font-size: 35px;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    @include themify($themes){
+      color: themed('l-button-pdf-cl');
+    }
+    width: 45px;
+  }
+
+  .lecture-pdf-pagination__button--disabled {
+    @include themify($themes){
+      color: themed('l-button-pdf-cl-disable');
+    }
+    cursor: not-allowed;
+  }
+
+  .lecture-pdf-pagination__pages {
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .lecture-pdf-pagination__pages input {
+    height: 100%;
+    background: none;
+    border: none;
+    text-align: right;
+  }
+}

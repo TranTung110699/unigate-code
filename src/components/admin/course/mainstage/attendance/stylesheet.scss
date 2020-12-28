@@ -1,0 +1,58 @@
+.table-session-attendance {
+  &__fixed {
+    overflow: visible;
+  }
+  &__viewer {
+    overflow-x: scroll;
+  }
+  &__viewer > div {
+    overflow: initial !important;
+  }
+  th, td {
+    border: 1px solid rgb(224, 224, 224);
+    height: 70px !important;
+    max-height: 70px !important;;
+  }
+  table {
+    thead {
+      th {
+        text-align: center !important;
+        padding-left: inherit !important;
+        padding-right: inherit !important;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding-left: inherit !important;
+          padding-right: inherit !important;
+          text-align: center !important;
+        }
+        .table-session-attendance--name {
+          text-align: left !important;
+          padding-left: 8px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .table-session-attendance {
+    th, td {
+      border: 1px solid rgb(224, 224, 224);
+      height: 100px !important;
+      max-height: 100px !important;;
+    }
+  }
+}
+
+@media (max-width: 100px) {
+  .table-session-attendance {
+    th, td {
+      border: 1px solid rgb(224, 224, 224);
+      height: 150px !important;
+      max-height: 150px !important;;
+    }
+  }
+}

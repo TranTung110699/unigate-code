@@ -1,0 +1,27 @@
+.course-marking {
+  i.mi {
+    font-size: 25px !important;
+  }
+
+  .take-comments {
+    margin-top: 5px;
+    padding: 10px;
+    .account-comment {
+      display: inline;
+      .user-comment {
+        display: inline;
+      }
+      .edit-comment {
+        float: right;
+        display: inline;
+      }
+    }
+    .content-comment {
+      border-top: 1px solid #adadad;
+      p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

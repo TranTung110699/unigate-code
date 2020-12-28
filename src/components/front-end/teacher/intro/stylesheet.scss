@@ -1,0 +1,43 @@
+.xpeak-live-intro {
+  width: 100%;
+  float: left;
+  background: #f6f6f6;
+  padding: 40px 16px 16px 16px;
+  h3 {
+    letter-spacing: 6px;
+    margin-right: -6px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  p {
+    line-height: 28px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+.trial-to-learn-btn {
+  text-align: center;
+  padding-bottom: 30px;
+  a {
+    background: #e68a4c;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 1px 1px 5px #824c4c;
+    border-radius: 6px;
+  }
+  a:hover {
+    background: white;
+    color: #e68a4c;
+  }
+}
+@media (max-width: 768px) {
+  .xpeak-live-intro {
+    p {
+      font-size: 18px;
+    }
+  }
+}

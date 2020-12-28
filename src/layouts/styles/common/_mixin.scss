@@ -1,0 +1,28 @@
+@import 'layouts/theme.scss';
+@mixin button($background, $color) {
+  background-color: $background;
+  color: $color;
+
+  outline: none;
+  padding: 0 26px;
+  height: 40px;
+  min-width: 150px;
+  line-height: 36px;
+  //font-size: 12px;
+  //letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  @include themify($themes) {
+    border: solid 1px themed('l-button-primary-border');
+    border-radius: themed('l-button-primary-border-radius-dimen');
+  }
+
+  &:hover {
+    @include themify($themes) {
+      border-color: themed('l-button-primary-hover-border');
+    }
+  }
+}

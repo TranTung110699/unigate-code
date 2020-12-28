@@ -1,0 +1,144 @@
+@import '../../../../configs/css-configuration.scss';
+@import '../../../../layouts/theme.scss';
+@mixin statusColor($color) {
+  color: $color;
+  border-color: $color;
+}
+.pixelz-overview-course-header {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  &--exam {
+    color: orange;
+  }
+}
+
+.learn-nav-item {
+  &.overview {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  @include themify($themes) {
+    color: themed('l-nav-item-cl');
+  }
+
+  &--exam {
+    color: orange;
+  }
+
+  &__sub-info {
+    margin: 10px 0px 5px;
+    font-size: 12px;
+    display: flex;
+  }
+
+  &__time {
+    .icon {
+      margin-right: 5px;
+    }
+    margin-right: 10px;
+    color: #979797;
+  }
+
+  &__download-attachments {
+    //padding: 0 !important;
+    //width: 85px !important;
+    margin-left: auto;
+    margin-right: -25px;
+  }
+
+  &__main-info {
+    display: flex;
+    .question-number {
+      margin: 0 5px;
+      color: #4a4a4a;
+    }
+  }
+
+  &__icon {
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    //flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+
+    .mi {
+      padding: 0;
+      margin: 0 auto !important;
+    }
+  }
+
+  &__type {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  &__status {
+    border-width: 1px;
+    border-style: solid;
+    &--finish {
+      @include themify($themes) {
+        background: themed('complete-icon-background-color');
+      }
+      * {
+        color: #fff !important;
+      }
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //@include themify($themes){
+      //  background-color: themed('l-progress-finish');
+      //}
+    }
+    &--lock {
+      @include themify($themes) {
+        background-color: themed('l-progress-lock');
+      }
+    }
+    &--bad {
+      @include statusColor(#808080);
+    }
+    &--improvement {
+      @include statusColor(#808080);
+    }
+    &--progress {
+      @include themify($themes) {
+        @include statusColor(themed('complete-icon-background-color'));
+      }
+    }
+  }
+  &__title {
+    padding-top: 0;
+    //font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+    color: #4a4a4a;
+    width: 100%;
+    min-width: 0;
+
+    .title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .icon-type {
+    font-size: 18px;
+    color: #979797;
+    margin-right: 6px;
+  }
+  .ti-timer {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,14 @@
+.input-auto-complete {
+  position: relative;
+  svg:first-child {
+    z-index: 100;
+  }
+  &--error {
+    margin-bottom: 20px;
+  }
+  /*
+  &>div {
+    margin-top: 0px !important;
+  }
+  */
+}

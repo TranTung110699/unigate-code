@@ -1,0 +1,32 @@
+$background-button: #dfdfe8;
+$background-button-active: #00bcd4;
+$color-black:#1f2526;
+
+@mixin active($color,$backgroundColor){
+  background: $backgroundColor !important;
+  color: $color;
+  border: solid 1px $backgroundColor !important;
+}
+
+.status{
+  display: inline-block;
+  .left {
+    border-radius: 4px 0 0 4px;
+  }
+  .right{
+    border-radius: 0 4px 4px 0;
+  }
+  .actived{
+    z-index: 1;
+    @include active(white,$background-button-active)
+  }
+  button {
+    outline: none;
+    margin-left: -1px;
+    @include active($color-black, $background-button);
+    &:hover {
+      z-index: 1;
+      @include active(white, $background-button-active)
+    }
+  }
+}

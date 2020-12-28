@@ -1,0 +1,28 @@
+.stationery-table-result {
+  .quantity {
+    font-size: 16px !important;
+    font-weight: bold;
+  }
+
+  .changed-quantity {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .avatar > img {
+    height: 20px !important;
+    width: 20px !important;
+  }
+
+  .removed {
+    font-style: italic;
+  }
+
+  .red {
+    color: red !important;
+  }
+
+  .green {
+    color: green !important;
+  }
+}

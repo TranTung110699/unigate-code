@@ -1,0 +1,38 @@
+.etec-menu-search-form {
+  $inputWidth: 200px;
+  display: flex !important;
+  flex-direction: row;
+
+  &__button {
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1;
+  }
+
+  &__input {
+    width: 0;
+    opacity: 0;
+    transition: opacity 1s, width 1.5s;
+    transform: translateY(-12px);
+
+    &--show {
+      opacity: 1;
+      width: $inputWidth;
+    }
+  }
+
+  &__suggestion {
+    min-width: $inputWidth;
+  }
+}
+
+.etec-suggest-item {
+  line-height: normal !important;
+  padding: 7px 0 !important;
+
+  &__info {
+    font-size: 11px;
+    font-weight: 400;
+  }
+}

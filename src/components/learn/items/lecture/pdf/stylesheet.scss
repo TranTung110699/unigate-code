@@ -1,0 +1,47 @@
+@import "../../../../../layouts/theme.scss";
+
+.lecture-pdf {
+  background-color: white;
+
+  &__navigation {
+    position: absolute;
+    width: 100%;
+    &--fullscreen{
+      bottom: 0;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation-rotate-buttons {
+    display: flex;
+  }
+
+  &__navigation-rotate-button {
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    outline: none;
+    @include themify($themes){
+      color: themed('l-button-pdf-cl');
+    }
+  }
+
+  &--fullscreen {
+    height: 100vh !important;
+    width: 70vw !important;
+    max-width: 1000px;
+  }
+
+  &__fullscreen-button {
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    outline: none;
+  }
+
+}
+

@@ -1,0 +1,21 @@
+@import "../common/define.scss";
+
+.role-play-finish {
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+
+  &__message {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
+
+  &__result {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  &__buttons {
+    margin-top: 2em;
+  }
+}

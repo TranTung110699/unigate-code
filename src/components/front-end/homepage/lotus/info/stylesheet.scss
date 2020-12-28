@@ -1,0 +1,42 @@
+$color: #1d89e3;
+$background-color: #ffffff;
+
+.lotus-home-page-info {
+  background-color: $background-color;
+  padding: 68px 0;
+
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__item-image {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border: solid 1px $color;
+    border-radius: 50%;
+  }
+
+  &__item-image img {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+  }
+
+  &__item-number {
+    font-size: 36px;
+    color: $color;
+    margin-bottom: -9px;
+  }
+
+  &__item-name {
+    font-size: 14px;
+  }
+
+}

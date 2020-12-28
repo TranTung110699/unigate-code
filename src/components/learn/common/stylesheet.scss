@@ -1,0 +1,28 @@
+@import "./../defined.scss";
+@import "../../../layouts/theme.scss";
+
+.learn-lecture-buttons {
+  &__seen {
+    width: 100% !important;
+    margin-top: 10px !important;
+    border-radius: 30px !important;
+    //margin-bottom: 50px !important;
+    padding: 5px;
+    @include themify($themes){
+      background-color: themed('l-button-nav-bg') !important;
+      border: solid 1px themed('l-button-nav-border') !important;
+      color: themed('l-button-nav-cl-1') !important;;
+    }
+
+    &:hover {
+      @include themify($themes){
+        background-color: themed('l-button-nav-bg-hover-1') !important;
+      }
+    }
+    &:disabled{
+      @include themify($themes){
+        color:themed('l-button-nav-cl-hover-1') !important;
+      }
+    }
+  }
+}

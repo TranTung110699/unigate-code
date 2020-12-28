@@ -1,0 +1,13 @@
+.skill-edit-children-layout {
+  &__rubric {
+    .skill-rubric-view-items__cell{
+      &--name {
+        width: 20%;
+      }
+
+      &--weighted {
+        width: 10%;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.text-input {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+
+  &__clear-icon {
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    transform: translate(-20px, -3px);
+    padding-bottom: 5px;
+    font-size: 10px;
+
+    &--has-floating-label {
+      transform: translate(-20px, 10px);
+    }
+  }
+}

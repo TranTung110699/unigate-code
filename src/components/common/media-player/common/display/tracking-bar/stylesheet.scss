@@ -1,0 +1,68 @@
+.media-audio-tracking-bar {
+  $tracking-bar-height: 8px;
+
+  outline: none;
+  height: $tracking-bar-height;
+  cursor: pointer;
+
+  &--disabled {
+    cursor: not-allowed;
+  }
+
+  &__played {
+    background-color: #3a9bd8;
+    height: $tracking-bar-height;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__tracking-head {
+    outline: none;
+    height: 0;
+    width: 0;
+    transform: translate(50%, -3px);
+    background-color: #045f98;
+    border-radius: 50%;
+    border: none;
+    padding: 7px;
+
+    &--disabled {
+      cursor: not-allowed;
+      background-color: #a4a4a4;
+    }
+  }
+
+  &__buffered {
+    background-color: #9ca8b1;
+    border-radius: 2px;
+    height: $tracking-bar-height;
+  }
+
+  &__mark {
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: darkorange;
+    z-index: 1;
+
+    outline: none;
+    height: 0;
+    width: 0;
+    border: none;
+    padding: #{$tracking-bar-height / 2} 2px;
+  }
+}
+
+.media-audio-tracking-bar-line {
+  outline: none;
+  background-color: #cdd5da;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+  display: flex;
+  position: relative;
+
+  &--invisible {
+    height: 0;
+  }
+}

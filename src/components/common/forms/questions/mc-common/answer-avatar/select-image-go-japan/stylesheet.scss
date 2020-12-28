@@ -1,0 +1,122 @@
+@import 'layouts/theme.scss';
+@mixin color($color) {
+  label {
+    color: $color !important;
+  }
+
+  svg {
+    fill: $color !important;
+  }
+}
+@mixin matchCheck() {
+  &.default-not-match {
+    @include themify($themes) {
+      background-color: themed('bg-not-match');
+    }
+  }
+  &.default-match {
+    @include themify($themes) {
+      background-color: themed('bg-match');
+    }
+  }
+}
+
+.go-japan-avatar-question {
+  @media (min-width: 768px) {
+    padding-top: 32px;
+  }
+  &__answers {
+    display: flex;
+    //flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: center;
+    @media (max-width: 768px) {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__answer {
+    margin-right: 35px;
+    text-align: center;
+    padding: 0 10px;
+    @media (max-width: 768px) {
+      max-width: 40%;
+      flex: 1 0 auto;
+      margin-right: 0;
+    }
+  }
+
+  &__answer-image {
+    width: 152px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    &--selected {
+      background: #f7941d;
+      color: #fff;
+    }
+    @include matchCheck();
+  }
+
+  &__answer-checkbox-wrapper {
+    margin-top: 15px;
+    padding: 0 5px;
+  }
+
+  &__answer-checkbox {
+    > div {
+      > div:first-child {
+        width: 0 !important;
+        height: 0 !important;
+        display: none !important;
+        visibility: hidden !important;
+      }
+      label {
+        width: 100% !important;
+      }
+    }
+    svg {
+      fill: #aeaeae !important;
+    }
+
+    &--selected {
+      svg {
+        fill: rgb(66, 123, 201) !important;
+      }
+      color: #fff;
+    }
+  }
+
+  &__answer-text {
+    width: 100%;
+    font-size: 16px;
+    background: #ededed;
+    padding: 11px 0px;
+    transform: translateY(-10px);
+
+    &--selected {
+      background: #f7941d;
+      color: #fff;
+    }
+    @include matchCheck();
+  }
+
+  .default-match {
+    @include themify($themes) {
+      @include color($color: themed('color-match'));
+    }
+  }
+
+  .default-not-match {
+    @include themify($themes) {
+      @include color($color: themed('color-not-match'));
+    }
+  }
+}

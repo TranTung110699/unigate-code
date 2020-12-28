@@ -1,0 +1,40 @@
+$borderColor: #E1E1E1;
+.list-contest-wrapper{
+  h3 {
+    margin-bottom: 10px !important;
+  }
+  & .go-to-contest-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+  }
+  & .btn-go-to-contest{
+    background: #164e99;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 0;
+    border-radius: 3px;
+  }
+  & .btn-go-to-practice-exams{
+    background: #bfbfbf;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 5px;
+    border-radius: 3px;
+  }
+
+  .ant-descriptions-item-content {
+    font-weight: bold;
+  }
+}

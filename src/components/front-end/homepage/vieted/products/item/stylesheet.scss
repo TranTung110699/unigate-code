@@ -1,0 +1,110 @@
+$color-hover: #fc8006;
+
+.vieted-home-page-product-item {
+  &__thumbnail {
+    position: relative;
+  }
+
+  &__thumbnail-img {
+    width: 100%;
+    display: block;
+  }
+
+  &__thumbnail-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--show {
+      display: block;
+    }
+
+    img {
+      width: 75%;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__selectable{
+    cursor: pointer;
+
+    &--selected {
+      color: $color-hover;
+    }
+
+    &:hover {
+      color: $color-hover;
+
+      .vieted-home-page-product-item__thumbnail-icon {
+          display: block;
+      }
+    }
+  }
+
+  &__name {
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &__description {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &__selector {
+    text-align: center;
+    padding-top: 13px;
+    margin-bottom: -10px;
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &__detail-page {
+    border: none;
+    outline: solid 1px;
+    outline-offset: -6px;
+    overflow: hidden;
+
+    &--show {
+      transition: max-height 10s;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .vieted-home-page-product-item {
+    &__name {
+      font-size: 12px;
+      padding-top: 9px;
+      margin-bottom: -5px;
+    }
+
+    &__description {
+      font-size: 10px
+    }
+
+    &__selector {
+      padding-top: 0;
+      margin-bottom: -14px;
+
+      img {
+        width: 20px
+      }
+    }
+  }
+
+}

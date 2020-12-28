@@ -1,0 +1,40 @@
+.check-validity-wrapper {
+  font-size: 14px;
+  .item-block {
+    background: #F2F2F2;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    overflow: auto;
+    border: 3px solid #FFF;
+  }
+  .table-item-list, .common-errors {
+    background: #FFF;
+  }
+  .common-errors {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .error-title {
+
+  }
+  .group-title {
+    font-weight: bold;
+  }
+  .warning-item {
+    font-size: 14px;
+  }
+  .item-list {
+    border: 3px solid #F2F2F2;
+  }
+  .exercises {
+    padding-left: 20px;
+    .exercise-item {
+      margin-top: 10px;
+      .exercise-name {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+}

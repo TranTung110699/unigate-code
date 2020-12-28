@@ -1,0 +1,12 @@
+.network-not-available{
+  animation-name: network-not-available-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes network-not-available-animation {
+  0% {color: rgba(255, 35, 17, 0.99);}
+  60% {color: rgba(255, 35, 17, 0.99);}
+  90% {color: transparent;}
+  100% {color: transparent;}
+}

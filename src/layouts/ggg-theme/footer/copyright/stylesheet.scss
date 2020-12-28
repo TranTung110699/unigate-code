@@ -1,0 +1,29 @@
+.copyright {
+  width: 100%;
+  background: #231F20;
+  p {
+    font-size: 12px;
+    margin: 0;
+    color: #6D6E6E;
+  }
+  .text-left {
+    text-align: left;
+    padding: 15px 0;
+  }
+  .text-right {
+    text-align: right;
+    padding: 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .copyright {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .copyright {
+    height: auto;
+  }
+}

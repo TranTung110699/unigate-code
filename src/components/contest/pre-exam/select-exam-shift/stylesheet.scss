@@ -1,0 +1,26 @@
+.select-exam-shift-wrapper {
+  //background: url(../images/site_bg.png) #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  .content {
+    .title {
+      color: #757575;
+      margin-bottom: 30px;
+    }
+    .select-exam-shift {
+      max-width: 500px;
+      padding: 10px;
+      min-width: 500px;
+      background: white;
+      outline: none;
+      border: solid 1px #ffd448;
+      .option {
+        padding: 10px;
+      }
+      .option-hint {
+        color: red;
+      }
+    }
+  }
+}

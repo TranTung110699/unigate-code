@@ -1,0 +1,21 @@
+@import '../../../layouts/theme.scss';
+
+.full-screen-component {
+  background-color: white;
+
+  &--fullscreen {
+    height: 100vh !important;
+    width: 70vw !important;
+    max-width: 1000px;
+  }
+
+  &__fullscreen-button {
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    outline: none;
+  }
+}

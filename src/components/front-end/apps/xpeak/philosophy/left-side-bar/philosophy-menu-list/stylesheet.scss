@@ -1,0 +1,68 @@
+.xpeak-philosophy{
+  ul {
+    padding-left: 0;
+    margin-top: 0;
+  }
+  li {
+    list-style-type: none;
+    a {
+      text-transform: uppercase;
+      width: 100%;
+      height: auto;
+      min-height: 60px;
+      margin-bottom: 15px;
+      border: 1px solid #ece2e2;
+      padding: 0 15px 0 50px;
+      box-shadow: 0px 5px 10px #d4d4d4;
+      display: flex;
+      align-items: center;
+      p{
+        margin: 3px 0;
+      }
+    }
+    a.symptom{
+      background: url("./images/symptom.png") no-repeat #fff 15px 15px;
+      &.active{
+        background: url("./images/symptom-hover.png") no-repeat #92c36a 15px 15px;
+        color: #fff;
+      }
+    }
+    a.blood-plus{
+      background: url("./images/blood-plus.png") no-repeat #fff 15px 15px;
+      &.active{
+        background: url("./images/blood-plus-hover.png") no-repeat #92c36a 15px 15px;
+        color: #fff;
+      }
+    }
+    a.pill{
+      background: url("./images/pill.png") no-repeat #fff 15px 15px;
+      &.active{
+        background: url("./images/pill-hover.png") no-repeat #92c36a 15px 15px;
+        color: #fff;
+      }
+    }
+    a.faq{
+      background: url("./images/emergency-call.png") no-repeat #fff 15px 15px;
+      &.active{
+        background: url("./images/emergency-call-hover.png") no-repeat #92c36a 15px 15px;
+        color: #fff;
+      }
+    }
+    a.symptom:hover{
+      background: url("./images/symptom-hover.png") no-repeat #92c36a 15px 15px;
+      color: #fff;
+    }
+    a.blood-plus:hover{
+      background: url("./images/blood-plus-hover.png") no-repeat #92c36a 15px 15px;
+      color: #fff;
+    }
+    a.pill:hover{
+      background: url("./images/pill-hover.png") no-repeat #92c36a 15px 15px;
+      color: #fff;
+    }
+    a.faq:hover{
+      background: url("./images/emergency-call-hover.png") no-repeat #92c36a 15px 15px;
+      color: #fff;
+    }
+  }
+}

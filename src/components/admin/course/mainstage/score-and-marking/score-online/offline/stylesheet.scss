@@ -1,0 +1,36 @@
+.admin-course-score-offline-result {
+  $borderStyle: 1px solid rgb(224, 224, 224);
+
+  td {
+    border-left: $borderStyle;
+    border-right: $borderStyle;
+    border-bottom: $borderStyle;
+  }
+
+  th {
+    border-left: $borderStyle;
+    border-right: $borderStyle;
+    border-top: $borderStyle;
+  }
+
+  &__td-student-info {
+    padding: 10px;
+  }
+
+  &__graduated-label {
+    font-weight: 500;
+    padding: 0 10px;
+
+    &--passed {
+      color: green;
+    }
+    &--failed {
+      color: red;
+    }
+  }
+  
+  &__edit-allowed-to-test {
+    cursor: pointer;
+    border-bottom: 1px dashed #0088cc;
+  }
+}

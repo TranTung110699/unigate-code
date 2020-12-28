@@ -1,0 +1,44 @@
+.not-supported-browser-alert {
+  &__icon-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #c53b3b;
+  }
+
+  &__icon {
+    font-size: 100px;
+  }
+
+  &__message {
+    text-align: center;
+    padding-bottom: 50px;
+    color: #c53b3b;
+  }
+
+  &__suggestion-wrapper {
+    padding-bottom: 30px;
+  }
+
+  &__suggestion {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  &__suggestion-summary {
+    display: inline;
+  }
+
+  &__suggestion-download-link {
+    padding-left: 10px;
+  }
+
+  &__action-wrapper {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__action-button {
+    white-space: normal;
+    height: auto;
+    padding: 5px 15px;
+  }
+}

@@ -1,0 +1,67 @@
+.etec-exam-shift-customized {
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  &__instruction {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__action {
+    text-align: center;
+    padding-top: 46px;
+  }
+
+}
+
+.etec-exam-shift-customized-form {
+  &__select {
+    padding-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__field {
+    margin: 10px;
+  }
+
+  &__result-section {
+    padding-top: 60px;
+  }
+}
+
+.etec-exam-shift-customized-form-result {
+  min-width: 600px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+
+  &__remove {
+    cursor: pointer;
+  }
+
+  thead {
+    background-color: #242c42;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  th {
+    border: 1px solid #979797;
+    padding: 13px 45px;
+
+  }
+
+  td {
+    border: 1px solid #979797;
+    padding: 13px 45px;
+  }
+
+}

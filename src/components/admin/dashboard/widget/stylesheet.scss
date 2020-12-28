@@ -1,0 +1,60 @@
+$primary-color: rgba(166, 220, 233, 0);
+
+.widget-container {
+  overflow: hidden;
+  //margin: 10px;
+  box-shadow: 0 1px 6px -1px rgba(0,0,0,0.9);
+  background-color: white;
+  .widget {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    .action-bar {
+      display: flex;
+      align-items: center;
+      height: 46px;
+      background-color: #ecebeb;
+      color: #3c3a3a;
+      padding: 0 15px;
+      .title {
+/*        font-weight: bold; */
+        flex-grow: 1;
+        padding: 0 8px 0 0;
+      }
+      .expand{
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+    .content {
+      min-height: 150px;
+      height: calc(100% - 46px);
+      background-color: white;
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-width: 1px;
+      flex-grow: 1;
+      padding: 15px;
+
+      .bar-chart {
+        height: calc(100% - 3px)
+      }
+    }
+
+    .content::-webkit-scrollbar {
+      width: 2px;
+    }
+    .content::-webkit-scrollbar-track {
+      background-color: $primary-color;
+    }
+
+    .content::-webkit-scrollbar-thumb {
+      background-color: #15bcd5;
+      border-radius: 1px;
+    }
+
+    .content::-webkit-scrollbar-thumb:window-inactive {
+      background: $primary-color;
+    }
+  }
+}

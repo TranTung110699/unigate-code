@@ -1,0 +1,31 @@
+@import 'layouts/theme.scss';
+
+.reorder-question-type-word-selection-block {
+  background: #ededed;
+  cursor: pointer;
+  padding: 7px 9px 8px 9px;
+
+  &--selected {
+    opacity: 0.3;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+
+  &.default-match {
+    @include themify($themes) {
+      background-color: themed('bg-match') !important;
+      color: #fff;
+    }
+  }
+
+  &.default-not-match {
+    @include themify($themes) {
+      background-color: themed('bg-not-match') !important;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}

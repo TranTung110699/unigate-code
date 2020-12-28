@@ -1,0 +1,58 @@
+.vieted-home-page-products {
+  font-weight: 200;
+  background-image: url(./resources/background.png);
+  padding-top: 33px;
+  padding-bottom: 45px;
+  color: #FFFFFF;
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+
+    &:after {
+      content : "";
+      margin: auto;
+      display: block;
+      width   : 60px;
+      border: 1px solid #1d89e3;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 45%;
+    max-width: 211px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 41px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .vieted-home-page-products {
+    padding-top: 12px;
+    padding-bottom: 2px;
+
+    &__title {
+      font-size: 19px;
+      padding-bottom: 16px;
+
+      &:after {
+        width: 26px;
+        margin-top: -4px
+      }
+    }
+
+    &__item {
+      margin-bottom: 11px;
+    }
+  }
+}

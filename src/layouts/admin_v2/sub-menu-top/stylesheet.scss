@@ -1,0 +1,49 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+
+.NEW_UI_JULY_2019-sub-menu-top-header {
+  font-family: $NEW_UI_JULY_2019-font-roboto-regular;
+  color: #fff !important;
+  border-bottom: 1px solid #797979;
+  height: 40px;
+  line-height: 40px;
+  .sub-header-menu-content {
+    height: 40px;
+    line-height: 40px;
+  }
+  .submenu-top-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    .NEW_UI_JULY_2019-sub-menu-top-title {
+      font-size: 24px;
+      line-height: 45px;
+    }
+  }
+  .NEW_UI_JULY_2019-sub-menu-top-schema {
+    a:not(.button) {
+      color: #fff !important;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    justify-content: flex-end;
+    white-space: pre;
+    .submenu-top-button:not(:last-child) {
+      margin-right: 20px;
+    }
+    .submenu-top-item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+  &.NEW_UI_JULY_2019-sub-header-menu {
+    background-color: $NEW_UI_JULY_2019-header-background-color !important;
+  }
+}

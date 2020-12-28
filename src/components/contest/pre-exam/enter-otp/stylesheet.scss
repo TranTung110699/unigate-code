@@ -1,0 +1,10 @@
+.enter-otp{
+  *{
+    text-align: center;
+  }
+  input.otp-input{
+    &:last-child{
+      margin-right: 0!important;
+    }
+  }
+}

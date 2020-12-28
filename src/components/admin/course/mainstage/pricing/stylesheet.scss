@@ -1,0 +1,21 @@
+@import "../../../../../configs/css-configuration.scss";
+
+.item-row {
+  margin: 10px 0;
+  background-color: $white;
+  padding: 10px;
+}
+
+.children-item-row {
+  margin: 10px 0 0 20px;
+  background-color: $white;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.edit-price {
+  padding-right: 10px;
+  label: {
+    padding-right: 5px;
+  }
+}

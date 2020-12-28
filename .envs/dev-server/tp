@@ -1,0 +1,15 @@
+var APP_SERVER_API_URL='https://api.lotuslms.com';
+var APP_MEDIA_SERVER_URL='https://api.lotuslms.com';
+var APP_AUDIO_MEDIA_SERVER_URL='https://vieted.com/dictaudio';
+var APP_FB_APP_ID=1158087994254227;
+var APP_PRACTICE_VOCABSET_IID=59683;
+var APP_THEME='pixelz';
+var APP_SCHOOL='tp';
+var APP_TITLE='Xpeak - Học Tiếng anh giao tiếp';
+var APP_FAVICON='ggg_favicon.ico';
+var APP_STATIC_CDN='https://s.vieted.com/';
+var APP_CHAT_URL='http://localhost:8080';
+var APP_ASSETS_CDN='https://api.lotuslms.com/assets/';
+var APP_SITE_NAME='Xpeak';
+var APP_LIVE_URL='http://live.vieted.com/demo/demo3.jsp';
+var APP_SHOW_PREVIEW=0;

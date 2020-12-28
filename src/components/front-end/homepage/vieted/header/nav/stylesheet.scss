@@ -1,0 +1,54 @@
+$color: #FFFFFF;
+$color-hover: #fc8006;
+
+.vieted-home-page-nav {
+  color: $color;
+  display: table;
+  padding-top: 26px;
+  font-weight: 200;
+
+  &__item {
+    cursor: pointer;
+    display: table-row;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+
+  &__item-name {
+    display: table-cell;
+    text-align: right;
+    font-size:  14px;
+    padding-right: 48px;
+    font-weight: 300;
+  }
+
+  &__item-image {
+    display: table-cell;
+    padding-bottom: 27px;
+
+    >div {
+      text-align: center;
+      padding: 12px;
+      border: solid 1px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.vieted-home-page-nav__item-image--focus {
+  display: none;
+}
+
+.vieted-home-page-nav__item:hover .vieted-home-page-nav__item-image--focus {
+  display: block;
+}
+
+.vieted-home-page-nav__item:hover .vieted-home-page-nav__item-image--normal{
+  display: none;
+}
+

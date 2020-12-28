@@ -1,0 +1,63 @@
+.toolbar-container {
+  $border-color: #e2e2e2;
+  margin-bottom: 5px;
+  display: flex;
+  @mixin border() {
+    border: solid 1px $border-color;
+    border-radius: 4px;
+  }
+  .left {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    .navigation-buttons {
+      @include border();
+      margin-right: 10px;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    .filter-button {
+      @include border();
+      margin-left: 10px;
+    }
+    .filter-button-active {
+      background: $border-color !important;
+    }
+    .mobile-menu {
+      display: none;
+    }
+  }
+  .indicator-right {
+    border-right: solid 1px $border-color !important;
+  }
+  .btn {
+    outline: none;
+    background: transparent;
+    border: none;
+    min-width: 60px;
+    &:hover {
+      background: $border-color;
+    }
+  }
+}
+
+.rbc-event {
+  background: #60e6ff;
+}
+
+@media screen and (max-width: 700px) {
+  .toolbar-container {
+    .right {
+      .filter-button {
+        display: none;
+      }
+      .mobile-menu {
+        display: block;
+      }
+    }
+  }
+}

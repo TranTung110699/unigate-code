@@ -1,0 +1,21 @@
+.req-type-container {
+  background: white;
+  .processor {
+    .title {
+      display: block;
+    }
+    .user {
+      display: block;
+    }
+  }
+  .download-template {
+    cursor: pointer;
+    .icon {
+      font-size: 1.5em;
+      top: 4px;
+    }
+    &:hover{
+      color: #00AEFF;
+    }
+  }
+}

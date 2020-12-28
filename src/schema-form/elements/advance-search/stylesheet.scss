@@ -1,0 +1,26 @@
+.schema-form-advance-search {
+  &__popover-overlay {
+    padding-top: 0;
+
+    .ant-popover-arrow {
+      display: none;
+    }
+
+    .elementGroupBody {
+      padding-top: 2px !important;
+      padding-bottom: 2px !important;
+    }
+    .ant-row {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__recap {
+    padding-top: 10px;
+  }
+}
+.advance-search-container {
+  .ant-input-group-addon:hover {
+    border-color: #40a9ff;
+  }
+}

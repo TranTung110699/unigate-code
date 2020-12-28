@@ -1,0 +1,65 @@
+.search-form{
+  width: 100%;
+  height: 160px;
+  background: #353F42;
+  color: #fff;
+  .col-xs-5ths {
+    width: 20%;
+    float: left;
+    padding:0 10px;
+    p{
+      font-size: 14px;
+      color: #fff;
+      margin-top: 30px;
+    }
+    select{
+      width: 100%;
+    }
+    button{
+      background: #DCAB18;
+      width: 100%;
+      margin-top: 65px;
+      border: none;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+    select{
+      background: url("./images/select.png") #fff no-repeat 190px 15px;
+      padding: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-sm-5ths {
+      width: 20%;
+      float: left;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .col-md-5ths {
+      width: 20%;
+      float: left;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .col-lg-5ths {
+      width: 20%;
+      float: left;
+    }
+  }
+
+  .search-course{
+    text-transform: uppercase;
+    h3{
+      font-size: 34.2px;
+      margin-top: 55px;
+      margin-bottom: 15px;
+    }
+    h4{
+      font-size: 24.86px;
+      margin-top: 0;
+    }
+  }
+}

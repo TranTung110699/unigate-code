@@ -1,0 +1,33 @@
+.role-play-main {
+  height: 100%;
+  position: relative;
+
+  &__audios {
+    display: none;
+  }
+
+  &__display {
+    height: 77%;
+  }
+
+  &__display-content {
+    padding: 1em;
+  }
+
+  &__control {
+    height: 23%;
+  }
+
+  &__popup {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    right: 1em;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__message {
+    color: red;
+  }
+}

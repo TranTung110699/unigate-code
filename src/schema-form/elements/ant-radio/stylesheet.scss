@@ -1,0 +1,12 @@
+.antd-radio-button {
+  .input-text-label {
+    //color: #b2b2b2;
+    line-height: 36px;
+    font-size: 14px;
+  }
+  .ant-radio:not(.ant-radio-disabled):not(.ant-radio-checked) {
+    .ant-radio-inner {
+      border-color: rgba(0, 0, 0, 0.5) !important;
+    }
+  }
+}

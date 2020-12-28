@@ -1,0 +1,35 @@
+@import 'layouts/theme.scss';
+
+@mixin answerColor($bg, $color) {
+  background-color: $bg !important;
+  label {
+    color: $color !important;
+  }
+  svg {
+    fill: $color !important;
+  }
+}
+
+.mc-text-question {
+  font-size: 14px;
+  label {
+  }
+
+  .default-match {
+    @include themify($themes) {
+      @include answerColor(
+        $bg: themed('bg-match'),
+        $color: themed('color-match')
+      );
+    }
+  }
+
+  .default-not-match {
+    @include themify($themes) {
+      @include answerColor(
+        $bg: themed('bg-not-match'),
+        $color: themed('color-not-match')
+      );
+    }
+  }
+}

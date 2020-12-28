@@ -1,0 +1,99 @@
+@import "../../../../configs/css-configuration.scss";
+
+.ui-top-menu {
+  background-color: $main-learn-top-color-bg;
+  //border-bottom: 1px solid $default-line-color;
+  padding: 0 0px 0;
+  position: absolute;
+  height: $top-menu-height;
+  top: 0;
+  left: 0;
+  width: 100%;
+  ul.signined {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+  ul.register {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      color: $white;
+      text-transform: uppercase;
+      margin: 0 15px;
+      cursor: pointer;
+
+      &.signup {
+        //font-weight: bold;
+        padding: 3px 10px;
+        border: 1px solid #fd9126;
+        border-radius: 15px;
+        color: #fd9126;
+      }
+    }
+  }
+  ul.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li.logo {
+      opacity: 1;
+      img {
+        max-height: 36px;
+      }
+      margin: 0 88px 0 0;
+    }
+    li {
+      display: inline-block;
+      color: $white;
+      opacity: 0.7;
+      text-transform: uppercase;
+      margin: 0 15px;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .ui-custom-popover {
+    right: -9px;
+    top: 23px;
+    border: 1px solid #cccccc;
+    z-index: 100;
+    &:before {
+      border-bottom-color: #ebebeb;
+    }
+  }
+
+  .center-block-panel {
+    height: $top-menu-height;
+  }
+  .profile-icon-panel {
+    color: $white;
+    width: 28px;
+    height: 42px;
+    top: 2px;
+    position: relative;
+    cursor: pointer;
+    .profile-icon {
+      width: 28px;
+      height: 42px;
+      fill: white;
+      position: relative;
+      top: -3px;
+    }
+  }
+  .login-name {
+    color: $white;
+    display: inline-block;
+    opacity: 0.7;
+    transform: translateY(-10px);
+  }
+}

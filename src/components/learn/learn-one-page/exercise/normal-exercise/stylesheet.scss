@@ -1,0 +1,30 @@
+.learn-one-page-normal-exercise {
+  text-align: justify;
+  margin-bottom: 1em;
+  position: relative;
+
+  .learn-control {
+    background-color: #EBEBEB;
+  }
+
+  .normal-exercise-control {
+    &__question {
+      border: solid 1px lightgrey;
+      color: black;
+    }
+
+    &__button {
+      border: solid 1px lightgrey;
+      color: black;
+    }
+  }
+
+  .normal-exercise-display {
+    &__items {
+      .question-content {
+        margin-top: 0;
+      }
+    }
+  }
+}
+

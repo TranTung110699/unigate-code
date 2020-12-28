@@ -1,0 +1,90 @@
+@import "../../../../configs/css-configuration.scss";
+@import "../../../../layouts/theme.scss";
+
+$white: #FFF;
+
+.ui-vocabset {
+  .learn-control {
+    &.dictation {
+      padding: 6px;
+    }
+    .vocab {
+      padding: 5px 10px 5px 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      top: -1px;
+      margin-bottom: 5px;
+      color: $white;
+      line-height: 20px;
+      margin-right: 10px;
+      border-radius: 100px;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background-color: $white;
+        color: #1a1a1a;
+      }
+
+      &.active {
+        background-color: $white;
+        color: #1a1a1a;
+      }
+    }
+    .btn.next {
+      padding: 6px 6px 6px 17px;
+      >svg {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  .vocab-list-title {
+    font-size: 30px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.541176);
+  }
+
+  .start-practice-vocabs {
+    margin-top: 20px;
+    text-align: center;
+
+    a {
+      @include themify($themes){
+        border: 2px solid themed('l-button-filled-border');
+        background-color: themed('l-button-filled-bg');
+        border-radius: themed('l-button-filled-border-radius-dimen');
+        color: themed('l-button-filled-cl');
+      }
+      padding: 0 26px;
+      height: 40px;
+      min-width: 150px;
+      line-height: 36px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 0;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        color: $white;
+        @include themify($themes){
+          border-color: themed('l-button-filled-hover-border');
+          background-color: themed('l-button-filled-hover-bg');
+        }
+      }
+    }
+  }
+  .ui-speaker {
+    font-size: 18px;
+  }
+}

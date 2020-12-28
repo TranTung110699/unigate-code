@@ -1,0 +1,27 @@
+.question-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &__video {
+    align-self: center;
+  }
+
+  &__audio {
+    align-self: center;
+    width: 50%;
+    max-width: 500px;
+  }
+
+  &__image {
+    margin: 0 1em;
+    max-height: 160px;
+    text-align: center;
+    align-self: center;
+    max-width: 300px;
+  }
+}
+
+.question-content-audio-replacement {
+  font-style: italic;
+}

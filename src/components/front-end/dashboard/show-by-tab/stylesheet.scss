@@ -1,0 +1,167 @@
+@import "layouts/themes/theme-gj.scss", "layouts/theme.scss";
+
+$borderColor: #e1e1e1;
+.ggg-dashboard-wrapper {
+  min-height: 985px;
+  background: theme-color($key: 'student-dashboard-background');
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    .container {
+      padding-right: 0 !important;
+    }
+  }
+  .menu-top-wrapper {
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .ui-fly-panel {
+    border-bottom: 1px solid #E1E1E1;
+    .menu-top-wrapper {
+      border-bottom: none;
+    }
+  }
+  .dashboard-show-by-tab-wrapper {
+    width: 100%;
+    //background: theme-color($key: 'student-dashboard-background');;
+    min-height: 685px;
+    & > .content{
+      border-left: 1px solid $borderColor;
+    }
+    & .exam-shift-wrapper {
+      display: block;
+      & .select-contest-wrapper{
+        display: block;
+        background: unset;
+        & .content{
+          display: block;
+          clear: both;
+          & .title{
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            letter-spacing: 0;
+          }
+          & .btn-go-to-contest{
+            background: #164e99;
+            padding: 10px;
+            border: none;
+            outline: none;
+            color: white;
+            margin: 0;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    & .nav-menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ggg-dashboard-wrapper {
+    .dashboard-show-by-tab-wrapper {
+      & .nav-menu {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        cursor: pointer;
+        position: absolute;
+        overflow-x: visible;
+        top: 35%;
+        padding-left: 24px;
+        box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+        right: -30px;
+        color: #164e99;
+      }
+      & .nav-menu-content {
+        width: 250px;
+        position: fixed;
+        top: 20vh;
+        left: 18px;
+        height: 60vh;
+        transform: translateX(-272px);
+        flex-direction: row;
+        display: flex;
+        z-index: 10000;
+        transition: all 0.5s;
+        background: theme-color($key: 'student-dashboard-background');;
+        box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+      }
+      & .show-nav-menu-content {
+        transform: translateX(-22px);
+      }
+      & > .content{
+        border: none;
+      }
+    }
+  }
+}
+
+.my-position-wrappers,
+.my-paths {
+  margin-bottom: 30px;
+  h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .table {
+    border: 1px solid #DDD;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    th {
+      text-align: left;
+      padding: 8px;
+    }
+    tr td {
+      padding: 8px;
+      border-top: 1px solid #ddd;
+      color: rgb(102, 102, 102);
+      font-size: 15px;
+      vertical-align: middle !important;
+
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-position-wrappers,
+  .my-paths {
+    margin-top: 20px;
+    h3 {
+      font-size: 20px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.skills-progress-chart {
+  width: 90%;
+  height: 250px;
+  padding: 5px;
+  margin: 0 auto;
+
+  .recharts-responsive-container {
+    height: 100% !important;
+  }
+}
+
+.admin-disable-link {
+  pointer-events: none;
+}

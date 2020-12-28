@@ -1,0 +1,10 @@
+.rubric-info{
+  padding: 10px;
+  &-icon {
+    color: gray;
+    cursor: pointer;
+    &:hover {
+      color: #15bcd5;
+    }
+  }
+}

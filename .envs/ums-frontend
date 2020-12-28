@@ -1,0 +1,13 @@
+var APP_SERVER_API_URL = 'http://ums-api.vieted.net';
+var APP_MEDIA_SERVER_URL = 'http://ums-api.vieted.net';
+var APP_AUDIO_MEDIA_SERVER_URL = 'https://vieted.net/dictaudio';
+var APP_USER_LOCAL_STORAGE_KEY = 'user';
+var APP_LEARN_PATHS = 'Ngữ âm: 55229,Giao tiếp: 55229';
+var APP_FB_APP_ID = 1158087994254227;
+var APP_PRACTICE_VOCABSET_IID = 59683;
+var APP_THEME = 'ums';
+var APP_STATIC_CDN = 'http://vieted.net/ufiles/';
+var APP_ASSETS_CDN = 'http://vieted.net/assets/';
+var APP_CHAT_URL = 'http://125.212.192.50:8080';
+var APP_LIVE_URL = 'http://live.vieted.com/demo/demo3.jsp';
+var APP_SCHOOL = 've';

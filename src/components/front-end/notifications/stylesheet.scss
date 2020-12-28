@@ -1,0 +1,14 @@
+@import "../../../layouts/theme.scss";
+
+.notifications-list {
+  padding-left: 0 !important;
+  .notification-item {
+
+    .warning-text {
+      color: red;
+    }
+  }
+  .center-block-panel > div {
+    width:100%;
+  }
+}

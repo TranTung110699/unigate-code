@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto');*/
+
+a, a:visited, a:focus, a:active, a:hover {
+  text-decoration: none !important;
+  outline: none;
+}
+
+/*input[type="submit"], button[type="submit"] {
+  height: 50px;
+  line-height: 48px;
+  border: 2px solid #92c36a;
+  background: #92c36a;
+  color: #fff;
+  width: 100%;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 0 !important;
+}*/
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .home-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.menu-top {
+  .nav-link {
+    & .active, & :hover {
+      color: #e2ba40 !important;
+    }
+  }
+}
+
+.vt-layout {
+  background: #fff;
+  &__header{
+    padding: 0 195px;
+  }
+
+  &__footer{
+    padding: 0 195px;
+  }
+
+  & .ggg-dashboard-wrapper {
+    min-height: unset;
+    & .container {
+      padding: 0 20px 0 0;
+      margin: 0 auto;
+      width: 100%;
+      & .row{
+        margin: 0px;
+      }
+    }
+  }
+  
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.full-width{
+  width: 100%;
+}
+

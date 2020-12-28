@@ -1,0 +1,58 @@
+.skill-rubric-marking-cell-select-part {
+  $checkIconColor: #3595D9;
+  $markingCellColor: #CCF1F6;
+  $borderStyle: 1px solid rgb(224, 224, 224);
+  cursor: pointer;
+  display: flex;
+
+  &__part {
+    border-right: $borderStyle;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &--last {
+      border-right: none;
+    }
+
+    &--has-outer-border {
+      border-top: $borderStyle;
+      border-bottom: $borderStyle;
+      &.skill-rubric-marking-cell-select-part__part--first {
+        border-left: $borderStyle;
+      }
+      &.skill-rubric-marking-cell-select-part__part--last {
+        border-right: $borderStyle;
+      }
+    }
+
+    &--hightlighted {
+      background: palegreen;
+    }
+  }
+
+  &--selectable {
+    &:hover {
+      background: $markingCellColor;
+    }
+  }
+
+  &__help {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: #e0e0e0;
+  }
+
+  &__check-icon {
+    color: $checkIconColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+  }
+}

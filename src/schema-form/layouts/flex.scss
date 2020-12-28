@@ -1,0 +1,17 @@
+.flex-wraper-container {
+  .elementGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    >div {
+      padding: 10px;
+      flex-grow: 1;
+      float: none !important;
+    }
+    .submit {
+      width: 100px;
+    }
+  }
+
+}

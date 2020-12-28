@@ -1,0 +1,17 @@
+.chat-component {
+  position: fixed;
+  z-index: 999999;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  padding-right: 250px;
+  //background-color: #0d3349;
+  .m-l-20 {
+    margin-left: 20px;
+  }
+
+  >div {
+    align-self: flex-end;
+  }
+}

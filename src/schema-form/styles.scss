@@ -1,0 +1,56 @@
+@import 'layouts/_common-style.scss', 'layouts/theme.scss';
+.selectedQuestionType {
+  background-color: #eee;
+}
+
+.form-button-groups {
+  text-align: center;
+}
+
+.ui-form-control {
+  padding: 10px 0 10px 0;
+  display: inline-block;
+  margin-right: 10px;
+  ul.item-control {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li.item {
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .ant-submit-btn:not(.submit-open-ended-question) {
+    color: #fff;
+    background-color: #1890ff;
+    line-height: 1.499;
+    font-weight: 400;
+    border: 1px solid #1890ff;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 4px !important;
+    letter-spacing: initial;
+  }
+  .submit-open-ended-question {
+    @include themify($themes) {
+      background: themed('btn-primary-bg') !important;
+      color: themed('btn-text-cl') !important;
+    }
+    &:hover {
+      opacity: 0.8 !important;
+    }
+
+    height: 36px !important;
+    border: none !important;
+    line-height: 36px;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px !important;
+    border-radius: 2px !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px !important;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  }
+}

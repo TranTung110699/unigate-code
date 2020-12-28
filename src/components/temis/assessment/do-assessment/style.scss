@@ -1,0 +1,36 @@
+.temis-assessment-table {
+  .ant-checkbox-inner {
+    border-color: #1890ff;
+  }
+  &__evidence {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+  &-document {
+    .attachment-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+      &-dropzone {
+        border: none !important;
+        padding: 0 !important;
+      }
+      .attachment-list {
+        margin-top: 0 !important;
+        width: 80%;
+        span.rieinput-attachment {
+          white-space: nowrap;
+        }
+        .attachment-item {
+          padding: 5px !important;
+        }
+      }
+    }
+  }
+  .ant-table-footer{
+    //position: sticky;
+    bottom: 0;
+  }
+}

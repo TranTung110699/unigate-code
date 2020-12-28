@@ -1,0 +1,9 @@
+export const adminRootUrl = '/admin';
+export const systemRootUrl = '/system';
+export const learnRootUrl = '/learn';
+export const mobileRootUrl = '/mobile';
+export const dashboardUrl = '/dashboard';
+export const profileUrl = '/profile';
+export const scheduleRoomUrl = '/schedule-room';
+export const catalogue = 'catalogue';
+export const buyPackageUrl = '/buy-course';

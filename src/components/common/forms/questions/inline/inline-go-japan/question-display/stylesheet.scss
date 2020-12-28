@@ -1,0 +1,17 @@
+@import 'layouts/theme.scss';
+
+.go-japan-inline-question-display {
+  .default-match {
+    @include themify($themes) {
+      background-color: themed('bg-match') !important;
+      color: themed('color-match') !important;
+    }
+  }
+
+  .default-not-match {
+    @include themify($themes) {
+      background-color: themed('bg-not-match') !important;
+      color: themed('color-not-match') !important;
+    }
+  }
+}

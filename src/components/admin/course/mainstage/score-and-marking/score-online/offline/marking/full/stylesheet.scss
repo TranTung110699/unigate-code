@@ -1,0 +1,20 @@
+.admin-course-offline-exam-marking-full {
+  td, th {
+    border: solid 1px rgb(224, 224, 224);
+  }
+  td {
+    text-align: center;
+  }
+  &__resit-score-list {
+    padding: 0;
+  }
+  &__resit-score {
+    display: flex;
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(224, 224, 224);
+  }
+  &__resit-score-nth {
+    padding-right: 10px;
+    min-width: 60px;
+  }
+}

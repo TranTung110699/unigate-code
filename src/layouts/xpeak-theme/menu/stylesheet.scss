@@ -1,0 +1,248 @@
+.ui-main-menu-xpeak {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .learn-nav-color {
+    background: #e7e7e7 !important;
+    .profile-icon-panel {
+      .profile-icon {
+        color: #414141 !important;
+      }
+    }
+    a {
+      color: #414141 !important;
+    }
+    .ui-popover-logined {
+      background-color: white !important;
+    }
+  }
+
+  .mobile-show-nav-menu {
+    display: flex !important;
+  }
+  .mobile-hide-nav-menu {
+    display: flex !important;
+  }
+
+  .humberger {
+    display: none;
+  }
+
+  &.normal {
+    background: none;
+  }
+  &.fly {
+    background: #ffffff !important;
+  }
+
+  .ui-nav-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 55px;
+    max-height: 55px;
+    display: flex;
+    line-height: 53px;
+    padding: 0 30px;
+    .left {
+      a img {
+        width: auto;
+        height: 40px;
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      align-items: flex-end;
+      .content {
+        background: #1314ff;
+        padding: 10px;
+      }
+    }
+    .signined {
+
+    }
+
+    .ui-top-menu-panel {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .indicator{
+        width: 100%;
+        height: 1px;
+        background-color: rgba(128, 128, 128, 0.75);
+      }
+      .profile-mobile {
+        display: none;
+      }
+      .profile-web {
+        display: block;
+      }
+      .ui-popover-logined {
+        right: 23px;
+        top: 52px;
+        padding: 10px 0 0 0;
+        min-width: 100px;
+        background-color: #ebebeb;
+        a {
+          font-size: 12px;
+          padding: 0 10px;
+          margin: 0;
+          color: #333 !important;
+          &:hover {
+            background-color: #fd9126;
+            color: white !important;
+          }
+        }
+
+      }
+      &.normal {
+        li {
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+      &.fly {
+
+        li {
+          a {
+            color: #333;
+            opacity: .5;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        a {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          max-width: 100%;
+          white-space: normal;
+          text-decoration: none;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        ul.signined {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin: 0 15px;
+          }
+        }
+        &.signup {
+          cursor: pointer;
+          padding: 3px 10px;
+          border: 1px solid #fd9126;
+          border-radius: 15px;
+          color: #fd9126;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .profile-icon-panel {
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.no-header-dialog .close-popup {
+  position: absolute;
+  right: -12px;
+  top: -15px;
+  font-size: 18px;
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 33px;
+  text-align: center;
+  background: #505050;
+  opacity: 1.8;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0px 0 0 3px;
+}
+
+.ui-fly-panel .profile-icon {
+  fill: #484848;
+}
+
+.ui-video-banner .profile-icon {
+  fill: #fff;
+}
+
+@media screen and (max-width: 920px) {
+  .ui-main-menu-xpeak {
+    .humberger {
+      width: 43px;
+      height: 43px;
+      display: flex !important;
+      background: transparent;
+      outline: none;
+      border: none;
+      margin: 5px;
+      border-radius: 4px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .mobile-show-nav-menu {
+      display: flex !important;
+    }
+    .mobile-hide-nav-menu {
+      display: none !important;
+    }
+    .ui-nav-menu {
+      .right {
+        .ui-top-menu-panel {
+          position: fixed;
+          display: -ms-flexbox;
+          display: flex;
+          top: 53px;
+          align-items: flex-start;
+          flex-direction: column;
+          background-color: #e1dfdd;
+          border-radius: 3px;
+          z-index: 1000000000;
+          .profile-mobile {
+            display: block;
+          }
+          .profile-web {
+            display: none;
+          }
+          li {
+            width: 100%;
+            text-align: start;
+            .item {
+              width: 100%;
+            }
+            a {
+              color: #434343;
+              font-size: 12px;
+            }
+            &:hover {
+              background-color: #f0801b;
+              border-radius: 3px;
+              a {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

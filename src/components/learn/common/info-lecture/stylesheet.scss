@@ -1,0 +1,37 @@
+.info-lecture {
+  .title {
+    font-weight: bold;
+  }
+  .content {
+    height: unset;
+  }
+  .content-collapse, p {
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 2em;
+    height: 2em;
+    padding: 0;
+    margin: 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical !important;
+  }
+
+  .content-expand, p {
+    height: unset;
+    text-overflow: unset;
+    display: unset;
+  }
+  .show-more {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 5px 0;
+    outline: none;
+    font-weight: bold;
+    &:hover{
+      color: rgba(146, 195, 106, 0.85);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.audio-minimalistic-control {
+  $size: 41px;
+
+  height: $size;
+  text-align: center;
+
+  &__play-button {
+    background: url('./resources/muteAudio@3x.png') no-repeat;
+    background-size: contain;
+
+    height: 100%;
+    width: $size;
+    outline: none;
+    border: none;
+    font-size: 22px;
+
+    &--disabled {
+      filter: brightness(50%);
+      cursor: not-allowed;
+    }
+
+    &--playing {
+      background: url('./resources/playAudio@3x.png') no-repeat;
+      background-size: contain;
+    }
+  }
+}

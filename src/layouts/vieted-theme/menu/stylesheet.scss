@@ -1,0 +1,160 @@
+.vieted-ui-main-menu {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 17px 0;
+
+  &.normal {
+    background: none;
+  }
+
+  &.fly {
+    background: #ffffff !important;
+    padding: 0;
+
+    .ui-nav-menu .pull-left a img {
+      filter: inherit;
+      image-rendering: pixelated;
+    }
+  }
+
+  .ui-nav-menu {
+    height: 55px;
+    max-height: 55px;
+    line-height: 53px;
+    padding: 0 30px;
+
+    .profile-icon {
+      color: #FFFFFF;
+    }
+
+    .pull-left{
+      a img {
+        width: auto;
+        height: 45px;
+        image-rendering: pixelated;
+        filter: brightness(0) invert(1);
+      }
+    }
+    .ui-top-menu-panel {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &.normal {
+        li {
+          a {
+            color: #ffffff;
+            &.item {
+              color: #757575;
+            }
+          }
+        }
+      }
+      &.fly {
+
+        li {
+          a {
+            color: #333;
+            opacity: .5;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        a {
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          max-width: 100%;
+          white-space: normal;
+          text-decoration: none;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        ul.signined {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin: 0 15px;
+          }
+        }
+        .ui-popover-logined {
+          right: 27px;
+          top: 65px;
+          padding: 10px 0 0 0;
+          .item{
+            color: #0a0a0a;
+          }
+          li.item {
+            display: block;
+            text-transform: none;
+            a {
+              font-size: 11px;
+              color: #333;
+            }
+          }
+        }
+        &.signup {
+          cursor: pointer;
+          padding: 3px 10px;
+          border: 1px solid #fd9126;
+          border-radius: 15px;
+          color: #fd9126;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .profile-icon-panel {
+    cursor: pointer;
+  }
+}
+
+.no-header-dialog .close-popup {
+  position: absolute;
+  right: -12px;
+  top: -15px;
+  font-size: 18px;
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 33px;
+  text-align: center;
+  background: #505050;
+  opacity: 1.8;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0px 0 0 3px;
+}
+.ui-fly-panel .profile-icon{
+  fill: #484848;
+}
+.ui-video-banner .profile-icon{fill: #fff;}
+
+@media (max-width: 480px) {
+  .vieted-ui-main-menu {
+    padding: 0;
+
+    .ui-nav-menu {
+      padding: 0 15px;
+
+      .ui-top-menu-panel li a {
+        font-size: 11px;
+        letter-spacing: 0;
+      }
+
+      .pull-left a img {
+        height: 29px
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../../../layouts/theme.scss";
+
+.summary-course {
+  background-color: #FFF;
+  .pb72 {
+    padding-bottom: 72px;
+  }
+
+  .padding72 {
+    padding: 72px 0;
+  }
+
+  section {
+    @include themify($themes){
+      background-color: themed('l-summary-course-session-bg');
+    }
+    padding: 96px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  p.lead {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #666;
+  }
+
+  .teacher-row {
+    padding: 0 4px 4px 0;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) {
+    .lead {
+      font-size: 21px;
+    }
+  }
+
+  .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .cast-shadow-light {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .feature {
+    margin-bottom: 24px;
+
+    &.boxed {
+      padding: 32px;
+      @include themify($themes) {
+        background: themed('l-summary-course-feature-boxed');
+      }
+    }
+
+    p {
+      letter-spacing: 1px;
+      line-height: 23px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  img[data-sizes="auto"] {
+    display: block;
+    width: 100%;
+  }
+
+  .lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  .avatar100 {
+    width: 100px !important;
+    height: 100px !important;
+    display: inline-block !important;
+    border-radius: 50%;
+  }
+
+  .mb32 {
+    margin-bottom: 32px;
+  }
+
+  .mb16 {
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  h6 {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #292929;
+
+    &.uppercase {
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+  }
+
+  .staff-intro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 23px;
+    max-height: 178px;
+    -webkit-line-clamp: 7;
+    color: #666;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }
+}
+
+.margin-top-72 {
+  margin-top: 72px;
+}

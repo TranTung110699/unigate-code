@@ -1,0 +1,19 @@
+.admin-credit-syllabus-selection, .admin-group-selection, .admin-course-selection, .admin-survey-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background: #eee !important;
+  padding-top: 3px;
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &__organization {
+    margin-left: 10px;
+  }
+
+  &__delete {
+    cursor: pointer;
+  }
+}

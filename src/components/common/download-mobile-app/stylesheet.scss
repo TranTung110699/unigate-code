@@ -1,0 +1,39 @@
+.download-mobile-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    text-align: center;
+  }
+  &__download-link {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 1px #bdbdbd;
+    padding: 3px;
+    margin-right: 30px;
+
+    &--last {
+      margin-right: 0;
+    }
+
+    p {
+      margin: 0;
+      padding-left: 50px;
+      padding-right: 15px;
+    }
+
+    &--ios {
+      background: url('./assets/ic-ios.png') no-repeat #fff 10px 6px;
+    }
+    &--android {
+      background: url('./assets/ic-android.png') no-repeat #fff 10px 6px;
+    }
+  }
+
+  &--small-width {
+    .download-mobile-app__download-link {
+      display: block;
+      margin: 0 0 10px 0;
+    }
+  }
+}

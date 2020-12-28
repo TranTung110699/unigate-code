@@ -1,0 +1,54 @@
+.etec-exam-path {
+  color: #252b41;
+  padding-top: 55px;
+
+  &__content {
+    min-height: 300px;
+  }
+
+  &__title-section {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  &__title-separator {
+    max-width: 419px;
+    border: 1px solid #95989a;
+  }
+
+  &__title-separator-icon {
+    transform: translate(0, -32px);
+    background-color: #FFFFFF;
+    padding: 0 13px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #95989a;
+  }
+
+  &__action-section {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+
+  &__action {
+    margin: 0 15px;
+    border: solid 2px #252b41;
+    color: #252b41;
+    text-transform: uppercase;
+    padding: 9px 15px;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover,&--active {
+      border: solid 2px #85e149;
+      color: #85e149;
+    }
+  }
+}

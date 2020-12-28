@@ -1,0 +1,35 @@
+.xpeak-call{
+  text-align: center;
+  p{
+    font-size: 16px;
+  }
+}
+.uppercase{
+  text-transform: uppercase;
+}
+
+.xpeak-devices-app{
+  a {
+    width: 100%;
+  } p{
+    margin: 0;
+    padding-left: 50px;
+    font-size: 12px;
+  }
+  a.ios-downvote {
+    margin: 0;
+    background: url(./images/ic-ios.png) no-repeat #fff 15px 15px;
+    font-size: 12px;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    box-shadow: 0 0 3px #ffc4c4;
+  }
+  a.android-downvote{
+    margin: 0;
+    background: url(./images/ic-android.png) no-repeat #fff 15px 15px;
+    font-size: 12px;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    box-shadow: 0 0 3px #ffc4c4;
+  }
+}

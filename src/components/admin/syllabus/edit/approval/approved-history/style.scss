@@ -1,0 +1,25 @@
+.approved-history {
+
+  .status {
+    color: green;
+    font-weight: bold;
+  }
+
+  .comment-approved {
+    color: #0b93d5;
+    font-weight: bold;
+  }
+
+  .comment-reject {
+    color: red;
+    font-weight: normal;
+  }
+
+  .comment-row {
+    background-color: lightgray;
+  }
+
+  .strong {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,31 @@
+$default-bg-color: #eee;
+.suggestion-list-component {
+
+  ul.suggestion-content-panel {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    li {
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      background: #cccccc;
+      border-radius: 10px;
+      margin: 5px 10px 0 0;
+      padding: 3px 12px;
+      &.wrapper-class {
+        background-color: #cccccc;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #DBB;
+      }
+      &.selected {
+        background-color: #00bcd4;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #DBB;
+        color: #ffffff;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,63 @@
+.time-slots-wrapper {
+  display: table;
+  width: 100%;
+
+  th, td {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  td {
+    display: table-cell;
+    text-align: center;
+    width: 12%;
+  }
+  .td-day-in-week {
+    vertical-align: middle;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+    padding: 3px 5px;
+    text-align: center;
+    height: 50px;
+  }
+  .td-slot {
+    height: 4em;
+    width: 16%;
+  }
+  .slot-cell {
+    width: 8em !important;
+  }
+  .strong {
+    font-weight: bold;
+    margin: 0;
+  }
+  .small-text {
+    font-size: 80%;
+    margin: 0;
+  }
+  .cell {
+    height: 4em;
+    display: block;
+    &:hover {
+      background-color: #CCF1F6;
+      cursor: pointer;
+    }
+  }
+
+  .clickable {
+    &:hover {
+      background-color: #CCF1F6;
+      cursor: pointer;
+    }
+  }
+
+  .chosen {
+    i {
+      color: #3595D9;
+      font-weight: bold;
+      font-size: 58px;
+      text-align: center;
+    }
+    &.duplicated {
+      background-color: #FFC7CE;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.lotus-home-page {
+  &__header {
+    background: url(./resources/en-banner.png);
+    background-size: cover;
+
+    .vieted-ui-main-menu {
+      .ui-top-menu-panel {
+        color: white;
+      }
+    }
+    .vieted-ui-main-menu .ui-nav-menu .ui-top-menu-panel li .ui-popover-logined {
+      top: 65px;
+      right: 24px;
+    }
+  }
+}

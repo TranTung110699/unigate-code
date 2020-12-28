@@ -1,0 +1,29 @@
+$default-bg-color: #eee;
+.touchable-component {
+
+  ul.content-panel {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    overflow-x: scroll;
+    li {
+      flex-grow: 1;
+      text-align: center;
+      cursor: pointer;
+      &.wrapper-class {
+        background-color: #cccccc;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #DBB;
+      }
+      &.selected {
+        background-color: #00bcd4;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #DBB;
+        color: #ffffff;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,36 @@
+@import '../../common/define.scss';
+
+.role-play-selecting-role {
+  text-align: center;
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 35px 0 20px;
+  }
+
+  &__roles {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__role {
+    margin: 0 1em;
+  }
+
+  &__buttons {
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__button {
+    button {
+      background-color: $role-play-primary-button-color !important;
+    }
+  }
+}

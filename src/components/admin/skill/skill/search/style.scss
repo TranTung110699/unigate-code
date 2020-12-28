@@ -1,0 +1,11 @@
+.skill-table-result {
+  .ant-table-thead,
+  .ant-table-tbody {
+    > tr {
+      > td,
+      > th {
+        padding: 5px 16px !important;
+      }
+    }
+  }
+}

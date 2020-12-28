@@ -1,0 +1,23 @@
+.report-dashboard-marking {
+  &__rubric {
+    .skill-rubric-view-items {
+      &__cell {
+        &--name {
+          width: 40%;
+        }
+
+        &--weighted {
+          width: 15%;
+        }
+
+        &--marking-suggestion {
+          width: 15%;
+        }
+      }
+    }
+  }
+
+  &__take-comment {
+    padding: 15px;
+  }
+}

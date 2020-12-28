@@ -1,0 +1,76 @@
+.lotus-home-page-products {
+  background: url(./resources/Backgroud-Products.png);
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 30px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 100;
+    display: inline-block;
+    color: white;
+  }
+
+  &__title:after {
+    content: "";
+    margin: auto;
+    display: block;
+    width: 60px;
+    border: 1px solid #1d89e3;
+  }
+
+  &__sub-title {
+    font-weight: 100;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    .lotus-devices-app {
+      a {
+        width: 100%;
+        border: 1px solid #d8d8d8;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      p {
+        margin: 0;
+        padding-left: 25px;
+        font-size: 14px;
+      }
+      a.ios-downvote {
+        margin: 0;
+        background: url(./resources/ic-ios.png) no-repeat #fff 30px 15px;
+        padding: 10px;
+        box-shadow: 0 0 3px #ffc4c4;
+        max-width: 240px;
+        float: right;
+      }
+      a.android-downvote {
+        margin: 0;
+        background: url(./resources/ic-android.png) no-repeat #fff 30px 15px;
+        padding: 10px;
+        box-shadow: 0 0 3px #ffc4c4;
+        max-width: 240px;
+        float: left;
+      }
+
+      div img {
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .lotus-home-page-products {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}

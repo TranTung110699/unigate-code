@@ -1,0 +1,122 @@
+@import "../../../../layouts/theme.scss";
+
+.evn-home-page {
+  background-color: #fff;
+  a:active,
+  a:hover {
+    @include themify($themes){
+      color: themed('text-cl-hover') !important;
+    }
+    font-weight: 500 !important;
+  }
+
+  &__feature-courses {
+    padding: 50px 0px;
+    background: url(./resources/massive-dynamic-2.png);
+    background-size: cover;
+    h1 {
+      width: 195px;
+      height: 42px;
+      color: #272727;
+      font-family: 'Roboto Light';
+      font-size: 36px;
+      font-weight: 300;
+    }
+    hr {
+      display: block;
+      height: 0px;
+      width: 60px;
+      border: 0;
+      @include themify($themes){
+        border-top: themed('feature-courses-border');
+      }
+      margin: 0 0 40px 0;
+      padding: 0;
+    }
+    &__title {
+      color: #272727;
+      font-size: 36px;
+      font-weight: 300;
+    }
+    &__wrapper {
+      padding: 0 20px;
+      margin: 0 auto;
+      max-width: 1300px;
+      width: 100%;
+      & .slick-prev,& .slick-next {
+        z-index: 999;
+        width: unset !important;
+        height: unset !important;
+      }
+      & .slick-prev {
+        background: url(./resources/angle-left.png) no-repeat !important;
+      }
+      & .slick-next {
+        background: url(./resources/angle-right.png) no-repeat !important;
+      }
+      & .slick-prev:before,& .slick-next:before {
+        font-size: 10px;
+        color: transparent !important;
+      }
+      & .ui-course-viewer{
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__categories-courses {
+    padding: 50px 20px;
+    & .container{
+      margin: 0 auto;
+      max-width: 1300px;
+      width: 100%;
+    }
+    & .ggg-dashboard-wrapper {
+      width: 100% !important;
+      & .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .evn-home-page {
+    &__categories-courses {
+      &__left-menu {
+        padding-right: 0px;
+      }
+      &__categories-course-list {
+        border-style: solid;
+        border-color: #e4e4e4;
+        border-width: 0px 0px 0px 1px;
+        padding: 0px 0px 0px 15px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .evn-home-page {
+    &__feature-courses {
+      &__wrapper {
+        & .slick-next {
+          right: 0px;
+        }
+        & .slick-prev {
+          left: 4px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../../../layouts/theme.scss";
+.blogs-preview-list {
+  &__title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  &__item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &:not(&--last) {
+      border-bottom: solid 1px rgba(51, 51, 51, 0.2);
+    }
+
+    &--last {
+      padding-bottom: 2em;
+    }
+  }
+}
+.layout-evn-blogs-preview-list{
+  padding-top: 15px;
+
+  &__title_wrapper{
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 24px;
+    @include themify($themes){
+      border-bottom: themed('border-bottom-color') !important;
+    }
+  }
+
+  &__item {
+    //padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+    & a:hover, & a:active, & a:focus {
+      @include themify($themes){
+        color: themed('text-cl-hover');
+      }
+    }
+    &:not(&--last) {
+      //border-bottom: solid 1px rgba(51, 51, 51, 0.2);
+    }
+
+    &--last {
+      padding-bottom: 2em;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.social-video-input-preview{
+  width: unset !important;
+  margin-top: 24px;
+}
+.attachment-video{
+  position: relative;
+  top: -10px;
+  & button {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  & .duration-video-icon{
+    height: 0px !important;
+    top: 7px;
+  }
+}

@@ -1,0 +1,15 @@
+@import 'layouts/theme.scss';
+.submit-btn-wrapper {
+  .save-submit-button {
+    div,
+    button {
+      @include themify($themes) {
+        background: themed('btn-primary-bg') !important;
+        color: themed('btn-text-cl') !important;
+      }
+      :hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

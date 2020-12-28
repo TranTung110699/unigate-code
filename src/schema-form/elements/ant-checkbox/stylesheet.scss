@@ -1,0 +1,16 @@
+.ant-checkbox-container {
+  .input-text-label {
+    //color: #b2b2b2;
+    line-height: 36px;
+    margin-bottom: -8px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+  .ant-checkbox:not(.ant-checkbox-checked):not(.ant-checkbox-disabled) {
+    .ant-checkbox-inner {
+      border-color: rgba(0, 0, 0, 0.5) !important;
+    }
+  }
+}

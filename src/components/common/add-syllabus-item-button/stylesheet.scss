@@ -1,0 +1,51 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+.NEW_UI_JULY_2019-add-syllabus-item-btn {
+  border-radius: 5px !important;
+  min-height: 45px;
+  min-width: 180px;
+  line-height: 45px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  background: #fff !important;
+  color: $NEW_UI_JULY_2019-button-add-group-color;
+  font-family: $NEW_UI_JULY_2019-font-roboto-regular;
+  font-weight: bold;
+  text-align: left !important;
+  font-size: 14px;
+  padding-left: 70px !important;
+  &:hover {
+    background: $NEW_UI_JULY_2019-button-add-group-color !important;
+    color: #fff !important;
+    i {
+      color: #fff !important;
+    }
+  }
+  &[disabled] {
+    background: $NEW_UI_JULY_2019-color-gray3 !important;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: not-allowed;
+  }
+
+  &.w-100 {
+    width: 100%;
+  }
+
+  &.add-syllabus-item-notdepth {
+    width: 90% !important;
+    box-shadow: initial !important;
+    margin: -2px;
+    background: #fff !important;
+    min-width: initial !important;
+    padding-left: 15px !important;
+    i {
+      color: $NEW_UI_JULY_2019-button-add-group-color !important;
+    }
+    &:hover {
+      color: inherit !important;
+      i {
+        color: inherit !important;
+      }
+    }
+  }
+}

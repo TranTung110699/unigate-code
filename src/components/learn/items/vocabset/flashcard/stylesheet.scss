@@ -1,0 +1,34 @@
+@import "../../../../../configs/css-configuration.scss";
+
+.flashcard-wrapper {
+  .wrap-audio {
+    display: inline-block;
+    height: 65px;
+    line-height: 65px;
+    width: 65px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .wrap-content {
+    font-size: 24px;
+    height: 65px;
+    line-height: 65px;
+    color: $default-text-color;
+    font-weight: 700;
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  h4 {
+    color: #666;
+    font-size: 16px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}

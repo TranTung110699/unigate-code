@@ -1,0 +1,12 @@
+.join-status-ok .color-by-status {
+  color: green;
+}
+
+.join-status-too-late .color-by-status {
+  color: gray;
+}
+.session-result-container{
+  .ant-table-body{
+    overflow: auto;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../../configs/css-configuration.scss";
+
+.importFromExcel {
+  .link {
+    color: #00A700 !important;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .success {
+    color: #00A700;
+  }
+
+
+  .button-spacing {
+    margin: 5px;
+  }
+
+  .import-tab {
+    padding: 12px 0;
+
+    .tab-detail {
+      color: #0a0a0a;
+    }
+  }
+}
+
+.show-import-ui-pagination {
+  .ui-pagination {
+    display: block;
+  }
+}
+
+.hide-import-ui-pagination {
+  .ui-pagination {
+    display: none;
+  }
+}

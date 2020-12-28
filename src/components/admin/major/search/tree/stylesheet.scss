@@ -1,0 +1,18 @@
+.admin-major-tree-results {
+
+  &__node {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  &__node-name {
+    flex-grow: 1;
+  }
+
+  &__node-actions {
+    min-width: 100px;
+  }
+
+
+}

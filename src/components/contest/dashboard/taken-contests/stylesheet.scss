@@ -1,0 +1,35 @@
+.exam-result-wrapper {
+  .table-result{
+    margin: 0 0 20px;
+    & h3 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 30px;
+      letter-spacing: 0;
+    }
+    & th {
+      border: 1px solid #e0e0e0;
+      color: #242c42 !important;
+      font-weight: 700;
+    }
+    & td{
+      border: 1px solid #e0e0e0;
+      & .contest-name {
+        width: 20%;
+      }
+      & .exam-round{
+        width: 20%;
+      }
+      & .exam-shift-date{
+        width: 20%;
+      }
+      & .submitted-time{
+        width: 15%;
+      }
+      & .score{
+        width: 5%;
+      }
+    }
+  }
+}

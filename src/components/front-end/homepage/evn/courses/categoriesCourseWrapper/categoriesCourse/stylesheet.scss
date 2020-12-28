@@ -1,0 +1,19 @@
+@import "../../../../../../../layouts/theme.scss";
+
+.ui-pagination{
+    //& button {
+    //  @include border-radius();
+    //}
+    &__page-button {
+      &--active{
+        @include themify($themes){
+          background: themed('btn-primary-bg') !important;
+        }
+      }
+    }
+    &__page-button:hover {
+      @include themify($themes){
+        background: themed('btn-primary-bg') !important;
+      }
+    }
+}

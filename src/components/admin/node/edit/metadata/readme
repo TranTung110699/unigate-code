@@ -1,0 +1,10 @@
+Component structure
+===================
+MetadataContainer
+  Filter
+  MetadataRenderer (depth, initially=0)
+    MetadataSortableList
+      sortable of(MetadataSortableItemRenderer)
+        - Row
+        - (optional) MetadataRender (depth++) -----(recursive)
+    AddItem

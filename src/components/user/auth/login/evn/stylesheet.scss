@@ -1,0 +1,63 @@
+$color : #e13542;
+.evn-login-form{
+  background-color: #ffffff;
+
+  a{
+    &:hover{
+      color: $color;
+    }
+  }
+  .title{
+    text-align: center;
+    height: 21px;
+    color: #272727;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+  }
+  .text-field{
+    margin-top: -20px;
+  }
+  .action{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    .forgot-password{
+      cursor: pointer;
+    }
+  }
+  .btn{
+    border: none;
+    width: 150px;
+    min-width: 100px;
+    margin: 13px auto;
+    height: 38px;
+    border-radius: 2px;
+    background-color: #164e99;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .evn-login-form {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 425px) {
+  .evn-login-form {
+    padding: 25px;
+  }
+}
+
+

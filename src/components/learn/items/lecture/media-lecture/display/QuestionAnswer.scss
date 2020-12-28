@@ -1,0 +1,17 @@
+
+.media-lecture-question-answer {
+  border: 1px solid #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  background: white;
+
+  &__content {
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  &__control {
+    text-align: center;
+    padding: 10px;
+  }
+}

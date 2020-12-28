@@ -1,0 +1,14 @@
+.not-allowed-wrapper {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  min-height: 400px;
+  text-align: center;
+  .warning-icon {
+    color: red;
+    font-size: 64px;
+  }
+  .error-message {
+    color: red;
+  }
+}

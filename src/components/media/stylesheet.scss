@@ -1,0 +1,208 @@
+@import "../../configs/css-configuration.scss";
+
+.ui-media-panel {
+  .img-detail {
+    padding: 20px;
+
+    .image-panel {
+      background-color: #f8f8f8;
+      .center-block-panel {
+        width: 200px;
+        height: 200px;
+        border: solid 1px #cccccc;
+        img {
+          margin: 0 auto !important;
+          max-width: 196px;
+          max-height: 196px;
+        }
+      }
+    }
+    .ui-img-info {
+      margin-left: 220px;
+    }
+  }
+  .overlay-lower-right {
+    font-size: 60% !important;
+    position: relative;
+    bottom: -10px;
+    right: -10px;
+  }
+  .ui-media-content {
+    .ui-content-left {
+      width: 250px;
+
+      height: 100%;
+      background-image: url($mediaPath + '/images/mm/bg-mm-top-left.png');
+      background-repeat: repeat-x;
+
+      .ui-folder-default {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li:hover, li.active {
+          background-color: $main-color;
+          a {
+            color: $white;
+            i {
+              color: $white;;
+            }
+          }
+        }
+        li {
+          padding: 0 0 0 20px;
+          margin: auto;
+          display: block;
+          width: 100%;
+          cursor: pointer;
+
+          a {
+            padding: 10px 0;
+            display: inline-block;
+            text-decoration: none;
+            color: $main-color;;
+
+            i {
+              margin-right: 10px;
+              color: $main-color;;
+            }
+          }
+        }
+      }
+    }
+    .ui-content-right {
+      background-image: url($mediaPath + '/images/mm/bg-mm-top-right.png'), url($mediaPath + '/images/mm/bg-mm-ngang.png');
+      background-repeat: repeat-x, repeat-y;
+      background-color: #f9f9f9;
+      padding-right: 0px;
+      margin-left: 250px;
+      padding-left: 5px;
+      padding-top: 5px;
+      .ui-content-panel {
+        min-height: 450px;
+        overflow: hidden;
+        position: relative;
+        .dropzone-file {
+          display: none;
+        }
+      }
+      .ui-content-panel:-moz-drag-over {
+
+        .dropzone-file {
+          height: 200px;
+          border-width: 2px;
+          border-color: rgb(102, 102, 102);
+          border-style: dashed;
+          border-radius: 5px;
+          display: block;
+          width: 100% !important;
+          height: 200px !important;
+        }
+      }
+    }
+  }
+  .ui-control-panel {
+    margin: auto;
+    padding: 20px;
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .item:first-child a {
+        padding-left: 0px;
+      }
+      .item {
+        display: inline-block;
+        a {
+          display: inline-block;
+          position: relative;
+          padding: 2px 40px;
+          cursor: pointer;
+
+          .plus {
+            position: absolute;
+            width: 4px;
+            height: 3px;
+            font-size: xx-small;
+            right: 40%;
+            top: 3px;
+          }
+        }
+      }
+    }
+
+    .ui-search {
+      position: relative;
+      input {
+        border: 1px solid #a5a5a5;
+        border-radius: 20px;
+        width: 230px;
+        padding: 2px 2px 2px 30px;
+
+      }
+      input:focus {
+        outline: none;
+      }
+      i {
+        position: absolute;
+        left: 10px;
+        top: 6px;
+      }
+    }
+  }
+  .mm-list-row-file-name {
+    position: relative;
+    width: 60%;
+    .menu-context {
+      cursor: pointer;
+    }
+  }
+
+  .mm-file-icon {
+    position: absolute;
+  }
+  .mm-file-name {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  ul.mm-file-view-grid {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    li {
+      display: inline-block;
+      width: 150px;
+      height: 180px;
+      margin: 5px;
+      .icon-grid {
+        height: 85%;
+        position: relative;
+        i {
+          color: $main-color;
+          font-size: 40px;
+        }
+        i:hover {
+          background-color: $main-color;
+          color: $white;
+        }
+      }
+      .icon-grid-input {
+        height: 50%;
+        .middle-center-box {
+          vertical-align: bottom !important;
+        }
+      }
+      .mm-file-name-grid {
+        height: 15%;
+        overflow: hidden;
+        text-align: center;
+
+      }
+      .mm-file-name-grid-input {
+        height: 50%;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+  }
+}

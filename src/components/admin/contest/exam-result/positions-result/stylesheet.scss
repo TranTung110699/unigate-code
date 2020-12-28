@@ -1,0 +1,15 @@
+.admin-positions-selection {
+  display: inline-block;
+  width: 100%;
+
+  &__info {
+    padding: 25px 0 0 25px;
+    font-weight: 500;
+  }
+
+  &__delete {
+    cursor: pointer;
+    padding: 4px 2px;
+    text-align: right;
+  }
+}

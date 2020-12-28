@@ -1,0 +1,29 @@
+@import "../../configs/css-configuration.scss";
+
+$l-screen-height: 475px; // chiều cao của màn hình
+$l-screen-body-height: 475px; // chiều cao của màn hình
+$l-border-color:#292929;
+
+// tổng không đủ do double 2 lần boder
+$l-zone-content: 475px; //??? không hiểu vì sao phải thêm 1px
+$l-zone-control: 50px;
+
+
+$l-nav-bg-color: #292929;
+$l-nav-item-bg-color: rgba(255, 255, 255, 0.05);
+$l-nav-active-border-color: #92c36a;
+$l-nav-exam-border-color: rgba(217, 83, 79, 0.85);
+$l-nav-active-bg-color: rgba(146, 195, 106, 0.2);
+$l-nav-exam-bg-color: rgba(217, 83, 79, 0.85);
+$l-nav-item-hover-bg-color: rgba(255, 255, 255, 0.1);
+
+$l-nav-header-background-color: #131313;
+$l-nav-header-color: #ffffff;
+
+$l-nav-header-height: 60px;
+$l-nav-content-height: 473px;
+$l-nav-control-height: 55px;
+$l-nav-content-to-make-scroll: 520px; // để tránh phần scroll lúc hiện lúc không, phải set cao hơn $l-screen-height
+
+$l-zone-content-width: 70%;
+$l-nav-width: 30%;

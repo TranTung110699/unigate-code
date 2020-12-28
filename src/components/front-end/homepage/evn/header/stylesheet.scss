@@ -1,0 +1,112 @@
+.evn-home-page__header {
+  color: #fff;
+  height: 350px;
+  text-align: center;
+
+  & .slick-track {
+    height: 350px;
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 42px;
+      width: 700px;
+      margin: 0 auto;
+      mix-blend-mode: difference;
+      color: #fff;
+    }
+  }
+  & .slick-dots {
+    bottom: 12px;
+  }
+  & .slick-dots li {
+    position: relative;
+  }
+  & .slick-dots li button {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  & .slick-dots li button:before {
+    font-size: 14px;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  & .slick-dots li.slick-active button:before {
+    color: #fff;
+  }
+
+  &__description {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__slide-item {
+    background-size: cover;
+    .background-filter {
+      width: 100%;
+      height: 100%;
+      background: black;
+      opacity: 0.35;
+      margin-left: -15px;
+      position: absolute;
+    }
+    .title-wrapper {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      position: absolute;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .evn-home-page__header {
+    & .row-relative {
+      position: relative;
+    }
+  }
+  .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .evn-home-page__header {
+    &__login-form {
+      padding: 25px 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .evn-home-page__header {
+    display: none;
+  }
+  .evn-home-page {
+    &__header {
+      & .slick-track {
+        h2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

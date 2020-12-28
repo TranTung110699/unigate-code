@@ -1,0 +1,86 @@
+$primary-color: #333;
+$header-color: #0c8254;
+$text-color: #5d723d;
+$spelling-color: #3da4dc;
+.overview-appear {
+  opacity: 0.01;
+}
+
+.overview-appear.overview-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.d-recognition-speaker {
+
+  .result {
+    text-align: center;
+    width: 100%;
+  }
+
+  .score {
+    text-align: center;
+    width: 100%;
+  }
+
+  .xpeak-speaker {
+    padding: 2px 7px 0px !important
+  }
+
+  .xpeak-icon {
+    font-size: 12pt;
+    line-height: 0;
+    transform: translateY(-18px);
+    opacity: 0.9;
+  }
+
+  .ui-recognition-recorder {
+    .outer {
+     z-index: 1;
+    }
+  }
+
+  .ui-content-panel {
+    padding: 10px 10px 10px 10px;
+
+    .ui-content-center {
+      display: inline-block;
+      text-align: center;
+      position: relative;
+
+      .ui-text-content {
+        margin-left: 55px;
+        display: inline-block;
+        font-weight: 500px;
+        .ui-text {
+          text-align: left;
+          color: $text-color;
+        }
+
+        .ui-spelling {
+          color: $spelling-color;
+        }
+
+        @media only screen and (min-width: 769px) {
+          .ui-text {
+            font-size: 22px;
+          }
+
+          .ui-spelling {
+            font-size: 18px;
+          }
+        }
+
+        @media only screen and (max-width: 768px) {
+          .ui-text {
+            font-size: 16px;
+          }
+
+          .ui-spelling {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+  }
+}

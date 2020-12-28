@@ -1,0 +1,160 @@
+.question-correct-answer {
+  color: #4db41d;
+}
+.question-incorrect-answer {
+  color: #f11a1a;
+}
+
+.question-display {
+  &__learning-suggestion {
+    margin-top: 50px;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+.go-japan-mc-question-answer-text {
+  .go-japan-question-content-body-wrapper {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 700px) {
+      display: initial;
+      padding-top: 0;
+      .question-content {
+        min-width: initial;
+        padding-right: 0;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0;
+        &__image {
+          width: 40%;
+          margin-bottom: 0;
+        }
+      }
+      .help-text {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .question-content {
+    width: 50%;
+    min-width: 200px;
+    padding-right: 10px;
+
+    $partMarginBottom: 20px;
+
+    &__audio {
+      margin-bottom: $partMarginBottom;
+    }
+
+    &__image {
+      max-height: none;
+      //margin-bottom: $partMarginBottom;
+    }
+  }
+
+  .mc-text-question {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    .display-panel {
+      width: 100%;
+      max-width: 250px;
+      @media screen and (max-width: 700px) {
+        max-width: initial;
+      }
+    }
+
+    &__radio-answer {
+      padding: 7px 15px;
+      background-color: #ededed;
+
+      label {
+        font-size: 16px;
+      }
+
+      > div > div {
+        display: none !important; // hide checkboxes
+      }
+
+      svg {
+        fill: #aeaeae !important;
+      }
+
+      svg:first-child {
+        background: white;
+        border-radius: 50%;
+      }
+
+      &--selected {
+        background-color: #f7941d;
+
+        label {
+          color: white !important;
+        }
+
+        svg {
+          fill: #3c79ba !important;
+        }
+      }
+    }
+  }
+
+  &--has-image-and-audio {
+    .mc-text-question {
+      padding-top: 83px;
+      @media (max-width: 700px) {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+.go-japan-inline-question-with-image-and-audio {
+  .go-japan-question-content-body-wrapper {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 700px) {
+      display: initial;
+      padding-top: 0;
+      .question-content {
+        min-width: initial;
+        padding-right: 0;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0;
+        &__image {
+          width: 40%;
+          margin-bottom: 0;
+        }
+      }
+      .help-text {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .question-content {
+    width: 50%;
+    min-width: 200px;
+    padding-right: 10px;
+
+    $partMarginBottom: 28px;
+
+    &__audio {
+      margin-bottom: $partMarginBottom;
+    }
+
+    &__image {
+      max-height: none;
+      margin-bottom: $partMarginBottom;
+    }
+  }
+}

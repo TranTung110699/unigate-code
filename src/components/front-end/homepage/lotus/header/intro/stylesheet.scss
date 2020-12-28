@@ -1,0 +1,103 @@
+$color: #FFFFFF;
+$color-primary: #1d89e3;
+$color-hover: #fc8006;
+
+.lotus-home-page-intro {
+  font-weight: 200;
+  color: $color;
+
+  &__title {
+    font-size: 44px;
+  }
+
+  &__content {
+    font-size: 14px;
+    padding-bottom: 10px;
+    max-width: 470px;
+  }
+
+  &__inputs {
+    margin-bottom: 26px;
+    input {
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    }
+  }
+
+  &__button {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    outline: none;
+    font-size: 12px;
+    border: solid 1px $color-primary;
+    padding: 12px;
+    background-color: $color-primary;
+    width: 180px;
+    margin-right: 30px;
+    margin-bottom: 27px;
+
+    &:visited {
+      color: $color;
+    }
+
+    &:hover {
+      color: $color;
+      border: solid 1px $color-hover;
+      background-color: $color-hover;
+    }
+
+    &--primary {
+      background-color: $color-primary;
+      border: solid 1px $color-primary;
+
+      &:hover {
+        background-color: $color-hover;
+        border: solid 1px $color-hover;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .lotus-home-page-intro {
+    &__title {
+      font-size: 19px;
+      margin-bottom: -4px;
+    }
+
+    &__content {
+      font-size: 9px;
+      line-height: 10px;
+      max-width: 195px;
+    }
+
+    &__mail {
+      max-width: 200px !important;
+      height: 50px !important;
+
+      label {
+        font-size: 12px !important;
+        top: 19px !important;
+      }
+
+      input {
+        margin-top: 4px !important;
+        font-size: 12px !important;
+      }
+    }
+
+    &__button {
+      font-size: 9px;
+      width: 112px;
+      padding: 2px;
+      display: block;
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+
+    &__inputs {
+      margin-bottom: 11px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+$speaker-color: #3da4dc;
+$speaker-color-hover: #65bcec;
+
+.simple-speaker {
+  border-width: 0 !important;
+  display: inline-block;
+  .ui-speaker {
+    width: 11px;
+    padding: 1px;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+.ui-mi-speaker {
+  color: $speaker-color;
+  cursor: pointer;
+  :hover {
+    color: $speaker-color-hover;
+    border-color: $speaker-color-hover;
+  }
+}
+.ui-speaker {
+  line-height: 1.78571;
+  position: inherit;
+  float: left;
+  //padding: 7px;
+  padding: 2px 7px 0px;
+  border-radius: 50%;
+  border: 2px solid $speaker-color;
+  font-size: 22px;
+  color: $speaker-color;
+  cursor: pointer;
+  :hover {
+    color: $speaker-color-hover;
+    border-color: $speaker-color-hover;
+  }
+  .font-size-16 {
+    font-size: 16px;
+  };
+}

@@ -1,0 +1,74 @@
+.learn-exercise-exam-nav {
+  &__exercises {
+    padding-bottom: 8px;
+  }
+
+  &__exercise {
+    border: solid 1px #666666;
+    background-color: #333333;
+    margin-bottom: 9px;
+    padding: 6px 11px 0px 11px;
+
+    &--active {
+      border: solid 1px #92c36a;
+    }
+  }
+
+  &__exercise-name {
+    font-size: 14px;
+    font-weight: 200;
+    color: #FFFFFF;
+    padding: 0 0 8px 0;
+  }
+
+  .normal-exercise-control-question-groups {
+    padding: 0px 0px;
+    background-color: #333333;
+    flex-wrap: wrap;
+
+
+    &__group {
+      flex-wrap: wrap;
+      justify-content: left;
+      border-radius: 20px;
+      align-content: center;
+      padding: 0px 3px;
+      margin: 0px 5px 9px 0;
+      border: solid 1px #9a9a9a;
+
+      &--active {
+        border-color: #668050;
+      }
+
+      &--single {
+        border-color: transparent;
+        padding: 0;
+      }
+    }
+
+    &__question {
+      border-radius: 20px;
+      min-width: 33px;
+      height: 20px;
+      margin: 3px 3.5px;
+      display: flex;
+      font-size: 10px;
+      font-weight: 300;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--single {
+        height: 25px;
+        margin: 0;
+      }
+    }
+  }
+
+  &__legend {
+    border: solid 1px #666666;
+    background-color: #333333;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+  }
+}

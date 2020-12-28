@@ -1,0 +1,13 @@
+.assignment-group-member {
+  &__section {
+    padding-bottom: 50px;
+  }
+
+  &__section-title {
+    font-size: 15px;
+  }
+
+  &__section-content {
+    overflow: auto;
+  }
+}

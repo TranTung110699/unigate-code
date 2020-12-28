@@ -1,0 +1,9 @@
+.popup-ant-duration-time-picker {
+  z-index: 1501 !important; //Now add this code to fix bug hide modal coz MU modal always set z-index is 1500
+}
+
+.duration-time-picker-label {
+  color: #b2b2b2;
+  line-height: 36px;
+  margin-bottom: -8px;
+}

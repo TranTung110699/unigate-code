@@ -1,0 +1,19 @@
+.ant-calendar-picker-container {
+  z-index: 1501 !important; //Now add this code to fix bug hide modal coz MU modal always set z-index is 1500
+}
+.ant-date-time-picker-wrapper {
+  .date-time-picker-label {
+    color: #b2b2b2;
+    line-height: 36px;
+    margin-bottom: -8px;
+  }
+  .ant-calendar-picker {
+    min-width: 222px;
+  }
+  .full-width {
+    width: 100% !important;
+  }
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+}

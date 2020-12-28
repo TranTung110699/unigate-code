@@ -1,0 +1,59 @@
+.etec-nav-bar {
+  border-bottom: 1px solid #979797;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__group {
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__item-child-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__next-icon {
+    transform: translate(0, 2px)
+  }
+
+  &__item {
+    padding: 10px 0;
+    margin: 0 20px;
+    outline: none;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    &--left {
+      margin-left: 0;
+    }
+
+    &--right {
+      margin-right: 0;
+    }
+
+    &--active {
+      border-bottom: solid 3px #8fdd2d;
+    }
+  }
+
+  &__free-icon {
+    color: #8fdd2d;
+    font-size: 9px;
+    font-weight: 700;
+    display: inline-block;
+    transform: translate(0, -9px);
+  }
+
+}

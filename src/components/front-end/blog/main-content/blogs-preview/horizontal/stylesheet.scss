@@ -1,0 +1,75 @@
+@mixin importIcon($icon) {
+  background-size: 14px;
+  background: url($icon) no-repeat left center;
+  padding-left: 23px;
+  color: #95989a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hz-blog-preview {
+  color: black;
+  //padding-bottom: 30px;
+  //border-bottom: 1px dotted #95989a;
+  margin-bottom: 30px;
+  p{
+    margin: 0;
+  }
+  background-color: #ffffff;
+
+  &__left {
+    padding: 0 15px 0 0;
+    & a {
+      width: 100%;
+    }
+    &__avatar {
+      width: 100%;
+      min-height: 160px;
+      vertical-align: middle;
+      object-fit: cover;
+    }
+  }
+  &__right {
+    padding: 0 0 0 15px;
+    margin: 0;
+    &__name {
+      color: #242c42;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    &__info {
+      transform: translateY(-12px);
+      &__view {
+        @include importIcon("./images/ic-eye.png");
+        margin-right: 37px;
+      }
+      &__date {
+        @include importIcon("./images/ic-date.png");
+      }
+    }
+  }
+  &__view-more {
+    height: 45px;
+    outline: none;
+    min-width: 150px;
+    border: 2px solid #8fdd2d;
+    color: #242c42;
+    background: transparent;
+    transition: all 0.5s ease;
+    &:hover{
+      background: #8fdd2d;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .hz-blog-preview {
+    &__left {
+      padding: 0;
+    }
+    &__right {
+      padding: 0 0 0 5px;
+    }
+  }
+}

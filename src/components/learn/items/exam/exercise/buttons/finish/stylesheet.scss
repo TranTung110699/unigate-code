@@ -1,0 +1,47 @@
+.learn-exercise-exam-finish-buttons {
+  padding: 5px 0;
+  text-align: center;
+
+  &__button-group {
+
+    &--left {
+      text-align: left;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__button {
+    padding: 5px 30px;
+    font-size: 12px;
+    border-radius: 0;
+    border: 2px solid #ff563f;
+    background-color: #ff563f;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: initial;
+
+    &:hover {
+      background-color: transparent;
+      color: #ff563f;
+    }
+
+    &--disabled {
+      cursor: not-allowed !important;
+      color: rgba(255, 255, 255, 0.3);
+
+      &:hover{
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

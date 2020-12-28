@@ -1,0 +1,40 @@
+ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.horizontal li {
+  float: left;
+  padding: 10px;
+  a:hover {
+    background-color: white;
+  }
+
+}
+.add-item-wrapper {
+  img.item-overview {
+    width: 86px;
+  }
+}
+.add-item-wrapper-notdepth {
+  .add-item {
+    width: 100%;
+  }
+  ul.horizontal {
+    li {
+      padding: 10px 0;
+      a {
+        background-color: white;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+      &:first-child {
+        a:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

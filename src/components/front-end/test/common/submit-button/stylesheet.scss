@@ -1,0 +1,27 @@
+.etec-submit-button {
+  color: #FFFFFF;
+  padding: 12px 50px;
+  text-transform: uppercase;
+  background-color: #8fdd2d;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #54c145;
+    color: #FFFFFF;
+    transition: all 0.5s;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lightgray;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: lightgray;
+      color: #FFFFFF;
+    }
+  }
+
+}

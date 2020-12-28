@@ -1,0 +1,23 @@
+@import '../../../../configs/css-configuration.scss';
+@import '../../../../layouts/theme.scss';
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  //height: 50px;
+  //minHeight: 50px;
+  padding: 5px;
+  //verticalAlign: "middle"}}
+  .content {
+    padding-right: 10px;
+    flex-grow: 1;
+    display: flex;
+  }
+  .hamburger{
+    .nav-menu.active{
+      display: flex;
+    }
+  }
+}
+

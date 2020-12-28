@@ -1,0 +1,39 @@
+.admin-enrolment-session {
+  &__box-content {
+    margin: 10px;
+    .button-show-box-search {
+      margin-bottom: 20px;
+    }
+    .box-form-learner {
+      .action-box {
+        display: flex;
+        .button-box {
+          display: inline;
+          min-width: 150px;
+        }
+      }
+    }
+  }
+  .box-container {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.wapper-reset-progress {
+  min-width: 150px;
+}
+
+.title-reset-progress {
+  text-align: center;
+  .display-learner-type {
+    font-size: 25px;
+  }
+}
+
+.reset-progress-user-info, .title-reset-progress {
+  .display-learner-name {
+    font-size: 20px;
+  }
+}

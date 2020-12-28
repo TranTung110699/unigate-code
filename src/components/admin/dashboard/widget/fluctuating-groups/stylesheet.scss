@@ -1,0 +1,17 @@
+.user-group-have-population-fluctuations {
+  .table-row {
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(224, 224, 224);
+    }
+  }
+  .current-members {
+    color: black;
+  }
+  .pending-members {
+    color: #15bcd5;
+  }
+  .redundant-members {
+    color: red;
+  }
+}

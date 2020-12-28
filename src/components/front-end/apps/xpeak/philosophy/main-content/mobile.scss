@@ -1,0 +1,21 @@
+.philosophy-wrapper {
+  @media (max-width: 1200px) {
+
+  }
+  @media (max-width: 990px) {
+    .box-content{
+      ul {
+        padding-left: 0;
+        li ul{
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+
+  }
+  @media (max-width: 400px) {
+
+  }
+}

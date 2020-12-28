@@ -1,0 +1,527 @@
+@import '../defined.scss';
+@import '../../../layouts/theme.scss';
+
+.ggg-ui-learn-nav {
+  margin-bottom: 30px;
+  .lesson-summary-wrapper {
+    .lesson-summary {
+      background: #292929;
+      color: white;
+      padding: 10px 40px;
+    }
+    .info {
+      padding: 10px 20px;
+      color: #707070;
+      border-bottom: 1px solid #999f9d;
+      border-right: 1px solid #999f9d;
+      border-left: 1px solid #999f9d;
+    }
+  }
+  .ggg-overview-wrapper {
+    .ggg-item {
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #707070;
+      &.is-header {
+        text-transform: uppercase;
+        border-bottom: 1px solid #999f9d;
+        border-right: 1px solid #999f9d;
+        border-left: 1px solid #999f9d;
+        &.active {
+          background: #353f42;
+          color: white;
+        }
+      }
+      &.learn-item {
+        border-right: 1px solid #999f9d;
+        border-left: 1px solid #999f9d;
+      }
+
+      .ggg-learn-nav-item {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.ui-learn-nav {
+  @include themify($themes) {
+    background-color: themed('l-main-bg');
+  }
+  h2 {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  h3 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .nav-scroll {
+    /*> div:first-child {
+      padding-right: 3px;
+      //margin-right: -20px !important;
+      border-right: 1px solid #ddd;
+      @include themify($themes) {
+        background-color: themed('l-main-bg') !important;
+      }
+      @include styleScrollBar();
+    }*/
+
+    &__track-vertical {
+      position: absolute;
+      @include themify($themes) {
+        background-color: themed('l-track-vertical');
+      }
+      width: 2px;
+      right: 2px;
+      bottom: 2px;
+      top: 0;
+      border-radius: 3px;
+    }
+
+    &__thumb-vertical {
+      @include themify($themes) {
+        background-color: themed('l-thumb-vertical-bg');
+      }
+      width: 4px !important;
+      border-radius: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+  .items {
+    list-style: none;
+    margin: 0;
+    &.overview {
+      padding: 0;
+    }
+
+    .row-item {
+      transition: opacity 0.25s linear, height 0.25s linear;
+      background-color: $l-nav-item-bg-color;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: normal;
+
+      &.active,
+      &:hover {
+        @include themify($themes) {
+          //border: 1px solid themed('l-menu-item-bg-active');
+          //background-color: themed('l-menu-item-bg-active-1');
+          background-color: themed('active-item-background-color');
+          * {
+            color: themed('a-primary-cl');
+          }
+        }
+      }
+
+      &.header,
+      &.playing,
+      &.next-item {
+        > div {
+          padding: 4px 10px;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 1px;
+
+          @include themify($themes) {
+            color: themed('l-button-nav-cl');
+          }
+        }
+        &:hover {
+          @include themify($themes) {
+            //border: 1px solid themed('l-menu-item-header-bg');
+          }
+        }
+      }
+
+      &.header {
+        @include themify($themes) {
+          background-color: themed('l-menu-item-header-bg');
+          color: themed('l-menu-item-header-cl');
+        }
+        margin-bottom: 0;
+
+        &.exam {
+          margin-bottom: 10px;
+          a {
+            @include themify($themes) {
+              color: themed('l-menu-item-header-cl');
+            }
+          }
+        }
+
+        &.active {
+          @include themify($themes) {
+            background-color: themed('l-menu-item-bg-active');
+            * {
+              color: themed('a-primary-cl');
+            }
+          }
+        }
+      }
+
+      &.playing,
+      &.next-item {
+        border: none;
+        background-color: $l-nav-header-background-color;
+        font-weight: bold !important;
+        color: $l-nav-header-color;
+        > div {
+          @include themify($themes) {
+            background-color: themed('l-menu-item-playing-or-next-bg');
+            color: themed('l-menu-item-playing-or-next-cl');
+          }
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .item {
+      @include themify($themes) {
+        border: 1px solid themed('l-menu-item-header-bg');
+      }
+      margin-bottom: 10px;
+      transition: opacity 0.25s linear, height 0.25s linear;
+      background-color: $l-nav-item-bg-color;
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+
+      > div,
+      > h2,
+      a {
+        width: 100%;
+        padding: 12px 12px 10px 12px;
+        margin: 0;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      a {
+        &:hover {
+          background-color: $l-nav-item-hover-bg-color;
+        }
+      }
+
+      &.active,
+      &:hover {
+        border: 1px solid $l-nav-active-border-color;
+
+        @include themify($themes) {
+          border: 1px solid themed('l-menu-item-bg-active');
+          background-color: themed('l-menu-item-bg-active-1');
+        }
+      }
+
+      &.header,
+      &.playing,
+      &.next-item {
+        > div {
+          padding: 4px 10px;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 1px;
+
+          @include themify($themes) {
+            color: themed('l-button-nav-cl');
+          }
+        }
+        &:hover {
+          @include themify($themes) {
+            border: 1px solid themed('l-menu-item-header-bg');
+          }
+        }
+      }
+
+      &.header {
+        @include themify($themes) {
+          background-color: themed('l-menu-item-header-bg');
+          color: themed('l-menu-item-header-cl');
+        }
+        margin-bottom: 0;
+
+        &.exam {
+          margin-bottom: 10px;
+          a {
+            @include themify($themes) {
+              color: themed('l-menu-item-header-cl');
+            }
+          }
+        }
+
+        &.active {
+          @include themify($themes) {
+            background-color: themed('l-menu-item-bg-active');
+            * {
+              color: themed('a-primary-cl');
+            }
+          }
+        }
+      }
+
+      &.playing,
+      &.next-item {
+        border: none;
+        background-color: $l-nav-header-background-color;
+        font-weight: bold !important;
+        color: $l-nav-header-color;
+        > div {
+          @include themify($themes) {
+            background-color: themed('l-menu-item-playing-or-next-bg');
+            color: themed('l-menu-item-playing-or-next-cl');
+          }
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+.learn-nav-dev {
+  display: flex;
+  @include themify($themes) {
+    background-color: themed('l-nav-dev-bg');
+  }
+  .btn {
+    margin: 0 5px 8px 5px;
+    font-size: 0.9em;
+    border: solid 1px white;
+    padding: 0 23px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include themify($themes) {
+      background-color: themed('l-dev-button-bg');
+      color: themed('l-dev-button-cl');
+    }
+    &:hover {
+      @include themify($themes) {
+        background-color: themed('l-button-nav-bg-hover-2') !important;
+        color: themed('l-button-nav-cl-hover') !important;
+      }
+    }
+  }
+  .btn-active {
+    background: white;
+    color: grey;
+    @include themify($themes) {
+      background-color: themed('l-dev-button-bg-active');
+      color: themed('l-dev-button-cl-active');
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item-panel-mobile {
+    height: auto !important;
+  }
+  .ui-learn-panel {
+    .ui-learn-nav {
+      margin-top: 0;
+      .items {
+        padding: 0;
+      }
+      .nav-panel-mobile {
+        height: auto;
+      }
+      .nav-item-panel {
+        position: relative;
+        .ui-learn-nav-control {
+          position: absolute;
+          width: 100%;
+          background: transparent;
+          top: -110px;
+          padding: 12px 0;
+          & .btn {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.learn-nav-tree {
+  @mixin sco($background, $text-color: #fff) {
+    background: $background;
+    td {
+      padding-right: 25px !important;
+      border-bottom: 1px solid #fff;
+    }
+    .learn-nav-item {
+      color: rgba(0, 0, 0, 0.65);
+    }
+    a:hover {
+      color: #000;
+    }
+  }
+  table,
+  tbody,
+  tr,
+  td {
+    width: 100%;
+    display: block;
+  }
+  .ant-table-row.row-item {
+    border: 1px solid transparent;
+    border-bottom-width: 0;
+    td {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: start;
+      .ant-table-row-expand-icon {
+        position: absolute;
+        right: 0;
+        line-height: 12px;
+        background: none;
+        border: none;
+        transition: 0.4s;
+        &.ant-table-row-expanded::after {
+          content: '﹀';
+          line-height: 30px;
+        }
+        &.ant-table-row-collapsed::after {
+          content: '︿';
+        }
+      }
+    }
+    &.sco-level-1 {
+      @include themify($themes) {
+        @include sco(themed('sco-background-color'));
+      }
+      &,
+      .learn-nav-item__title {
+        @include themify($themes) {
+          color: themed('sco-text-color');
+        }
+        font-weight: 700;
+      }
+      td {
+        &:hover {
+          @include themify($themes) {
+            background: themed('sco-background-color--hover') !important;
+          }
+        }
+      }
+      &:hover,
+      &.active {
+        @include themify($themes) {
+          background: themed('sco-background-color--hover') !important;
+        }
+      }
+    }
+    &.sco-level-2 {
+      @include sco(#f5f5f5);
+    }
+    /*************/
+    @for $i from 1 through 10 {
+      &.ant-table-row-level-#{$i} {
+        width: 100%;
+        display: flex;
+        float: right;
+        > td {
+          padding: 10px 8px !important;
+          .tree-item {
+            padding-left: $i * 3%;
+          }
+        }
+        &.active,
+        &:hover {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    &:hover {
+      @include themify($themes) {
+        background: themed('active-item-background-color') !important;
+        border: 1px solid themed('active-item-background-color');
+      }
+    }
+    &.active {
+      @include themify($themes) {
+        border: 1px solid themed('active-item-background-color');
+      }
+    }
+    .ant-table-row-indent {
+      display: contents;
+    }
+    .ant-table-row-spaced {
+      display: none;
+    }
+  }
+
+  .ant-table-row.row-item.tag-taphuan td {
+    border-right-width: 2px;
+    border-right-style: solid;
+  }
+  .tag-mt td {
+    border-right-color: red !important;
+  }
+  .tag-pp td {
+    border-right-color: orange !important;
+  }
+  .tag-dg td {
+    border-right-color: blue !important;
+  }
+  .tag-nd td {
+    border-right-color: green !important;
+  }
+
+  .ant-table-tbody > tr:hover > td:hover {
+    @include themify($themes) {
+      background: themed('active-item-background-color') !important;
+    }
+  }
+}
+
+.breadcrumb-items-learning {
+  .breadcrumb-item {
+    //font-size: 15px;
+  }
+  .breadcrumb-item-tag-mt {
+    color: red !important;
+  }
+  .breadcrumb-item-tag-pp {
+    color: orange !important;
+  }
+  .breadcrumb-item-tag-dg {
+    color: blue !important;
+  }
+  .breadcrumb-item-tag-nd {
+    color: green !important;
+  }
+}
+
+.learn-nav-tree-overview {
+  .ant-table-row.row-item {
+    @for $i from 1 through 10 {
+      &.ant-table-row-level-#{$i} {
+        td {
+          .tree-item {
+            padding-left: $i * 1.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-scroll {
+  //@include styleScrollBar(0, white, #486272);
+  //> div:first-child {
+  //  margin-right: -3px !important;
+  //  overflow: auto !important;
+  //}
+}

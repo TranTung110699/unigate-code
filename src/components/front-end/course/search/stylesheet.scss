@@ -1,0 +1,30 @@
+.search-courses-wrapper {
+  p.path-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .course-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .topic-wrapper {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .search-courses {
+    .course-title {
+      font-size: 18px;
+    }
+    .topic-wrapper {
+      padding: 40px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+}

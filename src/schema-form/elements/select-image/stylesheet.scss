@@ -1,0 +1,89 @@
+@import 'layouts/theme.scss';
+$default-bg-color: #ddd;
+.input-select-image {
+  padding: 0 10%;
+
+  .default-match {
+    @include themify($themes) {
+      border: 2px solid themed('bg-match') !important;
+    }
+  }
+  .default-not-match {
+    @include themify($themes) {
+      border: 2px solid themed('bg-not-match') !important;
+    }
+  }
+
+  ul.direction-row {
+    flex-direction: row;
+  }
+  ul.direction-column {
+    flex-direction: column;
+  }
+  ul.display-panel {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    li.selected {
+      >div {
+/*        border: 2px solid #289bfa; */
+        background-color: $default-bg-color;
+      }
+      .element-name {
+        font-weight: bold;
+      }
+
+    }
+
+    li {
+      padding: 10px;
+      //width: 180px;
+      //height: 180px;
+      flex-grow: 1;
+      //flex: 1 100%;
+      text-align: center;
+      cursor: pointer;
+      >div {
+        height: 100%;
+        padding: 10px;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+        >img.nonselected {
+          &__blur {
+            opacity: 0.9;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+          }
+        }
+        .element-name {
+          padding: 10px 0 0 0px;
+        }
+      }
+
+    }
+    li.wrapper {
+      >div {
+        /*border: 2px solid #cccccc;*/
+        height: 100%;
+      }
+
+    }
+    li.wrapper:hover {
+      >div {
+        background-color: $default-bg-color;
+      }
+      img {
+        opacity: 1 !important;
+      }
+      .element-name {
+        font-weight: bold;
+      }
+    }
+  }
+}

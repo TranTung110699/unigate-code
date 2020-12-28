@@ -1,0 +1,74 @@
+$markingCellColor: #CCF1F6;
+
+.skill-rubric-view-items {
+  $borderStyle: 1px solid rgb(224, 224, 224);
+  border: $borderStyle;
+
+  &__cell {
+    border-left: $borderStyle;
+    position: relative;
+    overflow: hidden;
+
+    &--left-most {
+      border-left: none;
+    }
+
+    &--header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+  &__column {
+    display: flex;
+    padding: 0 !important;
+  }
+}
+
+.skill-rubric-editing-cell {
+  cursor: pointer;
+  &:hover {
+    background: $markingCellColor;
+  }
+}
+
+.skill-rubric-marking-cell-input {
+  $checkIconColor: #3595D9;
+  padding: 5px;
+  cursor: pointer;
+
+  &--input {
+    padding-right: 40px;
+    padding-left: 20px;
+  }
+
+  &__help {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: #e0e0e0;
+  }
+}
+
+.skill-rubric-editing-cell-no-scale-info {
+  align-items: center;
+  display: flex;
+  color: red;
+  justify-content: center;
+  width: 100%;
+}
+
+.rubric-scale-child-info {
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__content {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    padding: 15px 25px;
+  }
+}

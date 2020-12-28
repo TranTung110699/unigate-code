@@ -1,0 +1,67 @@
+.report-course-status-wrapper {
+  .progress-title {
+    top: 0px;
+    padding-left: 2px;
+    position: absolute;
+  }
+
+  .progress-wrapper{
+    position: relative;
+  }
+
+  .progress{
+    height: 20px !important;
+  }
+}
+.box-search-progress-report {
+  transform: translateY(-21px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 1px 3px 4px #cccccc;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.student-detail-progress-wrapper {
+  .mobile-content {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .web-content {
+      display: block;
+    }
+    .mobile-content {
+      display: none;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .web-content {
+      display: block;
+    }
+    .mobile-content {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .web-content {
+      display: none;
+    }
+    .mobile-content {
+      display: block;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .web-content {
+      display: none;
+    }
+    .mobile-content {
+      display: block;
+    }
+  }
+}

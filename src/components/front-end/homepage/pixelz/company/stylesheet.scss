@@ -1,0 +1,62 @@
+/*@import url("https://fonts.googleapis.com/css?family=Lato:300,400%7CRoboto:100,400,300,500,600,700%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600");*/
+
+.bg-secondary {
+  background: #f8f8f8;
+}
+
+section {
+  padding: 96px 0;
+  position: relative;
+  overflow: hidden;
+
+  .avatar100 {
+    width: 100px !important;
+    height: 100px !important;
+    display: inline-block !important;
+    border-radius: 50%;
+  }
+
+  .spread-children-large * {
+    display: inline-block;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: #292929;
+  }
+
+  .mb24 {
+    margin-bottom: 24px;
+  }
+
+  .app-image {
+    border-radius: 8px 8px 0 0;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  img[data-sizes="auto"] {
+    display: block;
+    width: 100%;
+  }
+
+  h3{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+}
+
+.pb0{
+  padding-bottom: 0px;
+}
+
+.pt32{
+  padding-top: 32px;
+}

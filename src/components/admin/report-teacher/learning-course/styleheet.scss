@@ -1,0 +1,19 @@
+.learning-course-container {
+  background: white;
+  .summary {
+    display: flex;
+    .detail {
+      flex-grow: 1;
+      cursor: pointer;
+    }
+  }
+  .attended {
+    color: green;
+  }
+  .absented {
+    color: red;
+  }
+  .number{
+    text-align: right;
+  }
+}

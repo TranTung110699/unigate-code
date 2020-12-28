@@ -1,0 +1,105 @@
+$borderColor: #e1e1e1;
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    padding-right: 0 !important;
+  }
+}
+.temis-container {
+  width: 100%;
+  background: white;
+  min-height: 685px;
+  display: inline-block;
+  & > .content {
+    border-left: 1px solid $borderColor;
+    padding: 10px 0 20px 15px;
+  }
+  & .exam-shift-wrapper {
+    display: block;
+    & .select-contest-wrapper {
+      display: block;
+      background: unset;
+      & .content {
+        display: block;
+        clear: both;
+        & .title {
+          font-size: 26px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 30px;
+          letter-spacing: 0;
+        }
+        & .btn-go-to-contest {
+          background: #164e99;
+          padding: 10px;
+          border: none;
+          outline: none;
+          color: white;
+          margin: 0;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  & .nav-menu {
+    display: none;
+  }
+  .temis-tab-nav {
+    position: sticky;
+    top: 0;
+    @media (max-width: 991px) and (min-width: 768px) {
+      position: initial;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .temis-container {
+    & .nav-menu {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      cursor: pointer;
+      position: absolute;
+      overflow-x: visible;
+      top: 35%;
+      padding-left: 24px;
+      box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+      right: -22px;
+      color: #164e99;
+    }
+    & .nav-menu-content {
+      width: 250px;
+      position: fixed;
+      top: 20vh;
+      left: 18px;
+      height: 60vh;
+      transform: translateX(-272px);
+      flex-direction: row;
+      display: flex;
+      z-index: 10000;
+      transition: all 0.5s;
+      background: white;
+      box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    & .show-nav-menu-content {
+      transform: translateX(-22px);
+    }
+    & > .content {
+      border: none;
+      padding: 15px;
+    }
+
+    .temis-tab-nav {
+      position: initial;
+      top: initial;
+    }
+  }
+  .container {
+    padding: 15px 0 !important;
+  }
+}

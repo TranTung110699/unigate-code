@@ -1,0 +1,15 @@
+.dictation-container {
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e7e7e7;
+  flex-direction: column;
+  .title-dictation{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,101 @@
+.ui-paths-menu {
+  text-align: center;
+  border-bottom: 1px solid #c5c5c5;
+  ul {
+    &.paths-menu {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+
+      li {
+        padding: 0px 15px 0px 15px;
+        display: inline-block;
+        a {
+          padding: 20px 20px;
+          text-transform: uppercase;
+          color: #333;
+          transform: translateY(1px);
+          text-decoration: none;
+          font-size: 18px;
+          &.active {
+            border-bottom: solid 3px #92c36a;
+            color: #92c36a;
+            font-weight: 600;
+          }
+          img {
+            margin-bottom: 5px;
+          }
+        }
+        > div {
+          position: relative;
+          &:hover {
+            &:after {
+              display: block;
+            }
+            .ui-sub-path {
+              display: block;
+            }
+          }
+          &:after {
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #c5c5c5;
+            content: " ";
+            position: absolute;
+            bottom: 15px;
+            left: 35%;
+            z-index: 3;
+            display: none;
+          }
+          .ui-sub-path {
+            display: none;
+            transform: translate(-50px, -15px);
+            position: absolute;
+            list-style: none;
+            margin: 0 auto;
+            width: 200px;
+            padding: 0;
+            background-color: #ffffff;
+            border: 1px solid #c5c5c5;
+            border-radius: 5px;
+            box-shadow: 2px 13px 45px -14px rgba(0,0,0,0.25);
+            z-index: 2;
+
+            li {
+              display: block;
+              border-bottom: 1px dotted #c5c5c5;
+              &:last-child {
+                border-bottom: none;
+              }
+              a {
+                font-size: 13px;
+                text-transform: none;
+                padding: 10px 0;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ui-paths-menu {
+    ul {
+      &.paths-menu {
+        li {
+          padding: 15px 5px;
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

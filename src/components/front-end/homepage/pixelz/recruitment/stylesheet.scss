@@ -1,0 +1,69 @@
+.recuitment-wrapper {
+  .v-align-children {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+
+.embed-video-container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+h3.recruitment-video-fun {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #292929;
+}
+p.recruitment-video-fun-desc {
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+  .embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .embed-responsive .embed-responsive-item,
+  .embed-responsive iframe,
+  .embed-responsive embed,
+  .embed-responsive object,
+  .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .embed-video-container {
+    iframe {
+      border: none;
+      width: 100%;
+      height: 312px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+  }
+  h3 {
+    letter-spacing: 0;
+  }
+}

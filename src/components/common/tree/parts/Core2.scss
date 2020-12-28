@@ -1,0 +1,33 @@
+.tree-component {
+  background-color: white;
+
+  &__node {
+    display: flex;
+  }
+
+  &__node-title {
+    border-bottom: 1px solid #eee;
+    flex-grow: 1;
+  }
+
+  &__node-indentation {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__node-select {
+    display: flex;
+    align-items: center;
+  }
+
+  &__node-expand-button {
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+}

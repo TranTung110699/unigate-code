@@ -1,0 +1,352 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+export const Actions = {
+  ACTION_NEW: ':new',
+  ACTION_VIEW: ':view',
+  ACTION_UPDATE: ':update',
+  ACTION_DELETE: ':delete',
+  ACTION_APPROVAL: ':approval',
+
+  ACTION_ADD: ':add', // add a object to object
+  ACTION_EDIT: ':edit', // edit relation two object
+  ACTION_REMOVE: ':remove', // edit relation two object
+
+  ACTION_MANAGE: ':manage',
+  ACTION_ALL: ':all',
+};
+
+export const BaseAction = {
+  ATTR_IID: 'iid',
+  ATTR_ORGANIZATIONS: 'organizations',
+  ATTR_ACADEMIC_CATEGORY_IIDS: 'academic_category_iids',
+  ATTR_ANCESTOR_IIDS: 'ancestor_iids',
+  ENROLMENT_SESSION_MODULE: 'enrolment_session',
+  ORGANIZATION_SUB_ORGANIZATION: 'sub_organization',
+};
+
+export const Modules = {
+  ACADEMIC_CATEGORY_MODULE: 'academic_category',
+  CONTEST_MODULE: 'contest',
+  COURSE_MODULE: 'course',
+  ENROLMENT_PLAN_MODULE: 'enrolment_plan',
+  ENROLMENT_SESSION_MODULE: 'enrolment_session',
+  EXAM_ROUND_MODULE: 'exam_round',
+  EXAM_SHIFT_MODULE: 'exam_shift',
+  EXAM_STORE_MODULE: 'exam_store',
+  EXAM_TEMPLATE_MODULE: 'exam_template',
+  GROUP_MODULE: 'group',
+  INVITE_MODULE: 'invite',
+  OLD_ROLES_MODULE: 'old_roles',
+  ORGANIZATION_MODULE: 'organization',
+  PAPER_MODULE: 'paper',
+  PROGRAM_MODULE: 'program',
+  PROGRAM_MODULE_MODULE: 'program_module',
+  REPORT_MODULE: 'report',
+  SYLLABUS_MODULE: 'syllabus',
+  TRAINING_PLAN_MODULE: 'training_plan',
+  USER_MODULE: 'user',
+  USER_ABAC_ROLE_MODULE: 'user_abac_role',
+  USER_GROUP_MODULE: 'user_group',
+};
+
+export const AcademicCategoryActions = {
+  ACADEMIC_CATEGORY_ACTION_NEW:
+    Modules.ACADEMIC_CATEGORY_MODULE + Actions.ACTION_NEW,
+  ACADEMIC_CATEGORY_ACTION_UPDATE:
+    Modules.ACADEMIC_CATEGORY_MODULE + Actions.ACTION_UPDATE,
+  ACADEMIC_CATEGORY_ACTION_DELETE:
+    Modules.ACADEMIC_CATEGORY_MODULE + Actions.ACTION_DELETE,
+};
+
+export const ContestActions = {
+  CONTEST_ACTION_NEW: Modules.CONTEST_MODULE + Actions.ACTION_NEW,
+  CONTEST_ACTION_UPDATE: Modules.CONTEST_MODULE + Actions.ACTION_UPDATE,
+  CONTEST_ACTION_DELETE: Modules.CONTEST_MODULE + Actions.ACTION_DELETE,
+  CONTEST_ACTION_APPROVAL: Modules.CONTEST_MODULE + Actions.ACTION_APPROVAL,
+  CONTEST_ACTION_ADD_COLLABORATORS: `${Modules.CONTEST_MODULE +
+    Actions.ACTION_ADD}:collaborators`,
+  CONTEST_ACTION_INVITE_USER: `${Modules.CONTEST_MODULE}:invite:exam`,
+  CONTEST_ACTION_MARK_OPEN_ENDED_QUESTION: `${
+    Modules.CONTEST_MODULE
+  }:mark_open_ended_question`,
+};
+
+export const CourseActions = {
+  COURSE_ACTION_NEW: Modules.COURSE_MODULE + Actions.ACTION_NEW,
+  COURSE_ACTION_DELETE: Modules.COURSE_MODULE + Actions.ACTION_DELETE,
+  COURSE_ACTION_UPDATE: Modules.COURSE_MODULE + Actions.ACTION_UPDATE,
+  COURSE_ACTION_VIEW: Modules.COURSE_MODULE + Actions.ACTION_VIEW,
+  COURSE_ACTION_APPROVAL: Modules.COURSE_MODULE + Actions.ACTION_APPROVAL,
+  COURSE_ACTION_MANAGE_COLLABORATORS: `${Modules.COURSE_MODULE +
+    Actions.ACTION_MANAGE}:staff`,
+  COURSE_ACTION_CAN_SWITCH_THE_LEARNING_STATUS: `${
+    Modules.COURSE_MODULE
+  }:set:passed`,
+  COURSE_ACTION_RESET_PROGRESS: `${Modules.COURSE_MODULE}:reset:progress`,
+  COURSE_ACTION_EXPORT_STUDENTS: `${Modules.COURSE_MODULE}:export:students`,
+  COURSE_ACTION_EXPORT_STUDENTS_ATTENDANCE: `${
+    Modules.COURSE_MODULE
+  }:export:students_attendance`,
+  COURSE_ACTION_EDIT_SCORE: `${Modules.COURSE_MODULE}:edit:score`,
+  COURSE_ACTION_VIEW_SESSION: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_VIEW
+  }:session`,
+  COURSE_ACTION_UPDATE_SESSION: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:session`,
+  COURSE_ACTION_VIEW_ATTENDANCE: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_VIEW
+  }:attendance`,
+  COURSE_ACTION_UPDATE_ATTENDANCE: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:attendance`,
+  COURSE_ACTION_UPDATE_SUPER_ATTENDANCE: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:super_attendance`,
+  COURSE_ACTION_UPDATE_STUDENT_ATTENDANCE_NUMBER: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:student_attendance_number`,
+  COURSE_ACTION_UPDATE_TRANSCRIPT_STATUS: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:transcript_status`,
+  COURSE_ACTION_UPDATE_FILE_TRANSCRIPT: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:file_transcript`,
+  COURSE_ACTION_UPDATE_ROLES: `${Modules.COURSE_MODULE}${
+    Actions.ACTION_UPDATE
+  }:roles`,
+};
+
+export const EnrolmentPlanActions = {
+  ENROLMENT_PLAN_ACTION_NEW: Modules.ENROLMENT_PLAN_MODULE + Actions.ACTION_NEW,
+  ENROLMENT_PLAN_ACTION_DELETE:
+    Modules.ENROLMENT_PLAN_MODULE + Actions.ACTION_UPDATE,
+  ENROLMENT_PLAN_ACTION_UPDATE:
+    Modules.ENROLMENT_PLAN_MODULE + Actions.ACTION_DELETE,
+  ENROLMENT_PLAN_ACTION_APPROVAL:
+    Modules.ENROLMENT_PLAN_MODULE + Actions.ACTION_APPROVAL,
+  ENROLMENT_PLAN_ACTION_SUBMIT_MEMBERS_FOR_APPROVAL: `${
+    Modules.ENROLMENT_PLAN_MODULE
+  }:submit_members_for_approval`,
+  ENROLMENT_PLAN_ACTION_MARK_AS_READY_TO_EXECUTE: `${
+    Modules.ENROLMENT_PLAN_MODULE
+  }:mark_as_ready_to_execute`,
+};
+
+export const EnrolmentSessionActions = {
+  ENROLMENT_SESSION_ACTION_NEW:
+    Modules.ENROLMENT_SESSION_MODULE + Actions.ACTION_NEW,
+  ENROLMENT_SESSION_ACTION_DELETE:
+    Modules.ENROLMENT_PLAN_MODULE + Actions.ACTION_DELETE,
+  ENROLMENT_SESSION_ACTION_UPDATE_INFO: `${Modules.ENROLMENT_SESSION_MODULE +
+    Actions.ACTION_UPDATE}:info`,
+  ENROLMENT_SESSION_ACTION_UPDATE_STATUS: `${Modules.ENROLMENT_SESSION_MODULE +
+    Actions.ACTION_UPDATE}:status`,
+};
+
+export const ExamRoundActions = {
+  EXAM_ROUND_ACTION_NEW: Modules.EXAM_ROUND_MODULE + Actions.ACTION_NEW,
+  EXAM_ROUND_ACTION_DELETE: Modules.EXAM_ROUND_MODULE + Actions.ACTION_UPDATE,
+  EXAM_ROUND_ACTION_UPDATE: Modules.EXAM_ROUND_MODULE + Actions.ACTION_DELETE,
+  EXAM_ROUND_ACTION_CHANGE_EXAM_ROUND: `${
+    Modules.EXAM_ROUND_MODULE
+  }:change_exam_round`,
+};
+
+export const ExamShiftActions = {
+  EXAM_SHIFT_ACTION_NEW: Modules.EXAM_SHIFT_MODULE + Actions.ACTION_NEW,
+  EXAM_SHIFT_ACTION_DELETE: Modules.EXAM_SHIFT_MODULE + Actions.ACTION_UPDATE,
+  EXAM_SHIFT_ACTION_UPDATE: Modules.EXAM_SHIFT_MODULE + Actions.ACTION_DELETE,
+  EXAM_SHIFT_ACTION_CHANGE_EXAM_SHIFT: `${
+    Modules.EXAM_SHIFT_MODULE
+  }:change_exam_shift`,
+};
+
+export const ExamStoreActions = {
+  EXAM_STORE_ACTION_NEW: Modules.EXAM_STORE_MODULE + Actions.ACTION_NEW,
+  EXAM_STORE_ACTION_DELETE: Modules.EXAM_STORE_MODULE + Actions.ACTION_UPDATE,
+  EXAM_STORE_ACTION_UPDATE: Modules.EXAM_STORE_MODULE + Actions.ACTION_DELETE,
+  EXAM_STORE_ACTION_MANAGE_ORIGINAL_PAPER: `${Modules.EXAM_STORE_MODULE +
+    Actions.ACTION_MANAGE}:original_paper`,
+};
+
+export const ExamTemplateActions = {
+  EXAM_TEMPLATE_ACTION_NEW: Modules.EXAM_TEMPLATE_MODULE + Actions.ACTION_NEW,
+  EXAM_TEMPLATE_ACTION_DELETE:
+    Modules.EXAM_TEMPLATE_MODULE + Actions.ACTION_UPDATE,
+  EXAM_TEMPLATE_ACTION_UPDATE:
+    Modules.EXAM_TEMPLATE_MODULE + Actions.ACTION_DELETE,
+  EXAM_TEMPLATE_ACTION_APPROVAL:
+    Modules.EXAM_TEMPLATE_MODULE + Actions.ACTION_APPROVAL,
+};
+
+export const GroupActions = {
+  GROUP_ACTION_NEW: Modules.GROUP_MODULE + Actions.ACTION_NEW,
+  GROUP_ACTION_DELETE: Modules.GROUP_MODULE + Actions.ACTION_DELETE,
+  GROUP_ACTION_UPDATE: Modules.GROUP_MODULE + Actions.ACTION_UPDATE,
+  GROUP_ACTION_UPDATE_FILTERSETS: `${Modules.GROUP_MODULE +
+    Actions.ACTION_UPDATE}:filtersets`,
+};
+
+export const InviteActions = {
+  INVITE_ACTION_NEW: Modules.INVITE_MODULE + Actions.ACTION_NEW,
+  INVITE_ACTION_NEW_COURSE_INVITE: `${Modules.INVITE_MODULE +
+    Actions.ACTION_NEW}:course`,
+  INVITE_ACTION_NEW_LEARNING_ITEM_INVITE: `${Modules.INVITE_MODULE +
+    Actions.ACTION_NEW}:learning_item`,
+  INVITE_ACTION_ADD_USER_TO_CONTEST: `${Modules.INVITE_MODULE +
+    Actions.ACTION_ADD}:user`,
+  INVITE_ACTION_DELETE_LEARNING_ITEM: `${Modules.INVITE_MODULE +
+    Actions.ACTION_DELETE}:learning_item`,
+};
+
+export const OldRolesActions = {
+  OLD_ROLES_HEADMASTER: 'headmaster',
+  OLD_ROLES_TEACHER: 'teacher',
+  OLD_ROLES_TUTOR: 'tutor',
+  OLD_ROLES_STAFF: 'staff',
+  OLD_ROLES_ROOT: 'root',
+  OLD_ROLES_PUBLISHER: 'publisher',
+  OLD_ROLES_SYLLABUS_PUBLISHER: 'syllabus_publisher',
+  OLD_ROLES_SYLLABUS_MANAGE: 'syllabus_manage',
+  OLD_ROLES_SUPPORT: 'support',
+  OLD_ROLES_MARKETER: 'marketer',
+  OLD_ROLES_ACCOUNTANT: 'accountant',
+  OLD_ROLES_IT: 'it',
+  OLD_ROLES_DEPARTMENT_OF_ACADEMIC_AFFAIRS: 'department_of_academic_affairs',
+};
+
+export const OrganizationActions = {
+  ORGANIZATION_ACTION_VIEW: Modules.ORGANIZATION_MODULE + Actions.ACTION_NEW,
+  ORGANIZATION_ACTION_ALL: Modules.ORGANIZATION_MODULE + Actions.ACTION_ALL,
+  ORGANIZATION_ACTION_VIEW_SUB_ORGANIZATION:
+    Modules.ORGANIZATION_MODULE +
+    Actions.ACTION_VIEW +
+    BaseAction.ORGANIZATION_SUB_ORGANIZATION,
+  ORGANIZATION_ACTION_ALL_SUB_ORGANIZATION:
+    Modules.ORGANIZATION_MODULE +
+    Actions.ACTION_ALL +
+    BaseAction.ORGANIZATION_SUB_ORGANIZATION,
+};
+
+export const PaperActions = {
+  PAPER_ACTION_MANAGE: Modules.PAPER_MODULE + Actions.ACTION_MANAGE,
+  PAPER_ACTION_UPDATE_MIXING_EXAM_QUESTIONS: `${
+    Modules.PAPER_MODULE
+  }:mixing:exam_questions`,
+  PAPER_ACTION_APPROVAL_EXAM_QUESTIONS: `${Modules.PAPER_MODULE +
+    Actions.ACTION_APPROVAL}:exam_questions`,
+  PAPER_ACTION_DELETE_EXAM_QUESTIONS: `${Modules.PAPER_MODULE +
+    Actions.ACTION_DELETE}:exam_questions`,
+};
+
+export const ProgramActions = {
+  PROGRAM_ACTION_NEW: Modules.PROGRAM_MODULE + Actions.ACTION_NEW,
+  PROGRAM_ACTION_DELETE: Modules.PROGRAM_MODULE + Actions.ACTION_DELETE,
+  PROGRAM_ACTION_UPDATE: Modules.PROGRAM_MODULE + Actions.ACTION_UPDATE,
+  PROGRAM_ACTION_APPROVAL: Modules.PROGRAM_MODULE + Actions.ACTION_APPROVAL,
+  PROGRAM_ACTION_ADD_SUBJECT: `${Modules.PROGRAM_MODULE +
+    Actions.ACTION_ADD}:subject`,
+  PROGRAM_ACTION_ADD_MODULE: `${Modules.PROGRAM_MODULE +
+    Actions.ACTION_ADD}:module`,
+  PROGRAM_ACTION_REMOVE_SUBJECT: `${Modules.PROGRAM_MODULE +
+    Actions.ACTION_REMOVE}:subject`,
+  PROGRAM_ACTION_REMOVE_MODULE: `${Modules.PROGRAM_MODULE +
+    Actions.ACTION_REMOVE}:module`,
+};
+
+export const ProgramModuleActions = {
+  PROGRAM_MODULE_ACTION_NEW: Modules.PROGRAM_MODULE_MODULE + Actions.ACTION_NEW,
+  PROGRAM_MODULE_ACTION_DELETE:
+    Modules.PROGRAM_MODULE_MODULE + Actions.ACTION_DELETE,
+  PROGRAM_MODULE_ACTION_UPDATE:
+    Modules.PROGRAM_MODULE_MODULE + Actions.ACTION_UPDATE,
+};
+
+export const ReportActions = {
+  REPORT_ACTION_LEARNING_VIEW: `${Modules.REPORT_MODULE +
+    Actions.ACTION_VIEW}:learning`,
+  REPORT_ACTION_TEACHER_ACTIVITIES_VIEW: `${Modules.REPORT_MODULE +
+    Actions.ACTION_VIEW}:teacher_activities`,
+  REPORT_ACTION_STUDENT_LEARNING_VIEW: `${Modules.REPORT_MODULE +
+    Actions.ACTION_VIEW}:student_learning`,
+};
+
+export const SyllabusActions = {
+  SYLLABUS_ACTION_NEW: Modules.SYLLABUS_MODULE + Actions.ACTION_NEW,
+  SYLLABUS_ACTION_VIEW: Modules.SYLLABUS_MODULE + Actions.ACTION_VIEW,
+  SYLLABUS_ACTION_DELETE: Modules.SYLLABUS_MODULE + Actions.ACTION_DELETE,
+  SYLLABUS_ACTION_UPDATE: Modules.SYLLABUS_MODULE + Actions.ACTION_UPDATE,
+  SYLLABUS_ACTION_MANAGE_COLLABORATORS: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_MANAGE}:staff`,
+  SYLLABUS_ACTION_APPROVAL_QUEUED: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_APPROVAL}:queued`,
+  SYLLABUS_ACTION_APPROVAL_DONE_EDITING: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_APPROVAL}:done_editing`,
+  SYLLABUS_ACTION_APPROVAL_APPROVAL_STEP1: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_APPROVAL}:approval_step1`,
+  SYLLABUS_ACTION_APPROVAL_APPROVAL_STEP2: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_APPROVAL}:approval_step2`,
+  SYLLABUS_ACTION_APPROVAL: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_APPROVAL}:approved`,
+  SYLLABUS_ACTION_ADD_COMMENT: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_ADD}:comment`,
+  SYLLABUS_ACTION_EDIT_COMMENT: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_EDIT}:comment`,
+  SYLLABUS_ACTION_REMOVE_COMMENT: `${Modules.SYLLABUS_MODULE +
+    Actions.ACTION_REMOVE}:comment`,
+  SYLLABUS_ACTION_INVITE_REVIEW: `${Modules.SYLLABUS_MODULE}:invite:review`,
+  SYLLABUS_ACTION_PUSH_TO_PARENT_ORGANIZATIONS: `${
+    Modules.SYLLABUS_MODULE
+  }:push:parent_organizations`,
+  SYLLABUS_ACTION_RECEIVE_SYLLABUS_FROM_CHILDREN_ORGANIZATION: `${
+    Modules.SYLLABUS_MODULE
+  }:receive:syllabus_from_children_organization`,
+};
+
+export const TrainingPlanActions = {
+  TRAINING_PLAN_ACTION_NEW: Modules.TRAINING_PLAN_MODULE + Actions.ACTION_NEW,
+  TRAINING_PLAN_ACTION_DELETE:
+    Modules.TRAINING_PLAN_MODULE + Actions.ACTION_DELETE,
+};
+
+export const UserActions = {
+  USER_ACTION_NEW: Modules.USER_MODULE + Actions.ACTION_NEW,
+  USER_ACTION_DELETE: Modules.USER_MODULE + Actions.ACTION_DELETE,
+  USER_ACTION_UPDATE: Modules.USER_MODULE + Actions.ACTION_UPDATE,
+  USER_ACTION_UPDATE_STATUS: `${Modules.USER_MODULE +
+    Actions.ACTION_UPDATE}:status`,
+  USER_ACTION_UPDATE_PASSWORD: `${Modules.USER_MODULE +
+    Actions.ACTION_UPDATE}:password`,
+  USER_ACTION_NEW_STAFF: `${Modules.USER_MODULE + Actions.ACTION_NEW}:staff`,
+  USER_ACTION_UPDATE_STAFF: `${Modules.USER_MODULE +
+    Actions.ACTION_UPDATE}:staff`,
+  USER_ACTION_UPDATE_STATUS_STAFF: `${Modules.USER_MODULE +
+    Actions.ACTION_UPDATE}:status:staff`,
+  USER_ACTION_UPDATE_PASSWORD_STAFF: `${Modules.USER_MODULE +
+    Actions.ACTION_UPDATE}:password:staff`,
+  USER_ACTION_DELETE_STAFF: `${Modules.USER_MODULE +
+    Actions.ACTION_DELETE}:staff`,
+};
+
+export const UserAbacRoleActions = {
+  USER_ABAC_ROLE_ACTION_MANAGE:
+    Modules.USER_ABAC_ROLE_MODULE + Actions.ACTION_MANAGE,
+};
+
+export const UserGroupActions = {
+  USER_GROUP_ACTION_NEW_STAFF: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_NEW}:staff`,
+  USER_GROUP_ACTION_NEW_MEMBER: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_NEW}:member`,
+  USER_GROUP_ACTION_NEW_MEMBER_ENROLMENT_PLAN: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_NEW}:member:enrolment_plan`,
+  USER_GROUP_ACTION_APPROVE_MEMBER_ENROLMENT_PLAN: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_APPROVAL}:member:enrolment_plan`,
+
+  USER_GROUP_ACTION_DELETE_STAFF: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_DELETE}:staff`,
+  USER_GROUP_ACTION_DELETE_MEMBER: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_DELETE}:member`,
+  USER_GROUP_ACTION_DELETE_MEMBER_ENROLMENT_PLAN: `${Modules.USER_GROUP_MODULE +
+    Actions.ACTION_DELETE}:member:enrolment_plan`,
+};

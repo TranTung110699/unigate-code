@@ -1,0 +1,25 @@
+.meta-data-time-range {
+  padding: 5px 20px;
+
+  &__content {
+    padding-bottom: 5px;
+
+    &--editable {
+      border: none;
+      border-bottom: 1px dashed #0088cc;
+      background: none;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    padding: 10px;
+    &--first {
+      padding-left: 0;
+    }
+  }
+
+  &__value {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,22 @@
+.breadcrumbs {
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline;
+    color: #727273;
+    a {
+      cursor: pointer;
+      color: #727273;
+    }
+  }
+  li+li {
+    &::before {
+      display: inline-block;
+      padding-right: .5rem;
+      padding-left: .5rem;
+      color: #636c72;
+      content: ">";
+      font-size: 18px;
+    }
+  }
+}

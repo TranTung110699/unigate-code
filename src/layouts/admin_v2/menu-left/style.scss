@@ -1,0 +1,12 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+
+.ui-admin-left-menu-panel {
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+  }
+  .ant-layout-sider-trigger {
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.15);
+    background: $NEW_UI_JULY_2019-primary-background-color;
+  }
+}

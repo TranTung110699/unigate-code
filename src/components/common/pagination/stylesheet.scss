@@ -1,0 +1,70 @@
+@import '../../../configs/css-configuration.scss';
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+
+.ui-pagination {
+  padding: 20px 10px;
+  text-align: left;
+
+  &__current-page {
+    width: 40px !important;
+    min-width: 0 !important;
+  }
+
+  button {
+    height: 30px;
+    line-height: 30px;
+    min-width: 30px !important;
+    padding: 0 6px;
+    margin-right: 8px;
+  }
+
+  &__page-button--active {
+    span {
+      font-size: 15px !important;
+      color: #1e88e5;
+    }
+  }
+
+  &__control {
+    margin-left: 20px;
+  }
+
+  &__page-input {
+    width: 50px;
+    margin-left: 5px;
+  }
+  //Hide arrow spin button
+  .ant-input-number-handler-wrap {
+    display: none !important;
+  }
+
+  &__items-per-page-select {
+    margin-left: 5px;
+  }
+}
+.theme-dark {
+  *:not([disabled]):not([aria-disabled='true']) {
+    color: $NEW_UI_JULY_2019-primary-text-color;
+  }
+  [disabled],
+  [aria-disabled='true'] {
+    * {
+      color: rgba(0, 0, 0, 0.25) !important;
+    }
+  }
+  &.ant-pagination {
+    .ant-pagination-item {
+      &:hover {
+        border-color: $NEW_UI_JULY_2019-primary-background-color;
+      }
+    }
+    .ant-pagination-item-active {
+      background: $NEW_UI_JULY_2019-primary-background-color;
+    }
+    .ant-pagination-item-ellipsis {
+      display: flex !important;
+      color: inherit !important;
+      left: -5px !important;
+    }
+  }
+}

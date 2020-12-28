@@ -1,0 +1,7 @@
+@import "layouts/theme.scss";
+.download-materials-button{
+  @include themify($themes){
+    background-color: themed('btn-primary-bg');
+    border-color: themed('btn-primary-bg');
+  }
+}

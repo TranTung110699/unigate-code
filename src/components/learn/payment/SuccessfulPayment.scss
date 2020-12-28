@@ -1,0 +1,13 @@
+.successful-payment-modal {
+  padding: 1em;
+
+  &__title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  &__body {
+    text-align: center;
+  }
+}

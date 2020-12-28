@@ -1,0 +1,36 @@
+@mixin active() {
+  background: #0b93d5;
+  color: white;
+  .label,
+  .icon i {
+    color: white;
+  }
+}
+.col-xs-exercise {
+  width: (100% / 7);
+}
+.item-icon {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  > div {
+    cursor: pointer;
+  }
+  .icon {
+    img {
+      width: 50%;
+    }
+    i {
+      font-size: 400%;
+      color: #0b93d5;
+    }
+  }
+  &:hover {
+    @include active();
+  }
+}
+.item-active {
+  .item-icon {
+    @include active();
+  }
+}

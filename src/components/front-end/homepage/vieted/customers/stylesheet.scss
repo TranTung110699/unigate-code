@@ -1,0 +1,72 @@
+.vieted-home-page-customers {
+  font-weight: 200;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 30px;
+
+  &__title {
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  &__title:after {
+    content : "";
+    margin: auto;
+    display: block;
+    width   : 60px;
+    border: 1px solid #1d89e3;
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    width: 33.3%;
+    margin-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 65px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .vieted-home-page-customers {
+    &__logos {
+      padding: 0 80px
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .vieted-home-page-customers {
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    &__title {
+      font-size: 19px;
+      margin-bottom: 14px;
+
+      &:after {
+        width: 25px;
+        margin-top: -4px;
+      }
+    }
+
+    &__logo {
+      width: 50%;
+      margin-bottom: 10px;
+      padding-right: 10px;
+     padding-left: 10px;
+    }
+  }
+}

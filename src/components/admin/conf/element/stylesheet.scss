@@ -1,0 +1,44 @@
+.admin-config-block__conf {
+  border-bottom: solid 1px #E0E0E0;
+
+  &--last {
+    border-bottom: none;
+  }
+}
+
+.admin-config-conf {
+  padding: 1em 2em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__reset {
+    flex-basis: 5%;
+  }
+
+  &__heading {
+    flex-basis: 20%;
+  }
+
+  &__content {
+    flex-basis: 50%;
+    //white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    min-width:0;  
+  }
+
+  &--small-padding-right {
+    padding-right: 1em;
+  }
+}
+
+.admin-config-content {
+  &__heading {
+
+  }
+  &__meaning {
+    color: #7f8c8d;
+  }
+}

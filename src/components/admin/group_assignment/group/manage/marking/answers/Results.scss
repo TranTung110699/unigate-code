@@ -1,0 +1,15 @@
+.assignment-group-marking-answers-result {
+  &__text-plagiarized {
+    &--yes {
+      color: red;
+    }
+    &--no {
+      color: green;
+    }
+  }
+
+  &__check-plagiarism {
+    cursor: pointer;
+    font-size: 26px;
+  }
+}

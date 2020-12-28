@@ -1,0 +1,21 @@
+$border:  1px solid #eee;
+.NEW_UI_JULY_2019-user-info-top-left {
+  text-align: center;
+  padding-left: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+  border: $border;
+  > .row {
+    &:not(:last-child) {
+      border-bottom: $border;
+    }
+    margin-left: 0;
+    margin-right: 0;
+  }
+  * {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+  }
+}

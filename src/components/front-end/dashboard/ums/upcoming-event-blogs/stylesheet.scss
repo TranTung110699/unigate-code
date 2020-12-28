@@ -1,0 +1,124 @@
+.upcoming-event-blogs {
+  .upcoming-event-blogs-header {
+    .welcome-title {
+      color: #242c42;
+      font-size: 24px;
+      font-weight: 400;
+      float: left;
+    }
+    .date-title {
+      color: #242c42;
+      font-size: 14px;
+      font-weight: 400;
+      float: right;
+    }
+  }
+  .event-blogs-result-wrapper {
+    font-weight: 400;
+    color: #242c42;
+    line-height: 20px;
+    margin-top: 10px;
+    .event-blog-item {
+      margin-bottom: 15px;
+      height: 40px;
+      font-size: 16px;
+      .date-block {
+        background-color: #c0172a;
+        float: left;
+        padding: 8px 21px;
+        width: 118px;
+        margin-right: 20px;
+        .date-content {
+          color: #FFF;
+          font-size: 14px;
+        }
+      }
+      .date-title{
+        float: right;
+        height: 18px;
+        color: #242c42;
+        font-size: 14px;
+      }
+      .title {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming-event-blogs {
+    .upcoming-event-blogs-header {
+      .welcome-title {
+        font-size: 24px;
+        font-weight: 400;
+        float: left;
+      }
+      .date-title {
+        font-size: 14px;
+        font-weight: 400;
+        float: right;
+      }
+    }
+    .event-blogs-result-wrapper {
+      .event-blog-item {
+        margin-top: 10px;
+        .date-block {
+          float: left;
+          padding: 8px 21px;
+          width: 118px;
+          margin-right: 20px;
+          .date-content {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .upcoming-event-blogs {
+    padding-right: 8px;
+    .upcoming-event-blogs-header {
+      .welcome-title {
+        font-size: 18px;
+        font-weight: 400;
+        float: left;
+      }
+      .date-title {
+        font-size: 14px;
+        font-weight: 400;
+        float: right;
+      }
+    }
+    .event-blogs-result-wrapper {
+      .event-blog-item {
+        margin-top: 10px;
+        .date-block {
+          float: left;
+          padding: 4px 10px;
+          width: 92px;
+          margin-right: 10px;
+          .date-content {
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

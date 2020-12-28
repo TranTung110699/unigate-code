@@ -1,0 +1,57 @@
+@import "../../../configs/css-configuration.scss";
+
+.header-dialog {
+  .close-popup {
+    position: absolute;
+    right: 12px;
+    top: 25px;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    opacity: 1.8;
+    color: $default-text-color;
+  }
+}
+
+.dialog-content-padding0 {
+  padding: 0 !important;
+}
+
+.no-header-dialog {
+
+  .close-popup {
+    position: absolute;
+    right: -12px;
+    top: -15px;
+    font-size: 20px;
+    border: 1px solid #505050;
+    border-radius: 50%;
+    width: 31px;
+    text-align: center;
+    background: #505050;
+    opacity: 1.8;
+    color: $white;
+    cursor: pointer;
+    padding: 2px 0 0 3px;
+    i {
+      cursor: pointer;
+    }
+  }
+
+  .close-modal {
+    background-color: white !important;
+    width: 30px !important;
+    height: 30px !important;
+    border: none !important;
+    border-radius: 22px;
+    padding: 0 !important;
+
+    .close-icon {
+      width: 24px !important;
+      height: 24px !important;
+      padding-top: 2px !important;
+    }
+  }
+}
+
+

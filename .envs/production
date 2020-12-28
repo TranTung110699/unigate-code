@@ -1,0 +1,9 @@
+var APP_SERVER_API_URL = 'https://api.vieted.com';
+var APP_MEDIA_SERVER_URL = 'https://api.vieted.com';
+var APP_AUDIO_MEDIA_SERVER_URL = 'https://vieted.com/dictaudio';
+var APP_USER_LOCAL_STORAGE_KEY = 'user';
+var APP_LEARN_PATHS = 'Ngữ âm: 55229,Giao tiếp: 55229';
+var APP_FB_APP_ID = 1158087994254227;
+var APP_PRACTICE_VOCABSET_IID = 59683;
+var APP_THEME = 'pixelz';
+

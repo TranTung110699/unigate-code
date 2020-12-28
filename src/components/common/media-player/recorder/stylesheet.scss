@@ -1,0 +1,86 @@
+$recorder-color: #f3832d;
+$color-footer-link-hover: #65bcec;
+$sign-color: #fbdac0;
+$recorder-size: 100px;
+.ui-recognition-recorder {
+  .hidden {
+    display: none;
+  }
+  .recorder-container {
+    width: $recorder-size;
+    background-color: $recorder-color;
+    display: block;
+    margin: 50px auto 0px auto;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 2px #bdc3c7;
+    cursor: default;
+    transition: .3s all ease-in;
+    position: relative;
+  }
+  .icon-microphone {
+    color: #fff;
+    font-size: 50px;
+    line-height: $recorder-size;
+    display: block;
+    text-align: center;
+    transition: .1s all ease-in;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .outer {
+    width: $recorder-size;
+    height: $recorder-size;
+    -webkit-transform: scale(1);
+    border-radius: 100%;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid #7f8c8d;
+    z-index: -1;
+    transition: 1.5s all ease;
+    -webkit-animation: woong 1.5s infinite;
+  }
+
+  .outer-2 {
+    width: $recorder-size;
+    height: $recorder-size;
+    -webkit-transform: scale(1);
+    border-radius: 100%;
+    position: absolute;
+    background-color: #bdc3c7;
+    z-index: -1;
+    transition: 1.5s all ease;
+    -webkit-animation: woong-2 1.5s infinite;
+    -webkit-animation-delay: 2.5s;
+  }
+
+  @-webkit-keyframes woong {
+    0% {
+      -webkit-trasform: scale(1.2);
+    }
+    50% {
+      -webkit-transform: scale(1.8);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes woong-2 {
+    0% {
+      -webkit-transform: scale(1.2);
+      opacity: 0.6;
+    }
+    50% {
+      -webkit-transform: scale(1.6);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+}

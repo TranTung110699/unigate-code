@@ -1,0 +1,55 @@
+.school-dashboard-overview-info-wrapper {
+  $borderStyle: 0px solid lightgray;
+  $activeColor: #B9F6CA;
+  $inactiveColor: #F8BBD0;
+
+  &__statistics {
+    padding-bottom: 0;
+  }
+
+  &__item {
+    &--active {
+      background-color: $activeColor;
+    }
+    &--inactive {
+      background-color: $inactiveColor;
+    }
+  }
+
+  &__statistics-box {
+    border: $borderStyle;
+    display: inline-block;
+    padding: 20px 45px;
+  }
+
+  &__statistics-title {
+    font-size: 15px;
+    margin: 0 !important;
+    margin-bottom: 7px !important;
+    padding: 0 !important;
+  }
+
+  &__statistic-text {
+    cursor: pointer;
+  }
+
+  &__statistic {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__statistic-number {
+    margin-right: 10px;
+  }
+
+  &__statistic-number-box {
+    border: $borderStyle;
+    padding: 3px 10px;
+    &--active {
+      background-color: $activeColor;
+    }
+    &--inactive {
+      background-color: $inactiveColor;
+    }
+  }
+}

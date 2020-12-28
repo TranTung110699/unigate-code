@@ -1,0 +1,126 @@
+@import "../../../layouts/theme.scss";
+
+.etec-login-form {
+  padding: 60px 75px 0 75px;
+  width: 100%;
+  .content-dialog {
+    width: 520px !important;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    transform: translateY(-16px);
+    text-transform: uppercase;
+  }
+  h3, input {
+    display: block;
+  }
+  .indicator {
+    width: 30px;
+    transform: translateY(-16px);
+    height: 3px;
+    @include themify($themes){
+      background-color: themed('login-form-indicator');
+    }
+    margin: 0;
+    padding: 0;
+  }
+  .login-btn {
+    @include themify($themes){
+      background-color: themed('btn-login-bg');
+    }
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 5px 25px;
+    margin-top: 0;
+    vertical-align: middle;
+    min-height: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    cursor: pointer;
+  }
+  .remember-me-panel {
+    margin: 20px 0;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .are-you-forgot-pass {
+    text-align: center;
+    margin: 24px;
+  }
+  input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+  }
+  select {
+    height: 46px;
+    background: white;
+    opacity: 1;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #DDD;
+    margin-top: 10px;
+  }
+  @mixin socialAuthor($background) {
+    padding: 8px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    background: $background;
+    border: none;
+    margin-right: 18px;
+  }
+  .my-facebook-button-class {
+    @include socialAuthor(#3b5998);
+  }
+  .googleplus {
+    @include socialAuthor(#dc4e41);
+  }
+  .footer {
+    min-height: 70px;
+    margin-top: 64px;
+    text-align: center;
+    margin-left: -75px;
+    padding: 0;
+    margin-right: -75px;
+    background-color: #242c42;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: #95989a;
+    justify-content: center;
+    span {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  a {
+    color: #3b7adb;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .etec-login-form {
+    padding: 60px 35px 0 35px;
+    width: 100%;
+    .footer {
+      margin-left: -35px;
+      margin-right: -35px;
+    }
+  }
+}

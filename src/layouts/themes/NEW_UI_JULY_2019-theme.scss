@@ -1,0 +1,49 @@
+$NEW_UI_JULY_2019-font-roboto-regular: 'Roboto', sans-serif;
+$NEW_UI_JULY_2019-primary-background-color: #2b3c45;
+$NEW_UI_JULY_2019-secondary-background-color: #486272;
+$NEW_UI_JULY_2019-primary-text-color: #f5a623;
+$NEW_UI_JULY_2019-primary-button-color: #3b7bbe;
+$NEW_UI_JULY_2019-text-muted-color: #4a4a4a;
+$NEW_UI_JULY_2019-text-danger-color: #e2211b;
+$NEW_UI_JULY_2019-background-muted-color: #eeeeee;
+$NEW_UI_JULY_2019-background-danger-color: #ff6864;
+$NEW_UI_JULY_2019-background-success-color: #57c47c;
+$NEW_UI_JULY_2019-text-meta-color: #7c7c7c;
+$NEW_UI_JULY_2019-text-success-color: #28a745;
+$NEW_UI_JULY_2019-color-gray3: #9b9b9b;
+$NEW_UI_JULY_2019-text-menu-left-color: #3e3e3e;
+$NEW_UI_JULY_2019-header-background-color: #1e2a32;
+$NEW_UI_JULY_2019-sub-header-background-color: #23313b;
+$NEW_UI_JULY_2019-button-add-group-color: #2089e2;
+$NEW_UI_JULY_2019-background-queued-color: #d2d2d2;
+$NEW_UI_JULY_2019-background-approved-color: #69acfa;
+
+@mixin text-color($color) {
+  a,
+  b,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  em {
+    color: $color;
+  }
+}
+//.ui-admin-layout-dark {
+//  @include text-color(#fff);
+//
+//  .ui-header-admin,
+//  .whitebox,
+//  .white-background,
+//  .ant-card,
+//  .ant-card-body,
+//  .ant-popover,
+//  .ant-popover-content,
+//  .NEW_UI_JULY_2019-left-menu,
+//  table {
+//    @include text-color(rgba(0, 0, 0, 0.65));
+//  }
+//}

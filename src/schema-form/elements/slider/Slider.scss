@@ -1,0 +1,38 @@
+/**Created by vohung on 12/05/2017.*/
+.slider {
+  margin-left: 15px;
+  .slider-inline-element {
+    padding-right: 15px;
+    padding-left: 15px;
+    .slider-label {
+      display: inline-block;
+      padding-right: 15px;
+      float: left;
+    }
+    div {
+      width: 80%;
+      float: right;
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+      display: inline-block;
+    }
+  }
+
+  .slider-element {
+    padding-top: 21px;
+    div.slider-content {
+      margin-top: 12px;
+      margin-left: 15px;
+      div {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}

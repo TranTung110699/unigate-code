@@ -1,0 +1,25 @@
+.normal-course-search {
+  background: #f1f1f1;
+  .line-vertical {
+    border-left: solid 10px #f1f1f1;
+    display: flex;
+    min-height: 86px;
+    .right-1 {
+      flex-grow: 1;
+    }
+    .right2 {
+      margin: 28px 0 0 10px;
+    }
+  }
+  .background-white {
+    background: white
+  }
+}
+
+@media screen and(max-width: 992px) {
+  .normal-course-search {
+    .line-vertical {
+      border-left: none;
+    }
+  }
+}

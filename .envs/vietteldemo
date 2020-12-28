@@ -1,0 +1,11 @@
+var APP_SERVER_API_URL='https://taphuan-admin.csdl.edu.vn';
+var APP_MEDIA_SERVER_URL='https://taphuan-admin.csdl.edu.vn';
+var APP_AUDIO_MEDIA_SERVER_URL='https://taphuan-admin.csdl.edu.vn/dictaudio';
+var APP_USER_LOCAL_STORAGE_KEY='user';
+var APP_FB_APP_ID=1158087994254227;
+var APP_THEME='sb';
+var APP_STATIC_CDN='https://taphuan-admin.csdl.edu.vn/ufiles/';
+var APP_ASSETS_CDN='https://taphuan-admin.csdl.edu.vn/assets/';
+var APP_LIVE_URL='http://live.vieted.com/demo/demo3.jsp';
+//var APP_SAAS_DOMAIN='vieted.net';
+

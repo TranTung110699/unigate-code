@@ -1,0 +1,33 @@
+.ui-date-picker {
+  position: relative;
+  .mi-file-upload {
+    cursor: pointer;
+    transform: translate3d(-14px, 0px, 0px);
+  }
+  i.icon-refresh {
+    z-index: 10;
+    position: absolute;
+    right: -5px;
+    bottom: 12px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    &--error {
+      transform: translateY(-32px);
+    }
+  }
+
+  div:last-child > div {
+    width: 100% !important;
+  }
+
+  .mu-date-picker {
+    max-width: 1px;
+    max-height: 1px;
+    overflow: hidden;
+  }
+  .text-field {
+    display: inline-block;
+  }
+}

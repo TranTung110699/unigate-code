@@ -1,0 +1,21 @@
+@import '../../../../../layouts/theme.scss';
+
+.dashboard-block {
+  text-align: center;
+  padding: 20px 10px 0px 10px;
+  min-height: 200px;
+  .icon {
+    width: 80%;
+    max-width: 80px;
+  }
+}
+
+.dashboard-block:hover {
+  background-color: white;
+
+  h3 {
+    @include themify($themes) {
+      color: themed('li-cl-hover');
+    }
+  }
+}

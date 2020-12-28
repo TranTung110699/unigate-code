@@ -1,0 +1,37 @@
+.learn-exercise-exam-nav-button {
+  display: flex;
+  justify-content: flex-end;
+
+  &__button-group {
+    padding: 0 3px;
+  }
+
+  &__button {
+    border-radius: 100px;
+    outline: none;
+    padding: 5px 30px;
+    font-size: 12px;
+    border: 2px solid #92c36a;
+    background-color: transparent;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: initial;
+
+    &:hover {
+      background-color: #92c36a;
+      color: white;
+    }
+
+    &--disabled {
+      cursor: not-allowed !important;
+      color: rgba(255, 255, 255, 0.3);
+
+      &:hover{
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

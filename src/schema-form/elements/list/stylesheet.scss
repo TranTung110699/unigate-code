@@ -1,0 +1,23 @@
+.list-component {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .item-component {
+    color: #0a0a0a;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+    &:hover {
+      cursor: pointer;
+    }
+    .delete-button {
+      z-index: 10;
+      position: absolute;
+      right: -5px;
+      bottom: 5px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+}

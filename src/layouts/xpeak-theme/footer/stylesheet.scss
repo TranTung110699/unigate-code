@@ -1,0 +1,71 @@
+/*@import url("https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600");*/
+
+$background-color: #292929;
+$color: #ffffff;
+.ui-common-footer {
+  padding: 96px 0;
+  position: relative;
+  overflow: hidden;
+  color: $color;
+  background-color: $background-color;
+  float: left;
+  width: 100%;
+  h4 {
+    &.title {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 24px 0;
+      padding: 0;
+      color: $color;
+    }
+  }
+  hr {
+    border-top: 1px solid #555;
+    margin: 0 0 24px 0;
+    width: 100%;
+  }
+  .ui-company-reference {
+    margin-bottom: 96px;
+    a {
+      color: $color;
+      img {
+        opacity: 0.5;
+        width: 35px !important;
+        margin-right: 5px;
+        transition: opacity 300ms;
+        cursor: pointer;
+        display: inline-block !important;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .footer-outline {
+    h6 {
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 24px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          width: 100%;
+          color: #ffffff;
+          &:hover {
+            color: #92c36a;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.assignment-group-general {
+  &__section {
+    padding-bottom: 50px;
+  }
+
+  &__section-title {
+    font-size: 15px;
+  }
+
+  &__section-content {
+    padding: 15px 25px;
+  }
+
+  &__name {
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+    padding: 5px 0 !important;
+  }
+
+  &__iid {
+    margin: 0;
+    display: inline-block;
+    padding: 0 .5em !important;
+    color: #777;
+    font-size: 13px;
+  }
+}

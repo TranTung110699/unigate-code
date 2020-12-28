@@ -1,0 +1,36 @@
+@import '../defined.scss';
+@import '../../../layouts/theme.scss';
+
+@media (max-width: 991px) {
+  .screen-viewer {
+    .margin-for-lecture-content {
+      margin-top: 40px;
+    }
+  }
+  .nav-lecture-show {
+    display: block;
+    margin-top: 10px;
+  }
+  .nav-lecture-collapse {
+    display: none;
+  }
+
+  .collapse-nav-content {
+    background: #eee;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 3px;
+  }
+
+  .collapse-nav-content > * {
+    margin: 0 5px;
+  }
+
+  .collapse-nav-content:hover {
+    cursor: pointer;
+    @include themify($themes){
+      color: themed('text-cl-hover') !important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.degree {
+  .button-add-text {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .img-path {
+    margin: 5px;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .text {
+    border-bottom: solid gray 1px;
+    li div {
+      width: 33.3%;
+      display: inline-block;;
+    }
+  }
+}

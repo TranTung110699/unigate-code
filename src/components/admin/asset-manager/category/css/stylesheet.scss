@@ -1,0 +1,13 @@
+.admin-asset-category-tree-results {
+  &__node {
+     display: flex;
+     align-items: center;
+     min-height: 40px;
+     &-name {
+       flex-grow: 1;
+     }
+     &-actions {
+        min-width: 100px;
+     }
+  }
+}

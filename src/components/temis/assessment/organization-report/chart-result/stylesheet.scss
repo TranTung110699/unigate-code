@@ -1,0 +1,33 @@
+.temis-tcnn-report-chart-result {
+  padding-top: 10px;
+
+  &__charts {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+    flex: auto;
+    justify-content: center;
+  }
+  &__chart-box {
+    min-width: 450px;
+    display: inline-block;
+    padding: 2px;
+    flex-grow: 1;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 2px;
+    margin: 15px;
+  }
+  &__chart-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  &__chart-wrapper {
+    height: 250px;
+  }
+  &__legend-wrapper {
+    position: relative;
+  }
+}

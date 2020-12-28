@@ -1,0 +1,131 @@
+.chat-box-component {
+  background-color: #EBEEF3;
+  .mi-close {
+    cursor: pointer;
+  }
+  .header-box {
+    background-color: #292929;
+    color: #ffffff;
+    padding: 8px 10px;
+    cursor: pointer;
+    span {
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  .ui-box-content {
+    //border-left: 1px solid #cccccc;
+    //border-right: 1px solid #cccccc;
+    position: relative;
+    .ui-input-chat {
+      position: relative;
+      background-color: #ffffff;
+      input {
+        width: 100%;
+        padding: 2px 25px 2px 5px;
+        height: 40px;
+        border: none;
+      }
+      i {
+        position: absolute;
+        right: 6px;
+        top: 27%;
+        cursor: pointer;
+        color: #5E740B;
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .messages-content {
+      width: 70%;
+      text-align: left;
+      border-bottom: solid 1px #D5D7DC;
+      border-left: solid 1px #D5D7DC;
+      border-right: solid 1px #D5D7DC;
+      .ui-content-panel {
+        padding: 0 10px;
+
+        ul.message-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li.item {
+            padding: 5px 0 5px 30px;
+            &.right {
+              padding: 5px 30px 5px 0 !important;
+              img {
+                margin: 0 -29px 0 0 !important;
+                float: right;
+              }
+              .info {
+                text-align: right;
+              }
+              .content {
+                background-color: dodgerblue;
+                color: #ffffff;
+              }
+            }
+            img {
+              width: 24px;
+              height: 24px;
+              border-radius: 3px;
+              border: solid 1px #ccc !important;
+              float: left;
+              margin: 0 0 0 -29px;
+            }
+            .content {
+              background-color: #ffffff;
+              color: #2c3340;
+              font-size: 13px;
+              margin: 0 7px 7px 7px;
+              padding: 4px 7px;
+              border-radius: 3px;
+              position: relative;
+            }
+            .info {
+              font-size: 10px;
+              padding: 0px 7px;
+              font-style: italic;
+            }
+          }
+        }
+      }
+
+    }
+
+    .member-list {
+      width: 30%;
+      text-align: left;
+      padding: 0 5px;
+      ul.user-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li.item {
+          padding: 5px 0 5px 30px;
+          img {
+            width: 24px;
+            height: 24px;
+            border-radius: 3px;
+            border: solid 1px #ccc !important;
+            float: left;
+            margin: 0 0 0 -29px;
+          }
+        }
+      }
+    }
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+}
+

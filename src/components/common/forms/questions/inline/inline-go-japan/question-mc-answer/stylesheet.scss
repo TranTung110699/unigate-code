@@ -1,0 +1,19 @@
+.go-japan-inline-question-mc-answer {
+  padding-top: 32px;
+
+  &__answer-checkbox {
+    cursor: pointer;
+  }
+
+  &__answer-text {
+    font-size: 16px;
+    background: #ededed;
+    padding: 8px 15px;
+    transform: translateY(-10px);
+
+    &--selected {
+      background: #f7941d;
+      color: #fff;
+    }
+  }
+}

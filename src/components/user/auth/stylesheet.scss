@@ -1,0 +1,239 @@
+@import "../../../configs/css-configuration.scss";
+
+*:-webkit-autofill,
+*:-webkit-autofill:hover,
+*:-webkit-autofill:focus,
+*:-webkit-autofill:active {
+  border: none !important;
+  background-color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+  -webkit-box-shadow: inset 0 0 0px 9999px white !important;
+}
+
+.ui-auth-panel {
+  padding-left: 0px !important;
+  .ui-auth-header {
+    .login-register-tab {
+      cursor: pointer;
+      float: left;
+      width: 50%;
+      text-decoration: none;
+      background-color: #e7e7e7;
+      color: #767676;
+      padding: 12px 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 1px;
+
+      &.active {
+        background-color: #e68a4c;
+        color: white;
+      }
+    }
+  }
+  .login-register-area {
+    padding: 80px 40px;
+    label {
+      font-size: 13px;
+    }
+    .login-button-panel {
+      .login-btn, .register-btn  {
+        padding: 8px 25px;
+        border-radius: 30px;
+        background-color: #e68a4c;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+        cursor: pointer;
+      }
+      .register-btn {
+        display: inline-block;
+      }
+    }
+
+    .my-facebook-button-class {
+      padding: 8px;
+      border-radius: 50%;
+      color: $white;
+      font-size: 16px;
+      width: 50px;
+      display: inline-block;
+      background: #5d84bb;
+      border: none;
+      margin-right: 18px;
+      margin-left: 18px;
+    }
+  }
+
+  .another-login-tools-panel, .another-register-tools-panel {
+    margin-top: 15px;
+    .header {
+      position: relative;
+      span {
+        background: $white;
+        display: inline-block;
+        padding: 0 10px;
+        text-transform: uppercase;
+        color: #323232;
+        font-size: 13px;
+      }
+      .line-over {
+        width: 100%;
+        background-image: url($mediaPath + "/images/default/line_color_1x1.png");
+        background-repeat: repeat-x;
+        background-position-y: 50%;
+      }
+
+    }
+    .tools {
+      margin: 20px 0;
+      .another-login-icon {
+        padding: 8px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        color: $white;
+        font-size: 16px;
+        width: 50px;
+        display: inline-block;
+      }
+      .facebook {
+        margin: 0 20px;
+        background-color: $facebook-bg-color;
+      }
+      .googleplus {
+        background-color: $google-bg-color;
+      }
+    }
+  }
+
+  .color-default {
+    color: $default-text-color !important;
+  }
+  .remember-me-panel {
+    padding: 10px 0;
+  }
+  .terms-and-conditions {
+    padding: 10px 0;
+    margin: auto;
+    .text-link {
+      padding-top: 2px;
+      color: $default-text-color;
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+  .ui-button-group {
+    padding: 10px 0;
+  }
+
+  .content-panel {
+    padding: 50px 20px 150px 20px;
+    height: 580px;
+  }
+  .ui-right-panel {
+    padding-left: 0px;
+    padding-right: 0px;
+    .content-panel {
+      padding: 0px;
+    }
+  }
+  .center-block {
+    text-align: center;
+    margin: auto;
+  }
+  .forgot-password {
+    margin: auto;
+    display: inline-block;
+    padding-top: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 200;
+  }
+  .button {
+    border-radius: 20px !important;
+    button {
+      background-color: $main-color !important;
+      border-radius: 20px !important;
+      margin-right: 30px !important;
+    }
+
+  }
+  .ui-left-lpanel {
+    background-color: $main-color;
+    background-image: url($mediaPath + "/images/login/login_left_bg.png");
+    background-position: 10px bottom;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+
+    .company-short-name {
+      color: $login-short-company-color;
+      margin-bottom: 38px;
+      font-weight: 200;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    .ui-logo-panel {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ui-register {
+    .checkbox-inline {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+  .ui-auth-panel {
+    margin: 0px !important;
+    height: auto;
+    .ui-left-lpanel {
+      display: none;
+    }
+    .content-panel {
+      padding: 20px 10px 20px 10px;
+      height: auto;
+    }
+    .ui-auth-header {
+      //display: none;
+    }
+    .row {
+      width: 100%;
+      margin: 0;
+    }
+    .col-sm-6 {
+      padding: 0px;
+    }
+    .forgot-password {
+      display: none;
+    }
+    .login-button-panel {
+      float: none !important;
+    }
+
+    .login-modal-content {
+      padding: 20px;
+    }
+    .another-register-tools-panel {
+      .tools {
+        margin: 20px 0;
+      }
+    }
+    .tools {
+      .another-login-icon {
+        font-size: 26px;
+      }
+    }
+
+  }
+}

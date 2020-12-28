@@ -1,0 +1,145 @@
+.ui-school-daily-view {
+  background-color: white;
+  .hidden {
+    display: none;
+  }
+
+  .ui-session-box {
+    border: 1px solid #c2ccd1;
+    background: #c2ccd1;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    .tooltip-data {
+      &:hover {
+       font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+    .course-name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      flex-grow: 1;
+    }
+
+    .footer-box {
+
+    }
+  }
+
+  .setting-header-panel {
+    padding: 5px 0;
+    display: flex;
+    .ui-header-right-panel {
+flex-grow: 1;
+    }
+    .ui-header-left-panel {
+
+    }
+  }
+
+  .timeslot-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .timeslot-name {
+      font-size: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .room-name {
+      opacity: 0.5;
+      font-style: initial;
+      font-size: 10px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+    }
+  }
+
+  div {
+    &:focus {
+      outline: 0px solid transparent !important;
+    }
+  }
+
+  .GridRow {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .GridColumn {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  .LeftSideGridContainer {
+    flex: 0 0 75px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(1px);
+    //border: 1px solid #cccccc;
+    //background-color: #cccccc;
+  }
+
+  .LeftSideGrid {
+    overflow: hidden !important;
+  }
+  .HeaderGrid {
+    width: 100%;
+    overflow: hidden !important;
+    //background-color: #cccccc;
+    font-weight: bold;
+  }
+  .BodyGrid {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .evenRow {
+  }
+  .oddRow {
+    background-color: rgba(0, 0, 0, .1);
+  }
+
+  .leftHeader {
+    transform: translateY(1px);
+  }
+
+  .cell,
+  .headerCell,
+  .leftCell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .b-l-cel {
+    border-left: 1px solid #c2ccd1;
+  }
+
+  .b-r-cel {
+    border-right: 1px solid #c2ccd1;
+  }
+  .b-t-cel {
+    border-top: 1px solid #c2ccd1;
+  }
+  .b-b-cel {
+    border-bottom: 1px solid #c2ccd1;
+  }
+  .headerCell,
+  .leftCell {
+    font-weight: bold;
+    background-color: white;
+  }
+}

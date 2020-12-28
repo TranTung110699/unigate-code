@@ -1,0 +1,14 @@
+@import "../common/define.scss";
+
+.role-play-intro {
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+
+  &__description {
+    font-size: 1.1em;
+  }
+
+  &__button {
+    margin-top: 2em;
+  }
+}

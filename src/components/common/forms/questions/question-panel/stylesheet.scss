@@ -1,0 +1,65 @@
+.question-panel {
+  $header-bg-color: #ebebeb;
+  $padding-header: 5px 10px;
+  $padding-content: 5px 10px;
+  $ticked-bg-color: #fffbe7;
+  $ticked-bd-color: #e8d060;
+  //padding-bottom: 13px;
+
+  float: left;
+  width: 100%;
+
+  &__header {
+    background-color: $header-bg-color;
+    display: flex;
+    align-items: stretch;
+    padding: $padding-header;
+
+    &--ticked {
+      background-color: $ticked-bg-color;
+      border: solid 1px $ticked-bd-color;
+    }
+
+    &--tickable {
+      cursor: pointer;
+    }
+  }
+
+  &__header-text {
+    flex-grow: 1;
+  }
+
+  &__header-tick {
+    padding-top: 4px;
+  }
+
+  &__tick-icon {
+    height: 14px;
+    width: 14px;
+    background: url(./resources/ic-pinn.png) no-repeat;
+
+    &--ticked {
+      background: url(./resources/ic-pin.png) no-repeat;
+    }
+  }
+
+  &__content {
+    padding: $padding-content $padding-content;
+
+    @media (max-width: 700px) {
+      padding: 10px 0 0;
+    }
+
+    img {
+      max-width: 90%;
+    }
+  }
+
+  @for $i from 10 through 48 {
+    .font-size-#{$i} {
+      * {
+        font-size: #{$i}px;
+      }
+    }
+  }
+}

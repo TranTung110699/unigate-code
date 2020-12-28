@@ -1,0 +1,203 @@
+@import '../../../layouts/theme.scss';
+$color: #fff;
+.gj-login-form {
+  padding: 10px 30px 0 30px;
+  width: 100%;
+  .content-dialog {
+    width: 520px !important;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    transform: translateY(-16px);
+    text-transform: uppercase;
+  }
+  h3,
+  input {
+    display: block;
+  }
+  .indicator {
+    width: 30px;
+    transform: translateY(-16px);
+    height: 3px;
+    background-color: #8fdd2d;
+    margin: 0;
+    padding: 0;
+  }
+  .login-btn {
+    @include themify($themes) {
+      background: themed('btn-login-bg');
+    }
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 5px 25px;
+    margin-top: 0;
+    vertical-align: middle;
+    min-height: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    cursor: pointer;
+  }
+  .remember-me-panel {
+    margin: 10px 0 0 0;
+    .ant-form-item{
+      margin-bottom: 10px;
+    }
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .are-you-forgot-pass {
+    text-align: center;
+    margin: 24px;
+  }
+  input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+  }
+  select {
+    height: 46px;
+    background: white;
+    opacity: 1;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  @mixin socialAuthor($background) {
+    padding: 8px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    background: $background;
+    border: none;
+    margin-right: 18px;
+  }
+  .my-facebook-button-class {
+    @include socialAuthor(#3b5998);
+  }
+  .googleplus {
+    @include socialAuthor(#dc4e41);
+  }
+  .footer {
+    min-height: 70px;
+    margin-top: 64px;
+    text-align: center;
+    margin-left: -75px;
+    padding: 0;
+    margin-right: -75px;
+    background-color: #242c42;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: #95989a;
+    justify-content: center;
+    span {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  a {
+    color: #3b7adb;
+  }
+  .ant-carousel {
+    height: 350px;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+.gj-login-form {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 50px 30px 30px;
+
+  a {
+    &:hover {
+      //color: $color;
+    }
+  }
+  .forgot-password:hover {
+    color: #e13542;
+  }
+  & .indicator {
+    @include themify($themes) {
+      background-color: themed('btn-login-bg');
+    }
+  }
+  & .login-btn {
+    @include themify($themes) {
+      background: themed('btn-login-bg');
+    }
+  }
+
+  .title {
+    text-align: center;
+    height: 21px;
+    color: #272727;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+  }
+  .text-field {
+    margin-top: -20px;
+  }
+  .action {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    .forgot-password {
+      cursor: pointer;
+    }
+  }
+  .btn {
+    border: none;
+    width: 150px;
+    min-width: 100px;
+    margin: 13px auto;
+    height: 38px;
+    border-radius: 2px;
+    @include themify($themes) {
+      background-color: themed('btn-login-bg');
+    }
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    &:hover {
+      color: white;
+    }
+  }
+  .ant-form-item-label{
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .gj-login-form {
+    padding: 35px 20px;
+    width: 100%;
+    .footer {
+      margin-left: -35px;
+      margin-right: -35px;
+    }
+  }
+}

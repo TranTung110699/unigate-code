@@ -1,0 +1,84 @@
+@import 'layouts/theme.scss';
+
+.forgot-password-container {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 400;
+
+  img {
+    &.help {
+      margin-right: 5px;
+    }
+  }
+
+  input {
+    border: inherit;
+    border-bottom: 1px solid #ddd;
+    background-color: #f2f2f2;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .forgot-password-btn {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    button {
+      @include themify($themes) {
+        background: themed('btn-primary-bg');
+        border: 1px solid themed('btn-primary-bg');
+      }
+      padding: 10px 30px;
+      color: white;
+      transition: 0.3s;
+      outline: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #fff;
+      @include themify($themes) {
+        color: themed('btn-primary-bg');
+      }
+    }
+    &.ggg-forgot-password-btn {
+      button {
+        border-radius: 0;
+        background: #dcab18;
+        border: none;
+        color: #fff;
+        box-shadow: none;
+        padding: 5px 25px;
+        margin-top: 0;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #fff;
+        color: #dcab18;
+        border: 1px solid #dcab18;
+      }
+    }
+    &.ums-forgot-password-btn {
+      button {
+        border-radius: 0;
+        background: #e13542;
+        border: none;
+        color: #e8e8e8;
+        box-shadow: none;
+        padding: 5px 25px;
+        margin-top: 0;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+      }
+      button:hover {
+        color: white;
+      }
+    }
+  }
+}

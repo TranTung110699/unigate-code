@@ -1,0 +1,83 @@
+.front-end-user-update-nav {
+  &__user-info {
+  }
+
+  hr {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid #d5d5d5;
+  }
+
+  &__user-avatar {
+    display: inline-block;
+    margin-right: .5em;
+  }
+
+  &__user-name {
+    display: inline-block;
+  }
+
+  &__buttons {
+
+  }
+
+  &__button {
+    display: block;
+    padding: 0 15px 0 50px;
+    background-repeat: no-repeat;
+    background-position: 16px 9px;
+    border: solid transparent;
+    border-radius: 3px;
+
+    &--active {
+      &:hover {
+        color: #ffffff;
+      }
+
+      &:focus {
+        color: #ffffff;
+      }
+
+      background-color: #92c36a;
+      color: #ffffff;
+    }
+
+    &--info {
+      background-image: url(../icons/ic-info.png);
+    }
+
+    &--info-active {
+      background-image: url(../icons/ic-info-active.png);
+    }
+
+    &--teacher {
+      background-image: url(../icons/ic-teacher.png);
+    }
+
+    &--teacher-active {
+      background-image: url(../icons/ic-teacher-active.png);
+    }
+
+    &--ava {
+      background-image: url(../icons/ic-ava.png);
+    }
+
+    &--ava-active {
+      background-image: url(../icons/ic-ava-active.png);
+    }
+
+    &--pw {
+      background-image: url(../icons/ic-pw.png);
+    }
+
+    &--pw-active {
+      background-image: url(../icons/ic-pw-active.png);
+    }
+
+    p {
+      margin-top: .3em;
+      margin-bottom: .3em;
+    }
+  }
+}

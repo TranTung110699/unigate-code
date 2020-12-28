@@ -1,0 +1,14 @@
+.pending-fees-wrapper {
+  margin-top: 20px;
+}
+
+.create-invoice-btn {
+  float: right;
+  margin-top: 15px;
+}
+
+.add-benefit-btn {
+  &:hover {
+    background: #e9e9e9;
+  }
+}

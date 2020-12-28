@@ -1,0 +1,191 @@
+.feedback-wrapper {
+  width: 100%;
+  background-image: url("./images/background-footer.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+  height: 530px;
+  .background-slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #000;
+      height: 100%;
+      opacity: 0.6;
+    }
+    .slider-feedback {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 90px;
+      .slider-content {
+        height: 350px;
+        border: 1px solid #DCAB18;
+        width: 100%;
+        padding: 50px;
+        float: left;
+        img {
+          position: absolute;
+          margin-left: 70px;
+          height: 346px;
+          top: -48px;
+        }
+        p.feedback {
+          background-image: url("./images/feedback-text.png");
+          background-repeat: no-repeat;
+          color: white;
+          font-style: italic;
+          font-size: 16px;
+          padding-left: 45px;
+          line-height: 1.6;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        .text-right {
+          text-align: right;
+          h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 0;
+            font-weight: bold;
+          }
+          p {
+            font-size: 16px;
+            color: white;
+            margin-top: -10px;
+          }
+        }
+      }
+      .slick-list {
+        overflow: hidden;
+      }
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    li {
+      display: inline-block;
+      button {
+        outline: none;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #b18d1f;
+        border-radius: 50%;
+        margin-right: 5px;
+        background-color: transparent;
+        color: transparent !important;
+        &:before {
+          color: transparent !important;
+        }
+      }
+      &.slick-active {
+        button {
+          &:before {
+            color: transparent !important;
+          }
+          color: transparent !important;
+          background-color: #b18d1f;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .feedback-wrapper {
+    height: 508px;
+    .background-slider {
+      .slider-feedback {
+        .slider-content {
+          padding: 18px;
+          img {
+            position: inherit;
+            margin-left: 0;
+            height: 346px;
+            top: 0;
+          }
+          p {
+            &.feedback {
+              background-size: 22px;
+              font-size: 16px;
+              padding-left: 32px;
+              height: 218px;
+              overflow: hidden;
+            }
+          }
+          .text-right {
+            h3 {
+              font-size: 14px;
+            }
+            p {
+              font-size: 14px;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+    .slick-dots {
+      li {
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feedback-wrapper {
+    background-repeat: repeat-y;
+    .background-slider {
+      .slider-feedback {
+        .slider-content {
+          padding: 18px;
+          img {
+            display: none;
+          }
+          p {
+            &.feedback {
+              background-size: 22px;
+              font-size: 13px;
+              padding-left: 32px;
+              height: 236px;
+              overflow: hidden;
+            }
+          }
+          .text-right {
+            h3 {
+              font-size: 14px;
+            }
+            p {
+              font-size: 14px;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+    .slick-dots {
+      li {
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.table-work-note {
+  table {
+    tbody {
+      tr {
+        td {
+          padding-left: inherit !important;
+          padding-right: inherit !important;
+          overflow: unset !important;
+          white-space: unset !important;
+          text-overflow: unset !important;
+        }
+      }
+    }
+  }
+}

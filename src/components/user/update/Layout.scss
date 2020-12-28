@@ -1,0 +1,23 @@
+.front-end-user-update-layout {
+  padding-top: 2em;
+  padding-bottom: 7em;
+  background-color: #ffffff;
+
+  &__nav {
+    margin-bottom: 1em;
+  }
+
+  &__main-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  &__main {
+    .mui-button--primary {
+      button {
+        background-color: #e68a4c !important;
+      }
+    }
+  }
+}

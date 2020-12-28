@@ -1,0 +1,48 @@
+.compare-organizations-layout {
+  .ant-card-head {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .search-form {
+    padding: 0 40px;
+
+    .tree-select-component {
+      padding-top: 14px;
+    }
+
+    .center-align {
+      text-align: center;
+    }
+  }
+
+  .recharts-legend-wrapper {
+    padding-top: 30px;
+
+    .recharts-legend-item {
+      margin-right: 15px !important;
+      margin-left: 15px !important;
+    }
+  }
+
+  .sections {
+    padding-top: 40px;
+
+    > div {
+      margin-bottom: 20px;
+    }
+
+    .ant-card-head {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .ant-card-body {
+      height: 500px;
+
+      .recharts-responsive-container {
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.preview-invoice-wrapper, .invoice-detail-wrapper {
+  padding: 30px;
+  .school-info-wrapper {
+    font-size: 16px;
+    .school-info {
+      float: left;
+      width: 50%;
+    }
+    .invoice-code {
+      float: left;
+      width: 50%;
+      text-align: right;
+    }
+  }
+  .preview-invoice-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .payer-info {
+
+  }
+  .beneficiary-wrapper {
+    .beneficiary-info {
+      width: 50%;
+      float: left;
+    }
+    .class-groups {
+      width: 50%;
+      float: left;
+    }
+  }
+  .fee-list-wrapper {
+
+  }
+  .notes-wrapper {
+    min-height: 168px;
+  }
+  .signature-wrapper {
+    .signature-wrapper-item {
+      width: 33%;
+      float: left;
+    }
+    .payer {
+      text-align: center;
+    }
+    .cashier {
+      text-align: center;
+    }
+    .accountant {
+      text-align: center;
+    }
+    .signature-content {
+      height: 150px;
+    }
+  }
+  .print-invoice-btn {
+    clear: both;
+  }
+  .preview-invoice-block {
+    border: 1px solid #DDD;
+    background: white;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    overflow: auto;
+  }
+}

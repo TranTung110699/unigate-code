@@ -1,0 +1,17 @@
+.Editable {
+  &__popover {
+    padding: 1em;
+  }
+  &__action {
+    text-align: right;
+  }
+  &__anchor {
+    border-bottom: 1px dashed #0088cc;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    &--disabled {
+      border-bottom: none;
+    }
+  }
+}

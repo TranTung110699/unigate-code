@@ -1,0 +1,15 @@
+.async-loader {
+  &__error {
+    border: dashed 1px;
+    background: #ffcdc6;
+    color: darkred;
+    text-align: center;
+    padding: 10px;
+  }
+
+  &__retry-button {
+    i {
+      margin-left: 10px;
+    }
+  }
+}

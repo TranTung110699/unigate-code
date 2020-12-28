@@ -1,0 +1,15 @@
+.active-type {
+  background: #0b93d5;
+  color: #fff;
+  img{
+    background: #fff;
+  }
+}
+.template-type-item {
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+.template-detail-border{
+  border-left: 1px solid #e8e8e8;
+}

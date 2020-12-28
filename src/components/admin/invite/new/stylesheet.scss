@@ -1,0 +1,19 @@
+.targets-wrapper {
+  margin-bottom: 10px;
+  &-editor {
+    .action-wrapper {
+      position: relative;
+    }
+  }
+}
+
+.items-wrapper {
+  margin-bottom: 10px;
+  .action-wrapper {
+    position: relative;
+  }
+  .tree-view {
+    min-width: 450px;
+    max-height: 500px;
+  }
+}

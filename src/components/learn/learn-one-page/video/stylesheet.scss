@@ -1,0 +1,30 @@
+.ui-video-panel {
+  margin: 0 0 30px 0;
+  text-align: left;
+  .video-name {
+    padding: 20px 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .video-container {
+    position: relative;
+    text-align: center;
+
+    span {
+      width: 100%;
+      position: relative;
+    }
+    iframe {
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      max-width: 443px !important;
+      max-height: 249px !important;
+      border: 1px solid #f1f1f1;
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+}

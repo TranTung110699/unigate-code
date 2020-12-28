@@ -1,0 +1,51 @@
+@import '../../common/define.scss';
+
+.role-play-sentence-result {
+  text-align: center;
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 35px 0 20px;
+  }
+
+  &__title-message {
+    display: inline-block;
+    margin-right: .3em;
+  }
+
+  &__title-result {
+    display: inline-block;
+  }
+
+  &__details {
+    font-size: 1.1em;
+  }
+
+  &__word {
+    display: inline-block;
+    margin-right: .2em;
+
+    &--incorrect {
+      text-decoration: line-through;
+      color: #F44336;
+    }
+    &--correct {
+      color: #4CAF50;
+    }
+  }
+
+  &__buttons {
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__button {
+    button {
+      background-color: $role-play-primary-button-color !important;
+    }
+  }
+}

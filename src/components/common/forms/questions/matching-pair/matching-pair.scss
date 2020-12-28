@@ -1,0 +1,32 @@
+@import 'layouts/theme.scss';
+.matching-pair-question {
+  display: flex;
+
+  &__half {
+    padding: 0.5em;
+    width: 50%;
+  }
+
+  &__option {
+    &--sortable {
+      cursor: pointer;
+    }
+    &.default-match {
+      @include themify($themes) {
+        background-color: themed('bg-match') !important;
+      }
+    }
+    &.default-not-match {
+      @include themify($themes) {
+        background-color: themed('bg-not-match') !important;
+      }
+    }
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0.5em;
+  }
+
+  &__option-icon {
+    margin-right: 1em;
+  }
+}

@@ -1,0 +1,14 @@
+.etec-tip {
+  .button-view-more{
+    min-height: 90px;
+    background-color: #8fdd2d;
+    color: white;
+    width:100%;
+    border: none;
+    &:hover{
+      background-color: #3eb331;
+      transition: all 0.5s;
+    }
+  }
+
+}

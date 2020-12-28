@@ -1,0 +1,23 @@
+.ui-fly-panel {
+  background: none;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #929292;
+
+  &.hidden {
+    display: none;
+  }
+
+  &.show {
+    display: block;
+  }
+  &.menu-fly {
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: block;
+  }
+}

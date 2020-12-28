@@ -1,0 +1,109 @@
+.teacher-list-wrapper {
+  padding: 46px 0 46px 0;
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .teacher-content {
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    margin-top: 30px;
+    height: 365px;
+    a {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .teacher-description {
+      position: absolute;
+      bottom: 1px;
+      height: 95px;
+      background: #fff;
+      width: 90%;
+      h5 {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        height: 30px;
+        padding-top: 5px;
+        overflow: hidden;
+      }
+      p {
+        margin-top: 0;
+        font-size: 14px;
+        text-align: center;
+        height: 50px;
+        overflow: hidden;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      right: 0;
+      background-color: #2f2f2f;
+      opacity: 0.8;
+      overflow: hidden;
+      width: 90%;
+      height: 0;
+      transition: .5s ease;
+      .description{
+        color: #fff;
+        padding: 10px;
+        height: 340px;
+        overflow: hidden;
+      }
+    }
+
+    .text {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    a {
+      &:hover  {
+        .overlay {
+          height: 100%;
+          .teacher-description{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .teacher-list-wrapper {
+    padding: 46px 15px;
+    .teacher-content {
+      .teacher-description {
+        width: 92%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .teacher-list-wrapper {
+    .teacher-content {
+      .teacher-description {
+        width: 92%;
+      }
+    }
+  }
+}

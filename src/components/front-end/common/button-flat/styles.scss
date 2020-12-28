@@ -1,0 +1,23 @@
+@import 'layouts/theme.scss';
+@import 'layouts/_common-style.scss';
+
+.view-more-button {
+  @include themify($themes) {
+    color: themed('a-btn-cl-active');
+    border: 1px solid themed('a-btn-cl-active');
+  }
+  @include center-thing();
+  background: theme-color('background');
+  outline: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition: all 0.3s;
+  &:hover {
+    @include themify($themes) {
+      background: themed('a-btn-cl-active');
+      border: 1px solid themed('a-btn-cl-active');
+    }
+    color: theme-color('background');
+  }
+}

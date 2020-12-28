@@ -1,0 +1,79 @@
+@import "../../../../../layouts/theme.scss";
+
+.normal-exercise {
+  display: flex;
+  flex-direction: column;
+  @include themify($themes) {
+    box-shadow: themed('box-shadow');
+  }
+
+  &__header {
+    /*
+    background-color: #333333;
+    text-align: center;
+    color: #ffffff;
+    */
+    font-weight: bold;
+    font-size: 150%;
+  }
+
+  &__main {
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    display: flex;
+
+    &--intro-sticky-top {
+      flex-direction: column;
+    }
+
+    &--intro-sticky-left {
+      flex-direction: row;
+    }
+
+    &--intro-sticky-right {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__intro-sticky {
+    background-color: white;
+
+    &--top {
+      border-bottom: solid 1px;
+    }
+
+    &--left {
+      border-right: solid 1px;
+      width:  65%;
+    }
+
+    &--right {
+      border-left: solid 1px;
+      width:  35%;
+    }
+  }
+
+  &__display {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  &__control {
+    padding-bottom: 10px;
+
+  }
+
+  &__duration {
+    line-height: 1;
+    font-size: 3em;
+  }
+
+  &__duration-text {
+    line-height: 83px;
+
+    &--unlimited {
+      line-height: 1;
+      font-size: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "layouts/theme.scss";
+
+.comment-component {
+  @include themify($themes) {
+    background: themed('l-main-bg');
+  }
+  padding: 10px 0;
+  .action-bar {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    @include themify($themes){
+      color: themed('comment-main-cl');
+    }
+    span {
+      font-weight: 700;
+    }
+    &:hover {
+      @include themify($themes){
+        background-color: themed('comment-action-hover-bg');
+      }
+    }
+    &__right {
+      display: flex;
+      justify-content: flex-end;
+      min-width: 150px;
+    }
+  }
+  .number-comment-wrapper--mobile{
+    display: none;
+  }
+  .number-comment-wrapper--desktop {
+    display: inline-block;
+  }
+  .number-comment {
+    flex-grow: 1;
+  }
+
+  .show-detail-comments {
+    display: block;
+  }
+  .hidden-detail-comments {
+    display: none;
+  }
+  .expand-icon {
+    margin-left: 10px;
+    i {
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .comment-component{
+    .number-comment-wrapper--mobile{
+      display: inline-block;
+    }
+    .number-comment-wrapper--desktop {
+      display: none;
+    }
+    .action-bar {
+      &__right {
+        min-width: unset;
+      }
+    }
+  }
+}
+

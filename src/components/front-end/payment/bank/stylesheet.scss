@@ -1,0 +1,17 @@
+.payment-bank-form {
+  padding: 1em 3em 2em 3em;
+
+  &__values {
+    margin-bottom: 1em;
+  }
+
+  &__info-title {
+    font-size: 1.2em;
+  }
+
+  &__info-value {
+    background-color: #BDBDBD;
+    padding-left: 1em;
+    color: #FAFAFA;
+  }
+}

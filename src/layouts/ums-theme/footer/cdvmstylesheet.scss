@@ -1,0 +1,70 @@
+.ums-footer-wrapper {
+  .footer-wrapper#footer {
+    background: url(http://www.caodangvietmy.edu.vn/wp-content/themes/apc-2017/images/img-bg-footer.png)
+      center center no-repeat #1d458a;
+    height: auto;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.42857143;
+    p {
+      margin: 0 0 10px;
+    }
+    a {
+      outline: 0 !important;
+      color: royalblue;
+    }
+    i {
+      margin-right: 10px !important;;
+      }
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .list-inline {
+      padding-left: 0;
+      margin-left: -5px;
+      list-style: none;
+    }
+    .list-inline > li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    #connect-us {
+      .facebook-icon {
+        background-color: #42609d;
+      }
+      .youtube-icon {
+        background-color: #f15a4a;
+      }
+      .twitter-icon {
+        background-color: #42beec;
+      }
+      i {
+        margin-right: 0px !important;
+      }
+      ul {
+        margin-top: 0;
+        li {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          text-align: center;
+          padding-top: 10px;
+          margin-right: 3px;
+        }
+      }
+      i {
+        color: #fff;
+        margin: 0;
+      }
+    }
+    #logo {
+      margin-top: 7px;
+    }
+  }
+}

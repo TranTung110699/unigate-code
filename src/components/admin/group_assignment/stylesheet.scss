@@ -1,0 +1,93 @@
+.group-assignment-layout {
+  $borderStyle: 1px solid rgb(224, 224, 224);
+  background-color: #F8F8FF;
+  padding-bottom: 10px;
+
+  &__content {
+    width: 100%;
+
+    th, td {
+      border-left: $borderStyle;
+      border-right: $borderStyle;
+    }
+
+    th {
+      border-top: $borderStyle;
+    }
+
+    td {
+      border-bottom: $borderStyle;
+    }
+  }
+
+  &__content-name-header {
+    width: 20%;
+  }
+
+  &__content-info-header {
+    width: 25%;
+  }
+
+  &__content-cell {
+    padding: 20px 0;
+    vertical-align: top;
+
+    &--general {
+      width: 20%;
+    }
+
+    &--info {
+      width: 25%;
+    }
+
+    &--exercises {
+      padding: 10px 0;
+    }
+  }
+
+  &__content-name {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 13px;
+  }
+
+  &__content-iid {
+    display: inline-block;
+    color: #777;
+    font-weight: 400;
+    padding: 0 .5em !important;
+    font-size: 13px;
+  }
+
+  &__content-exercise-name {
+    display: inline-block;
+    margin: 0 !important;
+    font-size: 13px;
+  }
+
+  &__content-exercise-iid {
+    color: #777;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0 .5em !important;
+    display: inline-block;
+    margin: 0 !important;
+  }
+
+  &__content-exercise-info {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  &__content-time-value {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__content-time-title {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+}
+

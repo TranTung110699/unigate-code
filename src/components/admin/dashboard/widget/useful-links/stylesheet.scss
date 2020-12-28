@@ -1,0 +1,32 @@
+.menu_widget {
+  padding: 20px 45px;
+  .list_blocks {
+    .dashboard-block {
+      text-align: unset;
+      padding: 0px;
+      min-height: unset;
+      margin-bottom: 10px;
+      a {
+        display: inline-flex;
+        position: relative;
+        min-width: 200px;
+        h3 {
+          line-height: 45px;
+          position: absolute;
+          left: 60px;
+          min-width: 210px;
+          margin-bottom: 10px;
+        };
+        .icon {
+          width: 20%;
+          height: 20%;
+          margin-right: 20px;
+        }
+      }
+    }
+    .dashboard-block:hover {
+      background-color: white;
+    }
+  }
+}
+

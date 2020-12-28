@@ -1,0 +1,98 @@
+@import "../../../../../../../layouts/theme.scss";
+
+.evn-home-page-left-menu {
+  background-color: #ffffff;
+
+  margin-bottom: 15px;
+  a:active,
+  a:hover {
+    @include themify($themes){
+      color: themed('text-cl-hover') !important;
+    }
+    font-weight: 500 !important;
+  }
+  & .lv1-item {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #242c42;
+    background-color: #f5f5f5;
+    line-height: 20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    & .clear-fix{
+      padding: 15px;
+      height: 45px;
+      background-color: #e4e4e4;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__icon {
+        margin-right: 11px;
+      }
+    }
+    & .pull-right {
+      & .fa-angle-down, & .fa-angle-left{
+        font-size: 18px;
+        color: #7c7c7c;
+      }
+    }
+  }
+  
+  & .lv2-item {
+    background-color: #ffffff !important;
+    font-size: 14px !important;
+    line-height: 26px;
+    color: #242c42;
+    font-weight: 400;
+    a:active,
+    a:hover {
+      @include themify($themes){
+        color: themed('text-cl-hover') !important;
+      }
+      font-weight: 500;
+    }
+    & div {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+  & .menu-lv2 {
+    padding: 15px !important;
+    & .clear-fix{
+      background-color: #f5f5f5 !important;
+    }
+  }
+  & .menu-lv3 {
+    padding: 15px 15px 15px 30px !important;
+  }
+
+  & .active {
+    @include themify($themes){
+      color: themed('text-cl-hover') !important;
+    }
+  }
+  & ul {
+    list-style-type: none;
+  }
+  
+  & .left-sub-menu, & .left-sub-menu .lv1-item {
+    padding: 0 !important;
+  }
+
+  &__active {
+    background-color: #e4e4e4;
+    height: 45px;
+  }
+
+  &__title {
+    width: 100%;
+    height: 16px;
+    color: #242c42;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

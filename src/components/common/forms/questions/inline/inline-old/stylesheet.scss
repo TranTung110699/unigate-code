@@ -1,0 +1,42 @@
+@import 'layouts/theme.scss';
+
+.inline-question {
+  input {
+    &.default-match {
+      @include themify($themes) {
+        background-color: themed('bg-match') !important;
+      }
+    }
+
+    &.default-not-match {
+      @include themify($themes) {
+        background-color: themed('bg-not-match') !important;
+      }
+    }
+  }
+
+  .vocab-input {
+    input {
+      margin-top: 20px;
+    }
+  }
+
+  select {
+    &.default-match {
+      @include themify($themes) {
+        background-color: themed('bg-match') !important;
+      }
+    }
+
+    &.default-not-match {
+      @include themify($themes) {
+        background-color: themed('bg-not-match') !important;
+      }
+    }
+  }
+
+  .inline-text {
+    font-weight: bold;
+    text-align: center;
+  }
+}

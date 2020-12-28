@@ -1,0 +1,56 @@
+.assigned-courses {
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+    &.uppercase {
+      letter-spacing: 6px;
+      margin-right: -6px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  .bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    h4 {
+      margin-top: 0;
+      margin-bottom: 5px !important;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    a:hover {
+      color: #fff;
+      background: #92c36a;
+    }
+  }
+  .bs-callout-primary {
+    border-left-color: #428bca;
+    h4 {
+      color: #292929;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .btn {
+    border: 2px solid #92c36a;
+    padding: 0 26px;
+    height: 40px;
+    min-width: 150px;
+    line-height: 36px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    color: #92c36a;
+    text-align: center;
+  }
+  .padding-b-40 {
+    padding-bottom: 40px;
+  }
+}

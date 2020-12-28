@@ -1,0 +1,48 @@
+@import 'layouts/theme.scss', '../DisplayList/progress-bar.scss',
+  'layouts/_common-style.scss';
+
+.view-more-button-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  .ep-view-more-button {
+    outline: none;
+    background: theme-color();
+    transition: 0.3s;
+    box-sizing: border-box;
+    height: 35px;
+    color: #fff;
+    min-width: 100px;
+    border: {
+      width: 1px;
+      style: solid;
+      color: theme-color();
+      radius: 50px;
+    }
+    font: {
+      weight: 700;
+    }
+    @include center-thing();
+
+    &:hover {
+      background: #fff;
+      color: theme-color();
+      border: 1px solid theme-color();
+    }
+  }
+  @media screen and (max-width: 768px) {
+    justify-content: flex-end;
+  }
+}
+
+.ep-user-avatar {
+  @media screen and (max-width: 768px) {
+    //display: none;
+  }
+}
+
+.ep-progress-bar {
+  @include progressBar();
+}
+
+@include progressBarPercent();

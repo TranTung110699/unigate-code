@@ -1,0 +1,23 @@
+.input-tag-wrapper {
+  .tag-label{
+    color: #B2B2B2;
+    line-height: 36px;
+    font-size: 14px;
+  }
+  .tag-item {
+    margin-bottom: 3px;
+  }
+  .new-tag {
+    background: #fff;
+    border-style: dashed;
+  }
+  .new-tag-disable {
+    background: #f5f5f5;
+    cursor: not-allowed;
+    color: #b2b2b2;
+  }
+  .tag-error {
+    color: #f5222d;
+    font-size: 13px;
+  }
+}

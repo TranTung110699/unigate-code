@@ -1,0 +1,19 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+.timetable-container {
+  .navigation-buttons > button,
+  .filter-button > button,
+  .rbc-month-header,
+  .rbc-date-cell:not(.rbc-off-range) {
+    background: #fff;
+  }
+  .label-date {
+    color: #fff;
+  }
+  .rbc-date-cell.rbc-now.rbc-current {
+    background: $NEW_UI_JULY_2019-background-approved-color;
+    color: #fff;
+  }
+  .rbc-row .rbc-date-cell:not(:first-child) {
+    border-left: 1px solid #ddd;
+  }
+}

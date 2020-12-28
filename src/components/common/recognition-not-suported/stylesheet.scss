@@ -1,0 +1,58 @@
+$recorder-size: 100px;
+.browser-not-supported {
+  .icon-not-supported {
+    background-color: #f3832d;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    font-size: 65px;
+    .center-block-panel {
+      width: 100px;
+      height: 100px;
+      padding-left: 17px;
+    }
+  }
+  .icon-microphone {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 50px;
+    line-height: $recorder-size;
+    display: block;
+    text-align: center;
+    transition: .1s all ease-in;
+    position: relative;
+    cursor: pointer;
+  }
+  .xpeak-icon {
+    font-size: 12pt;
+    line-height: 0;
+    transform: translateY(-23px);
+    opacity: 0.9;
+  }
+  .ui-message-panel {
+    margin-left: 120px;
+    color: #737373;
+    text-align: left;
+    h3 {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .des {
+      text-align: left;
+    }
+    .browser {
+      border-radius: 5px;
+      border: 1.5px solid #f3832d;
+      padding: 3px 10px;
+      margin-top: 10px;
+      a {
+        font-weight: bold;
+        color:#f3832d;
+      }
+      a:hover {
+        color:#f3832d;
+      }
+    }
+  }
+}

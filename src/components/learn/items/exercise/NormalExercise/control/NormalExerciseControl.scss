@@ -1,0 +1,152 @@
+@import 'components/learn/defined.scss';
+@import 'layouts/theme.scss';
+@import 'layouts/styles/common/_mixin.scss';
+.normal-exercise-control {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: #7c7c7c !important;
+  border-top: 1px solid #eeeeee;
+
+  &__groups {
+    height: 80%;
+    margin: 0.2em;
+    display: flex;
+  }
+
+  &__group {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0.2em;
+    display: flex;
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &--active {
+      border-color: #c5e1a5;
+    }
+  }
+
+  &__question {
+    font-size: 0.8em;
+    margin: 0.2em;
+    border-radius: 100px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    cursor: not-allowed;
+
+    &--clickable {
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: #333333;
+      }
+    }
+
+    &--visited {
+      background-color: #bdbdbd;
+      color: #333333;
+    }
+
+    &--active {
+      background-color: #c5e1a5;
+      color: #333333;
+    }
+  }
+
+  &__action {
+    display: flex;
+  }
+
+  &__button {
+    font-size: 14px;
+    margin: 0.2em;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+    min-width: 40px;
+
+    @include themify($themes) {
+      background-color: themed('l-button-nav-bg');
+      color: themed('l-button-nav-cl');
+    }
+
+    &--icon {
+      min-width: 40px;
+    }
+
+    &--text {
+      min-width: 90px;
+    }
+
+    &:hover {
+      i {
+        color: inherit !important;
+      }
+      @include themify($themes) {
+        background-color: themed('l-button-nav-bg-hover-2') !important;
+        color: themed('l-button-nav-cl-hover') !important;
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      @include themify($themes) {
+        color: themed('l-question-button-disable-cl');
+      }
+      &:hover {
+        @include themify($themes) {
+          background-color: themed('l-button-nav-bg') !important;
+          color: themed('l-question-button-disable-cl') !important;
+        }
+      }
+    }
+
+    &:not([disabled]) {
+      &:hover {
+        @include themify($themes) {
+          background-color: themed('l-button-nav-bg-hover');
+          color: themed('l-button-nav-cl-hover-2');
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .normal-exercise-control {
+    display: block;
+    background-color: #fff !important;
+    padding: 15px;
+    &__groups {
+      justify-content: center;
+    }
+    &__action {
+      justify-content: center;
+      .check-button {
+        width: 100%;
+        &.btn-secondary {
+          @media (hover: none) {
+            @include themify($themes) {
+              background-color: themed('l-button-primary-cl') !important;
+              color: themed('l-button-primary-bg') !important;
+            }
+          }
+        }
+      }
+    }
+    .normal-exercise-control-question-groups {
+      /*height: 110px;*/
+      justify-content: center;
+    }
+  }
+}

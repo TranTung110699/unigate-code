@@ -1,0 +1,101 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+@mixin button-color($background, $color: #fff) {
+  div,
+  button {
+    background: $background !important;
+    &:hover {
+      opacity: 0.8;
+    }
+    span,
+    i {
+      color: $color !important;
+    }
+  }
+  button:not([disabled]) {
+    div:hover {
+      background: $background !important;
+    }
+  }
+}
+.NEW_UI_JULY_2019-primary-button {
+  border-radius: 5px !important;
+  input[type='submit'],
+  button[type='submit'] {
+    border-radius: 5px !important;
+  }
+  div,
+  button,
+  a {
+    background: $NEW_UI_JULY_2019-primary-button-color !important;
+    border-radius: 5px !important;
+    min-height: 45px;
+    min-width: 100px;
+    line-height: 45px;
+
+    &:hover {
+      background: $NEW_UI_JULY_2019-primary-button-color !important;
+      border-radius: 5px !important;
+    }
+  }
+  button {
+    font-size: 14px;
+    line-height: 16px !important;
+
+    i,
+    div span {
+      color: #fff;
+    }
+    &[disabled] {
+      &,
+      & * {
+        background: $NEW_UI_JULY_2019-color-gray3 !important;
+        color: rgba(255, 255, 255, 0.8);
+        cursor: not-allowed;
+      }
+    }
+  }
+  &-primary {
+    @include button-color($NEW_UI_JULY_2019-primary-button-color);
+  }
+  &-muted {
+    @include button-color($NEW_UI_JULY_2019-color-gray3);
+  }
+  &-danger {
+    @include button-color($NEW_UI_JULY_2019-text-danger-color);
+  }
+  &-warning {
+    @include button-color($NEW_UI_JULY_2019-primary-text-color);
+  }
+  &-secondary {
+    @include button-color(#fff, $NEW_UI_JULY_2019-primary-button-color);
+  }
+  &-ghost {
+    @include button-color(#fff, $NEW_UI_JULY_2019-primary-button-color);
+    border: 2px solid $NEW_UI_JULY_2019-primary-button-color;
+  }
+  &-flat {
+    @include button-color(none, #000);
+
+    div,
+    button,
+    a {
+      min-width: initial;
+
+      &:hover {
+        background: none !important;
+      }
+    }
+  }
+}
+.ant-button-wrapper {
+  > i.icon + span,
+  > span + i.icon,
+  > i.mi + span,
+  > span + i.mi {
+    margin-left: 8px;
+  }
+  i.icon,
+  i.mi {
+    vertical-align: -0.125em;
+  }
+}

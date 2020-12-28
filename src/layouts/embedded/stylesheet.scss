@@ -1,0 +1,18 @@
+@import "../../configs/css-configuration.scss";
+
+html, body {
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-size: 11pt !important;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.embedded-layout {
+  padding: auto!important;
+  line-height: 20px!important;
+  font-family: Times New Roman;
+  font-size: 12pt;
+}

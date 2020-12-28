@@ -1,0 +1,47 @@
+.dashboard{
+  width: 100%;
+  background: #fff;
+  padding: 96px 0 0;
+}
+.bs-callout-success h4{
+  text-transform: uppercase;
+}
+
+h3.dashboard-header {
+  letter-spacing: 10px !important;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+
+.progress-bar .title{
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.dashboard-background {
+  &::before {
+    background: #000000;
+    opacity: 0.4;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 445px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  h2 {
+    letter-spacing: 10px;
+    margin-right: -10px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    color: white;
+  }
+}

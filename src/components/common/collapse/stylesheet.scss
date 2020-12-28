@@ -1,0 +1,13 @@
+.collapse {
+  .collapse-item {
+    background-color: rgb(245, 245, 245) !important;
+    margin: 10px 0 10px 0 !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  }
+  .collapse-item.active {
+    border-bottom: 2px solid rgb(0, 188, 212) !important;
+  }
+  .collapse-item-default > div {
+    display: none !important;
+  }
+}

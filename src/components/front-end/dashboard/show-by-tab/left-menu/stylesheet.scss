@@ -1,0 +1,152 @@
+@import '../../../../../layouts/theme.scss';
+
+$backgroundColor: #fff;
+$menuLv1BackgroundColor: #e4e4e4;
+$menuisomorphiclv1Background: #2d3446;
+$menuisomorphiclv2Background: #1f2431;
+$textisomorphicColor: #788195;
+.dashboard-menu {
+  background-color: $backgroundColor;
+
+  margin-bottom: 30px;
+
+  @mixin handleSubMenuActive() {
+    a {
+      @include themify($themes) {
+        color: themed('text-cl-hover');
+      }
+      font-weight: bold;
+    }
+  }
+
+  .menu-lv1 {
+    background-color: $menuLv1BackgroundColor;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    .sub-menu-link {
+      width: 100%;
+      margin-bottom: 3px;
+      &:active {
+        @include handleSubMenuActive();
+      }
+    }
+
+    li {
+      color: #242c42;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      display: block;
+      padding: 12px 26px;
+      a {
+        color: #666;
+      }
+      &.sub-menu {
+        a {
+          color: #888;
+        }
+        a:hover {
+          @include themify($themes) {
+            color: themed('text-cl-hover');
+          }
+        }
+      }
+      &.active {
+        @include handleSubMenuActive();
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .dashboard-menu {
+    width: 100%;
+  }
+}
+.ant-dashboard-menu {
+  .ant-menu-item-lv1 {
+    &,
+    & > a {
+      //background-color: $menuLv1BackgroundColor!important;
+      @include themify($themes) {
+        color: themed('sco-text-color');
+      }
+      font-weight: 700;
+    }
+    border-bottom: 1px solid #eee;
+    @include themify($themes) {
+      background-color: themed('sco-background-color');
+    }
+    .ant-menu-submenu-title {
+      border-bottom: 1px solid #eee;
+      margin-top: 0;
+      margin-bottom: 0;
+      @include themify($themes) {
+        background-color: themed('sco-background-color');
+      }
+      &:hover {
+        @include themify($themes) {
+          color: themed('active-color');
+          background-color: themed('sco-background-color--hover');
+        }
+      }
+    }
+  }
+  .ant-menu-item-selected {
+    .sub-menu-link {
+      @include themify($themes) {
+        color: themed('active-color');
+      }
+    }
+    &:after {
+      @include themify($themes) {
+        border-right-color: themed('active-color');
+      }
+    }
+    @include themify($themes) {
+      background-color: themed('active-item-background-color');
+    }
+  }
+  .ant-menu-item {
+    font-weight: initial;
+    margin-top: 0;
+    a {
+      &:hover {
+        @include themify($themes) {
+          color: themed('active-color');
+        }
+      }
+    }
+  }
+}
+//
+// .ant-dashboard-menu {
+//  .ant-menu-item-lv1 {
+//    &,
+//    & > a {
+//      background: $menuisomorphiclv1Background;
+//      color: $textisomorphicColor;
+//    }
+//  }
+//  .ant-menu-submenu-title {
+//    margin-bottom: 0 !important;
+//    margin-top: 0 !important;
+//  }
+//  .ant-menu-item {
+//    margin-top: 0 !important;
+//    margin-bottom: 0 !important;
+//    & > a {
+//      color: $textisomorphicColor;
+//    }
+//    &:not(.ant-menu-item-lv1) {
+//      background: $menuisomorphiclv2Background;
+//    }
+//    &.ant-menu-item-selected {
+//      &,
+//      & > a {
+//        color: $textisomorphicColor;
+//      }
+//    }
+//  }
+//}

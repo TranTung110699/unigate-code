@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600");
+
+/*ETEC AND UMS Fonts*/
+@font-face {
+  font-family: 'UTM_Helve';
+  src: url('./fonts/UTM_Helve.ttf');
+}
+@font-face {
+  font-family: 'UTM_HelveBold';
+  src: url('./fonts/UTM_HelveBold.ttf');
+}
+@font-face {
+  font-family: 'UTM_HelveBold_Italic';
+  src: url('./fonts/UTM_HelveBold_Italic.ttf');
+}
+@font-face {
+  font-family: 'UTM_Helve_Italic';
+  src: url('./fonts/UTM_Helve_Italic.ttf');
+}
+
+/*GGG Fonts*/
+@font-face {
+  font-family: 'SFUI-Text';
+  src: url("./fonts/SF-UI-Text-Regular.otf"); }
+
+@font-face {
+  font-family: 'SFUI-Text-bold';
+  src: url("./fonts/SF-UI-Text-Bold.otf"); }
+
+@font-face {
+  font-family: 'SFUI-Text-light';
+  src: url("./fonts/SF-UI-Text-Light.otf"); }
+
+@font-face {
+  font-family: 'SFUI-Text-italic';
+  src: url("./fonts/SF-UI-Text-Italic.otf"); }
+
+@font-face {
+  font-family: 'SFUI-Text-thin';
+  src: url("./fonts/SF-UI-Display-Thin.otf"); }
+
+/*XPEAK Fonts*/
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lato-bold';
+  src: url('./fonts/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: 'Lato-light';
+  src: url('./fonts/Lato-Light.ttf');
+}
+@font-face {
+  font-family: 'Lato-italic';
+  src: url('./fonts/Lato-Italic.ttf');
+}
+
+/*JAPAN Fonts*/
+
+@font-face {
+  font-family: 'Ms-Pgothic';
+  src: url('./fonts/Ms-Pgothic.ttf');
+}
+
+.vieted-footer {
+  font-family: Roboto, sans-serif;
+}
+
+.jp-language-font {
+  font-family: Ms-Pgothic !important;
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Ms-Pgothic !important;
+    margin-bottom: 24px;
+    margin-top: 0;
+    padding: 0;
+    letter-spacing: 0;
+  }
+}

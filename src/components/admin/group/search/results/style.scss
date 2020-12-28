@@ -1,0 +1,22 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+.group-result {
+  &-item {
+    min-height: 60px;
+    background: #ffffff;
+    *:not(i):not(.ant-avatar) {
+      font-family: 'Roboto', sans-serif;
+      color: $NEW_UI_JULY_2019-text-muted-color;
+    }
+    &__number {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &:hover {
+      background: #69acfa;
+
+      * {
+        color: #ffffff !important;
+      }
+    }
+  }
+}

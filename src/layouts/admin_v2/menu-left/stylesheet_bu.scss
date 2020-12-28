@@ -1,0 +1,142 @@
+@import "../../theme.scss";
+
+$left-menu-color: #fff; // rftm
+$color: #000; // rftm
+.ui-admin-left-menu-panel {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &.ant-layout-sider {
+    // background: $left-menu-color !important;
+    border-right: 1px dotted #cccccc;
+    @include themify($themes){
+      background: themed('a-bg-cl') !important;
+    }
+  }
+  .ant-menu-inline {
+
+  }
+  .ant-menu-sub.ant-menu-inline {
+    @include themify($themes) {
+      background: themed('a-bg-cl');
+    }
+  }
+  .ant-menu-sub.ant-menu-inline {
+    > .ant-menu-item {
+      @include themify($themes) {
+        background: themed('a-bg-cl');
+      }
+      color: $color;
+
+      &:hover {
+        opacity: 0.9;
+        @include themify($themes) {
+          background: themed('li-bg-hover');
+          color: themed('li-cl-hover');
+        }
+      }
+    }
+
+    > .ant-menu-item:after {
+      @include themify($themes) {
+        border-right: 3px solid themed('li-cl-selected');
+      }
+    }
+
+    > .ant-menu-item-selected {
+      @include themify($themes) {
+        background: themed('li-bg-selected');
+        color: themed('li-cl-selected');
+      }
+    }
+  }
+
+  .ant-menu-item:active, .ant-menu-submenu-title:active {
+    // background-color: #c4261c20 !important;
+    @include themify($themes) {
+      background: themed('li-bg-selected');
+      color: themed('li-cl-selected');
+    }
+    font-weight: bold;
+  }
+
+  .ui-admin-left-menu {
+    background: $left-menu-color;
+    border: none;
+    color: $color;
+    opacity: 0.8;
+
+    .ant-menu-submenu-title:hover {
+      @include themify($themes) {
+        color: themed('li-cl-hover');
+      }
+    }
+
+    .ant-menu-submenu-active {
+      @include themify($themes) {
+        color: themed('li-cl-selected');
+      }
+
+      .ant-menu-submenu-arrow {
+        &:before {
+          @include themify($themes) {
+            background: themed('li-cl-selected');
+          }
+        }
+        &:after {
+          @include themify($themes) {
+            background: themed('li-cl-selected');
+          }
+        }
+      }
+    }
+
+    .ant-menu-submenu-selected {
+      @include themify($themes) {
+        color: themed('li-cl-selected');
+      }
+
+      .ant-menu-submenu-arrow {
+        &:before {
+          @include themify($themes) {
+            background: themed('li-cl-selected');
+          }
+        }
+        &:after {
+          @include themify($themes) {
+            background: themed('li-cl-selected');
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-menu-submenu-popup {
+  .ant-menu-item {
+    @include themify($themes) {
+      background: themed('a-bg-cl');
+    }
+
+    &:hover {
+      opacity: 0.9;
+      @include themify($themes) {
+        background: themed('li-bg-hover');
+        color: themed('li-cl-hover');
+      }
+    }
+  }
+
+  .ant-menu-item:after {
+    @include themify($themes) {
+      border-right: 3px solid themed('li-cl-selected');
+    }
+  }
+
+  .ant-menu-item-selected {
+    @include themify($themes) {
+      background: themed('li-bg-selected') !important;
+      color: themed('li-cl-selected');
+    }
+  }
+}

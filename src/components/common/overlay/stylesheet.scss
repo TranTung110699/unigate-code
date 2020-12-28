@@ -1,0 +1,23 @@
+.common-overlay-component {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__overlay {
+    z-index: 99;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+//@media screen and (min-width: 768px) {
+//  #learn-screen-container {
+//    .common-overlay-component {
+//      &__wrapper {
+//        width: 80%;
+//      }
+//    }
+//  }
+//}

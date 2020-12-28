@@ -1,0 +1,98 @@
+$color: #FFFFFF;
+$color-primary: #1d89e3;
+$color-hover: #fc8006;
+
+.vieted-home-page-intro {
+  font-weight: 200;
+  color: $color;
+
+  &__title {
+    font-size: 44px;
+  }
+
+  &__content {
+    font-size: 14px;
+    padding-bottom: 10px;
+    max-width: 470px;
+  }
+
+  &__mail {
+    label {
+      font-weight: 300;
+    }
+  }
+
+  &__inputs {
+    margin-bottom: 26px;
+  }
+
+  &__button {
+    text-align: center;
+    color: $color;
+    outline: none;
+    font-size: 12px;
+    background-color: $color-primary;
+    border: solid 1px $color-primary;
+    padding: 12px;
+    width: 180px;
+    margin-right: 30px;
+    margin-bottom: 27px;
+    font-weight: 400;
+
+    &:hover {
+      background-color: $color-hover;
+      border: solid 1px $color-hover;
+    }
+  }
+
+  a {
+    &:hover {
+      color: white;
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .vieted-home-page-intro {
+    &__title {
+      font-size: 19px;
+      margin-bottom: -4px;
+    }
+
+    &__content {
+      font-size: 9px;
+      line-height: 10px;
+      max-width: 195px;
+    }
+
+    &__mail {
+      max-width: 200px !important;
+      height: 50px !important;
+
+      label {
+        font-size: 12px !important;
+        top: 19px !important;
+        font-weight: 300;
+      }
+
+      input {
+        margin-top: 4px !important;
+        font-size: 12px !important;
+      }
+    }
+
+    &__button {
+      font-size: 9px;
+      width: 112px;
+      padding: 2px;
+      display: block;
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+
+    &__inputs {
+      margin-bottom: 11px;
+    }
+  }
+}

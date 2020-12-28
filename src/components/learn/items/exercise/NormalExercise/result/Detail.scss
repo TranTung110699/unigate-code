@@ -1,0 +1,56 @@
+.normal-exercise-result-detail {
+  &__main {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+  }
+
+  td, th {
+    border: solid 1px #FFFFFF;
+    padding: 0 10px;
+  }
+
+  &__title {
+    th, td {
+      text-align: left;
+    }
+  }
+
+  &__question-result {
+    &--correct {
+      color: rgba(146, 195, 106, 0.85);
+    }
+    &--wrong {
+      color: rgba(217, 83, 79, 0.85);
+    }
+  }
+
+  &__content-wrapper {
+    padding-bottom: 20px;
+  }
+
+  &__content-thumb-horizontal {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+  }
+
+  &__action {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #92c36a;
+
+    &:hover {
+      color: #c4dfaf;
+    }
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &__message {
+    color: #FFFFFF;
+  }
+}

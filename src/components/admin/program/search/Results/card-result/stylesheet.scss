@@ -1,0 +1,274 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+
+@mixin approved-hover {
+  .program-result-item {
+    .text-status,
+    .text-center,
+    &__title *,
+    &__time,
+    .text-number,
+    &__author,
+    &__number,
+    &__code {
+      color: #ffffff !important;
+    }
+  }
+
+  .text-status,
+  .text-secondary,
+  .btn-action svg {
+    color: #ffffff !important;
+  }
+}
+
+.text-success {
+  color: green;
+}
+
+.text-info {
+  color: #3b7bbe;
+}
+
+.text-danger {
+  color: #e2211b;
+}
+
+
+.text-queued {
+  color: #856404;
+}
+
+.text-warning {
+  color: #fc8006;
+}
+
+.text-secondary {
+  color: $NEW_UI_JULY_2019-text-muted-color;
+}
+
+.text-number {
+  font-size: 16px;
+}
+
+.NEW_UI_JULY_2019-program-result-render {
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .btn-action {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 28px;
+  }
+
+  .ui-admin-layout .ant-menu-horizontal {
+    margin-top: 60px;
+  }
+
+  .result-actions {
+    justify-content: flex-end;
+  }
+
+  .ant-card {
+    border-radius: 5px !important;
+  }
+
+  .program-result {
+    &-item {
+      &__author,
+      &__time,
+      &__info {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &__title {
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        color: $NEW_UI_JULY_2019-text-muted-color;
+        font-size: 16px;
+        a {
+          color: $NEW_UI_JULY_2019-text-muted-color;
+        }
+      }
+      &__code {
+        font: {
+          size: 12px;
+          style: italic;
+        }
+      }
+      &__author,
+      &__time {
+        color: $NEW_UI_JULY_2019-color-gray3;
+
+        span {
+          &:after {
+            content: ', ';
+          }
+
+          &:last-child:after {
+            content: '';
+          }
+        }
+      }
+
+      &__author {
+        text-transform: capitalize;
+      }
+
+      &-flex {
+        .ant-card-body {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .ant-card,
+      &.ant-card {
+        border-radius: 5px;
+        margin-top: 30px !important;
+
+        &-cover {
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+
+        &-body {
+          padding: 12px;
+        }
+
+        &:hover {
+          border-color: $NEW_UI_JULY_2019-background-approved-color;
+        }
+      }
+
+      &-header {
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+
+        &__list {
+          width: 90%;
+          height: 100px;
+          border-radius: 5px;
+        }
+
+        &__card {
+          width: 100%;
+          height: 150px;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+      }
+
+      &__thumb-view:hover {
+        .ant-card-body {
+          border-top-right-radius: initial;
+          border-top-left-radius: initial;
+          cursor: initial;
+        }
+      }
+
+      .ant-dropdown-link {
+        font-size: 20px;
+      }
+
+      &__queued:hover {
+        .ant-card:hover {
+          border-color: $NEW_UI_JULY_2019-background-queued-color;
+          color: inherit !important;
+          background: $NEW_UI_JULY_2019-background-queued-color;
+
+          &-body:hover {
+            background: $NEW_UI_JULY_2019-background-queued-color !important;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+
+    &-item__content,
+    &-item__content &-item__thumb-view {
+      .ant-card-body:hover {
+        background: #69acfa;
+        color: #ffffff !important;
+        border-radius: 5px;
+        @include approved-hover;
+      }
+    }
+
+    &-item__thumb-view {
+      .ant-card-body {
+        padding: 20px;
+
+        &:hover {
+          border-top-right-radius: unset;
+          border-top-left-radius: unset;
+        }
+      }
+
+      .btn-action {
+        margin-right: -10px;
+      }
+      &.program-result-item__queued:hover {
+        color: inherit !important;
+        background: $NEW_UI_JULY_2019-background-queued-color;
+      }
+      &.program-result-item__content:hover {
+        background: $NEW_UI_JULY_2019-background-approved-color;
+        @include approved-hover;
+      }
+    }
+
+    .ant-card {
+      margin-top: 20px;
+
+      .program-info {
+        font-size: 1.5em;
+
+        i.anticon-team {
+          color: #0b93d5;
+        }
+      }
+
+      .ant-card-actions {
+        li {
+          width: 70% !important;
+
+          &:last-child {
+            width: 30% !important;
+          }
+
+          &:first-child > span {
+            cursor: initial;
+          }
+        }
+      }
+    }
+  }
+
+  .button-clone {
+    text-align: center;
+    font-size: 16px;
+    margin-left: 30px;
+  }
+
+  .edit-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .delete-button {
+    width: 100%;
+    color: red;
+    font-size: 16px;
+  }
+
+  .bg-white {
+    background-color: #fff !important;
+  }
+}

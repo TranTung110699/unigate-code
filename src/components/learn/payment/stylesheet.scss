@@ -1,0 +1,125 @@
+.learn-payment {
+  text-align: center;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  background-color: #FFFFFF;
+  min-height: 100%;
+
+  /* 5 Columns */
+  .col-xs-15,
+  .col-sm-15,
+  .col-md-15,
+  .col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .col-xs-15 {
+    width: 20%;
+    float: left;
+  }
+  @media (min-width: 768px) {
+    .col-sm-15 {
+      width: 20%;
+      float: left;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-md-15 {
+      width: 20%;
+      float: left;
+    }
+  }
+  @media (min-width: 1200px) {
+    .col-lg-15 {
+      width: 20%;
+      float: left;
+    }
+  }
+
+  &__title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  &__buy-button {
+    margin-top: .5em;
+    padding: .5em;
+    background-color: #EA6A53;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.learn-payment-item-preview {
+  box-shadow: 0px 0px 15px 2px #bdc3c7;
+  margin-bottom: 1.5em;
+  height: 150px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+
+  &__avatar {
+    width: auto;
+    height: 40%;
+  }
+
+  &__name {
+    height: 30%;
+    margin-bottom: .25em;
+
+    &--selected {
+      color: #ffffff;
+    }
+  }
+
+  &__price {
+    font-size: 1.2em;
+    color: #ea6a24;
+
+    &--selected {
+      color: #ffffff;
+    }
+  }
+
+  &--selected {
+    background-color: #92c36a;
+  }
+
+}
+
+.payment-confirm {
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__section-title {
+    font-weight: bold;
+  }
+
+  &__section-content {
+  }
+
+  &__add-money {
+    margin-top: 2em;
+    border-top: dotted 1px;
+  }
+
+  &__add-money-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+
+  &__button {
+    margin: .5em;
+  }
+}

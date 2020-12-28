@@ -1,0 +1,145 @@
+.matching-pair-question {
+  display: flex;
+  justify-content: space-between;
+
+  &__fixed {
+    width: 40%;
+    padding: 10px;
+  }
+
+  &__moved {
+    width: 40%;
+    padding: 10px;
+  }
+
+  &__item {
+    margin: 20px 0;
+    height: 100px;
+  }
+
+  &__key-table {
+    width: 100%;
+    th, td  {
+      border: 1px solid #e7e7e7;
+      padding: 5px !important;
+    }
+  }
+
+  &__key-tb-cell-content {
+    display: flex;
+  }
+
+  &__key-tb-cell-content-main {
+    flex-grow: 1;
+    padding: 0 5px;
+  }
+
+  &__key-tb-cell-content-avatar {
+    width: 150px;
+  }
+}
+
+.matching-pair-question-fixed-item {
+  $border: solid 1px rgba(0, 0, 0, 0.03);
+  border-top: $border;
+  border-bottom: $border;
+  border-left: $border;
+
+  display: flex;
+
+  &__avatar {
+    height: 100%;
+    width: 150px;
+
+    img {
+    }
+  }
+
+  &__content-text {
+    padding: 5px;
+    flex-grow: 1;
+  }
+
+  &__main {
+    box-shadow: rgba(0, 0, 0, 0.12) -4px 1px 6px,
+    rgba(0, 0, 0, 0.12) -3px 1px 4px;
+    padding-right: 25px;
+    flex-grow: 1;
+  }
+
+  &__content {
+    background: white;
+    height: 100%;
+    display: flex;
+  }
+
+  &__curved-edge {
+    height: 100%;
+    width: 0;
+
+    img {
+      pointer-events: none;
+      height: 100%;
+      width: 50px;
+      max-width: 50px;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.matching-pair-question-movable-item {
+  cursor: pointer;
+  $border: solid 1px rgba(0, 0, 0, 0.03);
+  border-top: $border;
+  border-bottom: $border;
+  border-right: $border;
+
+  display: flex;
+  z-index: 2;
+
+  &--dragging {
+    z-index: 10000;
+    position: relative;
+  }
+
+  &__avatar {
+    height: 100%;
+    width: 150px;
+
+    img {
+      pointer-events: none;
+    }
+  }
+
+  &__content-text {
+    padding: 5px;
+    flex-grow: 1;
+  }
+
+  &__main {
+    box-shadow: rgba(0, 0, 0, 0.12) 9px 1px 6px, rgba(0, 0, 0, 0.12) 3px 1px 4px;
+    padding: 0 0 0 25px;
+    flex-grow: 1;
+  }
+
+  &__content {
+    background: white;
+    height: 100%;
+    display: flex;
+  }
+
+  &__curved-edge {
+    height: 100%;
+    width: 0;
+
+    img {
+      pointer-events: none;
+      z-index: 3;
+      height: 100%;
+      width: 50px;
+      max-width: 50px;
+      transform: translateX(-50%);
+    }
+  }
+}
+

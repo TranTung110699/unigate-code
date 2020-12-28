@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto');*/
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none !important;
+  outline: none;
+}
+
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .home-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.menu-top {
+  .nav-link {
+    & .active,
+    & :hover {
+      color: #e2ba40 !important;
+    }
+  }
+}
+
+.evn-layout {
+  background: #fff;
+  &__header {
+    padding: 0 195px;
+  }
+
+  &__footer {
+    padding: 0 195px;
+  }
+
+  & .ggg-dashboard-wrapper {
+    min-height: unset;
+    & .container {
+      padding: 0 20px;
+      margin: 0 auto;
+      max-width: 1300px;
+      width: 100%;
+      & .row {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.gj-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

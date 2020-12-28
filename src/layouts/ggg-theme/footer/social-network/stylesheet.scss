@@ -1,0 +1,88 @@
+.social-network {
+  height: 105px;
+  width: 100%;
+  background: #E4E3E4;
+  padding: 40px 0;
+  a {
+    margin-right: 20px;
+  }
+  p {
+    float: left;
+    margin: 0 30px 0 0;
+    color: #493530;
+    font-size: 16px;
+  }
+  input {
+    float: left;
+    padding: 9px 10px;
+    color: #493530;
+    font-size: 16px;
+    background: #fff;
+    border: none;
+    margin-top: -5px;
+    width: 240px;
+    margin-right: 10px;
+  }
+  button {
+    float: left;
+    color: #fff;
+    border: none;
+    background: #000;
+    padding: 9px 50px;
+    margin-top: -4px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .social-network {
+    p {
+      margin: 0 10px 0 0;
+    }
+    input {
+      width: 186px;
+    }
+    button {
+      padding: 12px 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .social-network {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .social-network {
+    height: auto;
+    .social {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-network {
+    height: auto;
+    p {
+      margin: 10px 0px;
+      width: 100%;
+    }
+    button {
+      padding: 9px 32px;
+    }
+    input {
+      width: 50%;
+      float: left;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .social-network {
+    button {
+      padding: 9px 22px;
+    }
+  }
+}

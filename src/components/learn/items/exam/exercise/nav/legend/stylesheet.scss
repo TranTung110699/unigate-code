@@ -1,0 +1,22 @@
+.learn-exercise-exam-nav-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8px;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__item {
+    padding: 1px;
+  }
+}
+
+.learn-exercise-exam-nav .learn-exercise-exam-nav-legend .normal-exercise-control-question-groups__question {
+  width: 52px;
+  height: 32px;
+  cursor: auto;
+  font-size: 14px;
+  color: #FFFFFF;
+}

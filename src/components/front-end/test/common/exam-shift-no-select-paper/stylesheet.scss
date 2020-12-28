@@ -1,0 +1,120 @@
+.etec-exam-shift-no-select-paper {
+  &__title-section {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__title-separator {
+    max-width: 419px;
+    border: 1px solid #95989a;
+  }
+
+  &__title-separator-icon {
+    transform: translate(0, -36px);
+    background-color: #FFFFFF;
+    padding: 0 13px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #95989a;
+  }
+
+
+  &__body-section {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__body-overview {
+    color: #242C42;
+  }
+
+  &__body-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__body-list-bullet {
+    color: green;
+    font-weight: 700;
+  }
+
+  &__body-table {
+    color: #242C42;
+  }
+
+  &__body-table-thead {
+    border: solid 1px #FFFFFF;
+  }
+
+  &__body-table-th {
+    font-size: inherit;
+    font-weight: inherit;
+    min-width: 80px;
+    padding: 11px;
+
+    &--1 {
+      width: 17%;
+    }
+
+    &--2 {
+      width: 13%;
+    }
+
+    &--3 {
+      width: 34%;
+    }
+
+    &--4 {
+      width: 13%;
+    }
+
+    &--5 {
+      width: 13%;
+    }
+
+  }
+
+  &__body-table-row {
+    &--first {
+      background-color: #242C42;
+      color: white;
+    }
+
+    &--last {
+      background-color: #dedede;
+    }
+  }
+
+  &__body-table-td{
+    padding: 11px;
+    border-top: solid 1px #FFFFFF;
+    border-bottom: solid 1px #cbcbcb;
+
+    &--before-last {
+      border: none;
+    }
+
+    &--left {
+      border: solid 1px #FFFFFF;
+      background-color: #575F74;
+      color: white;
+    }
+
+    &--right {
+      border: solid 1px #FFFFFF;
+      background-color: #ededed;
+      color: #242C42;
+    }
+  }
+
+  &__action-section {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+}

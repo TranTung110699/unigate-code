@@ -1,0 +1,73 @@
+.admin-course-score-normal-result {
+  $borderStyle: 1px solid rgb(224, 224, 224);
+
+  td {
+    border-left: $borderStyle;
+    border-right: $borderStyle;
+    border-bottom: $borderStyle;
+  }
+
+  th {
+    border-left: $borderStyle;
+    border-right: $borderStyle;
+    border-top: $borderStyle;
+  }
+
+  &__td-student-info {
+    padding: 10px;
+  }
+
+  &__graduated-label {
+    font-weight: 500;
+    padding: 0 10px;
+
+    &--passed {
+      color: green;
+    }
+    &--failed {
+      color: red;
+    }
+  }
+  &__td-score{
+    text-transform: uppercase;
+  }
+  
+  &__edit-allowed-to-test {
+    cursor: pointer;
+    border-bottom: 1px dashed #0088cc;
+  }
+
+  &__resit-score-list {
+    padding: 0;
+  }
+  &__resit-score {
+    display: flex;
+    padding: 5px 0;
+    border-bottom: solid 1px rgb(224, 224, 224);
+  }
+  &__resit-score-nth {
+    padding-right: 10px;
+    min-width: 60px;
+  }
+  .div-answer{
+    display: flex;
+    cursor: pointer;
+    margin-left: 20px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    &:hover{
+      color: #92c36a;
+    }
+  }
+  .marking-rubric-container{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .download-pmd{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.admin-course-offline-exam-marking {
+
+  &__popover-content {
+    min-width: 300px;
+    padding: 10px;
+  }
+
+  &__actions {
+    text-align: center;
+  }
+
+  &__edit-area {
+    text-align: center;
+  }
+
+  &__edit-button {
+    border: none;
+    background: transparent;
+
+    min-width: 20px;
+    border-bottom: 1px dashed #0088cc;
+    outline: none;
+    cursor: pointer;
+  }
+}

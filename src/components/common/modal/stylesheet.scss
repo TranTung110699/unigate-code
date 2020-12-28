@@ -1,0 +1,99 @@
+@import '../../../configs/css-configuration.scss';
+
+.modal_dialog {
+  max-height: 90% !important;
+  height: auto;
+  > div {
+    width: 100%;
+  }
+  .dialog-content {
+    height: 100% !important;
+    min-height: initial !important;
+    margin-top: 60px !important;
+    > div:first-child {
+      background: #f0f2f5 !important;
+    }
+    & > div > div {
+      margin-top: 1px !important;
+    }
+  }
+}
+
+.hashbang-dialog {
+  .dialog-content {
+    margin-top: 0px !important;
+  }
+}
+
+.no-header-dialog {
+  .close-popup {
+    position: absolute;
+    right: -12px;
+    top: -15px;
+    font-size: 20px;
+    border: 1px solid #505050;
+    border-radius: 50%;
+    width: 31px;
+    text-align: center;
+    background: #505050;
+    opacity: 1.8;
+    color: $white;
+    cursor: pointer;
+    padding: 2px 0 0 3px;
+    i {
+      cursor: pointer;
+    }
+  }
+
+  .close-modal {
+    background-color: white !important;
+    width: 30px !important;
+    height: 30px !important;
+    border: none !important;
+    border-radius: 22px;
+    padding: 0 !important;
+    z-index: 100;
+    .close-icon {
+      width: 24px !important;
+      height: 24px !important;
+      padding-top: 2px !important;
+    }
+  }
+}
+
+.modal_dialog_ant {
+  &--default-width {
+    width: 75% !important;
+    max-width: 768px !important;
+  }
+
+  .ant-modal-title {
+    font-size: 22px;
+  }
+
+  .ant-modal-body {
+    max-height: 714px;
+    overflow: auto;
+  }
+}
+
+.modal_dialog_ant.light-background-dialog {
+  .ant-modal-content,
+  .ant-modal-header,
+  .ant-modal-body {
+    background: #f2f2f2;
+  }
+}
+
+.hashbang-dialog-ant {
+  top: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+
+  .ant-modal-content {
+    height: 100vh;
+    .ant-modal-body {
+      max-height: 100vh;
+    }
+  }
+}

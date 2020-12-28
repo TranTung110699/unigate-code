@@ -1,0 +1,29 @@
+.displayed-avatar-wrapper {
+  margin: 50px;
+}
+
+.edit-avatar-wrapper {
+  .avatar-editor-box {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    background-color: #EFEBE9;
+  }
+
+  .avatar-editor-action {
+    margin: 10px 30px 0px 30px;
+  }
+
+  .text-center {
+    text-align: center;
+    canvas {
+      margin-top: 20px;
+    }
+    .avatar-editor-preview {
+      margin-top: 20px;
+      padding: 30px;
+    }
+  }
+}

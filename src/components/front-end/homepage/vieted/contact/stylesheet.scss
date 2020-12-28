@@ -1,0 +1,66 @@
+.vieted-home-page-contact {
+  background: url(./resources/background.jpg);
+  padding-top: 60px;
+  padding-bottom: 27px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+
+  &__content-group {
+    padding-left: 0;
+    padding-right: 0;
+    input {
+      font-weight: 400 !important;
+      -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    }
+  }
+
+  &__content-image-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--portrait {
+      display: block;
+    }
+
+    &--landscape {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .vieted-home-page-contact {
+    &__content-image {
+      &--portrait {
+        display: none;
+      }
+      &--landscape {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .vieted-home-page-contact {
+    padding-top: 28px;
+    padding-bottom: 15px;
+
+    &__content {
+      border-radius: 3px;
+    }
+  }
+}

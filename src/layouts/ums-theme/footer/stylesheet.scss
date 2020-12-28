@@ -1,0 +1,109 @@
+.ums-footer-wrapper {
+  hr {
+    margin: 0px;
+  }
+  .default-footer{
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0 30px 0;
+    margin: 0 auto;
+  }
+  .footer-wrapper {
+    padding: 40px 0 30px 0;
+    background-color: #001c33;
+    .footer-info-wrapper {
+      .footer-logo {
+
+      }
+      .about-desc {
+        p {
+          color: #DDD;
+          font-size: 14px;
+        }
+      }
+      .socials-wrapper {
+        padding: 0;
+        margin: 15px 0 0;
+        letter-spacing: 0;
+        list-style: none;
+        overflow-y: auto;
+        li {
+          float: left;
+          padding-right: 15px;
+          &:first-child {
+            padding-top: 0;
+          }
+          a {
+            color: #959595;
+            display: inline-block;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 2px 0;
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            cursor: pointer;
+            &:hover {
+              color: #b62127;
+            }
+          }
+        }
+      }
+    }
+    .fast-links-wrapper {
+      padding-left: 60px;
+      .fast-links-menu {
+        margin-top: 10px;
+        padding: 0;
+        .fast-link-item {
+          list-style: square;
+          list-style-position: inside;
+          padding: 5px 20px;
+          color: white;
+          a {
+            color: #959595;
+            display: inline-block;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 2px 0;
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            &:hover {
+              color: #b62127;
+            }
+          }
+        }
+      }
+    }
+    .footer-title {
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 0px 0 30px;
+    }
+  }
+  .copyright-wrapper {
+    background-color: #232731;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    a {
+      color: #e23b46;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ums-footer-wrapper {
+    .footer-wrapper {
+      .fast-links-wrapper {
+        padding-left: 0;
+      }
+    }
+  }
+}

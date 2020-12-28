@@ -1,0 +1,25 @@
+.ui-upload-media {
+  position: relative;
+  .mi-file-upload {
+    cursor: pointer;
+    transform: translate3d(-14px, 0px, 0px);
+  }
+  i.icon-upload {
+    z-index: 8;
+    position: absolute;
+    color: #00bcd4;
+    right: -15px;
+    top: 40px;
+    cursor: pointer;
+    font-size: 24px !important;
+  }
+  i.icon-download {
+    z-index: 8;
+    position: absolute;
+    color: #00bcd4;
+    right: 25px;
+    top: 40px;
+    cursor: pointer;
+    font-size: 24px !important;
+  }
+}

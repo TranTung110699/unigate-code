@@ -1,0 +1,9 @@
+var APP_SERVER_API_URL = 'https://elearning-api.seabank.com.vn';
+var APP_MEDIA_SERVER_URL = 'https://elearning-api.seabank.com.vn';
+var APP_USER_LOCAL_STORAGE_KEY = 'user';
+var APP_FB_APP_ID = 1158087994254227;
+var APP_THEME = 'sb';
+var APP_TITLE = 'HVSB Elearning';
+var APP_SCHOOL = 've';
+var APP_STATIC_CDN = 'https://elearning-statics.seabank.com.vn';
+var APP_ASSETS_CDN = 'https://elearning.seabank.com.vn/assets/';

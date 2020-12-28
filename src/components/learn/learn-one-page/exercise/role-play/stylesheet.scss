@@ -1,0 +1,45 @@
+$learnOnePageRolePlayHeight: 550px;
+
+.learn-one-page-role-play {
+  text-align: justify;
+  margin-bottom: 1em;
+  position: relative;
+
+  &__score {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+
+  .role-play-exercise {
+    height: $learnOnePageRolePlayHeight;
+  }
+
+  .role-play-sentences__sentence {
+    margin-bottom: 1em;
+  }
+
+  .role-play-main {
+    &__popup {
+      left: 0;
+      right: 0;
+    }
+
+    &__display {
+      height: 79%;
+    }
+
+    &__control {
+      height: 21%;
+    }
+  }
+
+  .role-play-pop-up {
+    &__close-area {
+      height: 45%;
+    }
+
+    &__visible {
+      height: 55%;
+    }
+  }
+}

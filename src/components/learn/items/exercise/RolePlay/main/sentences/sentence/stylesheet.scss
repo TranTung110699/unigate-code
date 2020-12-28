@@ -1,0 +1,52 @@
+.role-play-sentence {
+  display: flex;
+
+  &--right {
+    flex-direction: row-reverse;
+
+    .role-play-sentence__character {
+      margin-left: 1em;
+    }
+  }
+
+  &--left {
+    flex-direction: row;
+
+    .role-play-sentence__character {
+      margin-right: 1em;
+    }
+  }
+
+  &__character {
+  }
+
+  &__content {
+    height: 4em;
+  }
+}
+.chat-box-left{
+  position: absolute;
+  padding: 4px 15px;
+  left: 65px;
+  background-image: url("./images/bg-white-left.png");
+  background-repeat: no-repeat;
+}
+.chat-box-left-active{
+  position: absolute;
+  padding: 4px 15px;
+  left: 65px;
+  background-image: url("./images/bg-blue-left.png");
+  background-repeat: no-repeat;
+}
+.chat-box-right {
+  position: absolute;
+  padding: 4px 15px;
+  background: url("./images/bg-white-right.png") no-repeat right 0;
+  right: 70px;
+}
+.chat-box-right-active{
+  position: absolute;
+  padding: 4px 15px;
+  background: url("./images/bg-blue-right.png") no-repeat right 0;
+  right: 70px;
+}

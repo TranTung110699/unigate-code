@@ -1,0 +1,42 @@
+.normal-exercise-result {
+  float: left;
+  width: 100%;
+  padding: 2em;
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+
+    &--small {
+      font-size: 1em;
+    }
+  }
+  &__result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 1em;
+
+    &--small {
+      font-size: 1em;
+    }
+  }
+  &__buttons {
+    text-align: center;
+  }
+  &__button {
+    margin: .5em;
+  }
+}
+
+.test-result-wrapper {
+  .download-certificate {
+    color: #92c36a;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .result-with-skills {
+    height: auto !important;
+  }
+}

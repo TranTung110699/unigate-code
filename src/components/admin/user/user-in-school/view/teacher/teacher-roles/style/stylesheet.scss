@@ -1,0 +1,11 @@
+.admin-show-teacher-roles{
+  .role-name, .action-item {
+    display: block;
+    clear: right;
+  }
+
+  .format-text {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}

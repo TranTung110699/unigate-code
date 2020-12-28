@@ -1,0 +1,17 @@
+@media (min-width: 992px) {
+  .learn-sub-board {
+    margin-top: -10px;
+    position: absolute;
+    margin-right: -17px;
+    right: 0;
+    width: 100%;
+
+    &__content {
+      min-height: calc(100vh - 70px);
+    }
+
+    .learn-sub-board-section-card {
+      border: none;
+    }
+  }
+}

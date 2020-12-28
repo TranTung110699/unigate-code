@@ -1,0 +1,31 @@
+.role-play-sentence-content {
+  padding: 1em;
+  background-color: #FFFFFF;
+  height: 100%;
+
+  &--active {
+    background-color: #4d98ff;
+    color: #FFFFFF;
+  }
+
+  &--left {
+    border-radius: 0 10px 10px 10px;
+  }
+
+  &--right {
+    border-radius: 10px 0 10px 10px;
+  }
+
+  &__word {
+    display: inline-block;
+    margin-right: .2em;
+
+    &--incorrect {
+      text-decoration: line-through;
+      color: #F44336;
+    }
+    &--correct {
+      color: #4CAF50;
+    }
+  }
+}

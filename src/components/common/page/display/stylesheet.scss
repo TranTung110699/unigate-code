@@ -1,0 +1,34 @@
+.page-display {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  &__user-info {
+    display: flex;
+  }
+
+  &__user-avatar {
+    margin-right: 1em;
+  }
+
+  &__user-name {
+
+  }
+
+  &__name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  &__content {
+  }
+}

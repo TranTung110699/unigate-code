@@ -1,0 +1,41 @@
+@import "layouts/theme.scss";
+
+.course-title-wrapper {
+  .course-name {
+    margin: 0;
+    text-align: left;
+  }
+
+  .course-name, .deadline {
+    font-size: 18px !important;
+    //line-height: 40px !important;
+    font-weight: 400 !important;
+  }
+
+  .enrolment-plan-name {
+    color: #5d5d5d;
+  }
+
+  .ant-progress-inner{
+    background: #ffffff;
+  }
+  .close{
+    @include themify($themes){
+      color: themed('close-button-color')
+    }
+  }
+}
+
+.course-title-wrapper::after {
+  clear:both;
+  content:" ";
+  display:block;
+}
+@media screen and (max-width: 768px){
+  .course-extra-content{
+    display: block!important;
+  }
+  .enrolment-plan-name{
+    font-size: 12px;
+  }
+}

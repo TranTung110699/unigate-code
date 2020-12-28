@@ -1,0 +1,25 @@
+.teacher-schedule {
+  font-size: 12px !important;
+  color: white;
+  &:hover {
+    color: white;
+  }
+  .attendance {
+    color: #d9d9d9 !important;
+
+    i{
+      font-size: 18px !important;
+    }
+    margin-top: 3px;
+    margin-right: -5px;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s;
+    &:hover {
+      i{
+        font-size: 20px !important;
+      }
+      color: white !important;
+    }
+  }
+}

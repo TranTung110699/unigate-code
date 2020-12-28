@@ -1,0 +1,78 @@
+.etec-exam-shift-display {
+  padding: 20px 0;
+
+  &__item {
+    margin: 17px 0;
+  }
+}
+
+.etec-exam-shift-item {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+
+  &__top {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__top-background {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__top-content {
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 11px 15px;
+
+    &:hover {
+      background-color: rgba(36, 44, 66, 0.75);
+
+      .etec-exam-shift-item__buttons {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__buttons {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+
+  &__button {
+    padding: 8px 25px;
+    text-transform: uppercase;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: #8fdd2d;
+      border: 2px solid #8fdd2d;
+      color: #FFFFFF;
+    }
+  }
+
+
+  &__info {
+    display: flex;
+    justify-content: space-between
+  }
+
+  &__bottom {
+    min-height: 80px;
+    padding: 11px 15px;
+  }
+
+}

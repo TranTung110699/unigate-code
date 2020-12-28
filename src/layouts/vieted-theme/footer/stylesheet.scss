@@ -1,0 +1,105 @@
+$background-img: url(./background.png);
+$color: #ffffff;
+$color-hover: #fc8006;
+
+.vieted-footer {
+  padding: 36px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  color: $color;
+  background-image: $background-img;
+  float: left;
+  width: 100%;
+  font-weight: 200;
+
+  &__group {
+    padding-bottom: 50px;
+    padding-left: 19px;
+    font-weight: 300;
+  }
+
+  &__contact {
+    max-width: 425px;
+  }
+
+  &__contact-title {
+    margin-bottom: 2px;
+    font-size: 16px;
+  }
+
+  &__contact-details {
+    font-size: 14px;
+    display: table
+  }
+
+  &__contact-detail {
+    display: table-row;
+
+    i {
+      display: table-cell;
+      width: 24px;
+    }
+
+    span{
+      display: table-cell;
+
+    }
+  }
+
+  &__logo {
+    font-size: 14px;
+    p {
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__social {
+    font-size: 16px;
+    display: none;
+
+    a {
+      color: $color;
+      margin-right: 27px !important;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .vieted-footer {
+    padding: 5px 0 0 0;
+
+    &__contact-title {
+      font-size: 14px;
+    }
+
+    &__contact-details {
+      font-size: 10px;
+    }
+
+    &__group {
+      padding-bottom: 13px;
+    }
+
+    &__logo {
+      font-size: 10px;
+
+      img {
+        height: 32px;
+      }
+
+      p {
+        margin-top: 3px;
+      }
+    }
+
+    &__social a {
+      margin-right: 40px !important;
+    }
+  }
+}

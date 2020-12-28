@@ -1,0 +1,161 @@
+.learn-exercise-exam {
+  background: url(./resources/bg.png) #292929;
+
+  &__header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 99px;
+    .exam-exercise-for-web {
+      display: block;
+    }
+    .exam-exercise-for-mobile {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 8px 0px;
+      .exam-exercise-for-web {
+        display: none;
+      }
+      .exam-exercise-for-mobile {
+        display: flex;
+        min-height: 60px;
+        align-items: center;
+        .container-left {
+          flex-grow: 1;
+          .learn-exercise-exam__duration {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    i {
+      font-size: 17px;
+      position: relative;
+      top: 1px;
+      padding-right: 10px;
+    }
+  }
+
+  &__duration {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+
+    i {
+      font-size: 16px;
+      position: relative;
+      top: 2px;
+      padding-right: 8px;
+    }
+  }
+
+  &__question-group-time-left {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+
+    i {
+      font-size: 16px;
+      position: relative;
+      top: 2px;
+      padding-right: 8px;
+    }
+  }
+
+  &__user {
+    text-align: right;
+    font-size: 14px;
+
+    img {
+      padding-left: 13px;
+    }
+  }
+
+  &__body {
+    padding: 36px 99px;
+    @media screen and (max-width: 768px) {
+      padding: 16px 0;
+    }
+  }
+
+  &__body-group {
+    height: calc(100vh - 77px);
+  }
+  &__body-nav {
+    @media screen and (max-width: 768px) {
+      height: unset;
+    }
+  }
+
+  &__main {
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu {
+    height: 100%;
+  }
+
+  &__main-top {
+    padding-bottom: 8px;
+  }
+
+  &__main-bottom {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  &__main-footer {
+    padding: 30px 0;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__menu-top {
+    padding-bottom: 8px;
+  }
+
+  &__questions-display {
+    background-color: transparent;
+  }
+
+  &__dialog {
+    z-index: 3;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-panel {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    &__header {
+      font-weight: 700;
+      font-size: 14px;
+      padding: 7px 16px;
+    }
+
+    &__content {
+      font-size: 14px;
+      padding: 7px 16px;
+    }
+  }
+}

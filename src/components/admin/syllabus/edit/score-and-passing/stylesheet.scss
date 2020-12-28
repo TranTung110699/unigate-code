@@ -1,0 +1,29 @@
+.admin-learning-item-score-and-passing {
+  &__section {
+    background-color: #FFF;
+    padding: 15px;
+  }
+
+  &__section-title {
+    font-size: 120%;
+    font-weight: bold;
+  }
+
+  &__rubric {
+    .skill-rubric-view-items {
+      &__cell {
+        &--weighted {
+          width: 10%;
+        }
+
+        &--name {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  &__advanced-edit {
+    padding-top: 15px;
+  }
+}

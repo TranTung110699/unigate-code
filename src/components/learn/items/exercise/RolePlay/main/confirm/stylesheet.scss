@@ -1,0 +1,26 @@
+@import '../../common/define.scss';
+
+.role-play-confirm {
+  text-align: center;
+
+  &__message {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  &__buttons {
+    margin-top: 2em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__button {
+    margin: 0 .7em;
+    &--primary {
+      button {
+        background-color: $role-play-primary-button-color !important;
+      }
+    }
+  }
+}

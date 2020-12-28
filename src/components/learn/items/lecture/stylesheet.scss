@@ -1,0 +1,64 @@
+@import "./../../defined.scss";
+@import "../../../../layouts/theme.scss";
+
+.learn-lecture{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    flex-shrink: 0;
+    position: relative;
+    height: $l-screen-height;
+  }
+
+  &__content {
+    background: white;
+    flex-grow: 1;
+    padding: 20px;
+  }
+}
+
+.lecture-image {
+  padding: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+
+  img  {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.lecture-audio {
+  background-color: #ffffff;
+}
+
+.learn-lecture-wrapper {
+  width: 100%;
+  height: 100%;
+
+  &__buttons {
+    background-color: #272525;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.learn-lecture-buttons {
+  &__seen {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .learn-lecture-buttons {
+    //position: absolute;
+    //width: 300px;
+    //left: calc(50% - 150px);
+    &__seen{
+      margin-bottom: 0!important;
+    }
+  }
+}

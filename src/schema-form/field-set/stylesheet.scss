@@ -1,0 +1,69 @@
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+.elementGroup {
+  display: inline-block;
+  width: 100%;
+}
+
+.horizontal-wrapper {
+  .form-group {
+    margin-bottom: 8px;
+  }
+
+  label {
+    text-align: right;
+  }
+
+  .mu-select-field {
+    border: 1px solid #d9d9d9 !important;
+    padding-left: 10px;
+  }
+  input,
+  input:hover,
+  input:focus {
+    border: 1px solid #d9d9d9 !important;
+    width: 100%;
+    padding: 6px 12px !important;
+    /*
+    margin-bottom: 18px;
+*/
+    height: auto !important;
+
+    &::-webkit-input-placeholder {
+      padding: 6px 12px !important;
+    }
+
+    &:-ms-input-placeholder {
+      padding: 6px 12px !important;
+    }
+  }
+}
+
+.suffix {
+  text-align: left;
+}
+
+.border-round {
+  border-radius: 5px;
+}
+.NEW_UI_JULY_2019-element-group.elementGroup {
+  border-radius: 5px;
+  //*:not(.mi):not([class^="ti-"], [class*=" ti-"]) {
+  //  font-family: $NEW_UI_JULY_2019-font-roboto-regular;
+  //}
+  .elementGroupBody {
+    border-radius: 5px;
+  }
+  .elementGroup__title {
+    color: #fff;
+  }
+  &.m-b-0 > .elementGroupBody {
+    //Nếu không có margin bottom thì đẩy body vào
+    padding: 15px;
+  }
+}
+
+.light-background-dialog .NEW_UI_JULY_2019-element-group.elementGroup {
+  .elementGroup__title {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

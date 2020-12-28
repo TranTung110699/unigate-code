@@ -1,0 +1,22 @@
+.admin-transaction-search-results {
+  background-color: #ffffff;
+
+  &__title {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+
+  &__overview-area {
+    margin-left: 30px;
+  }
+
+  &__overview-item-label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: .5em;
+  }
+
+  &__overview-item-value {
+    display: inline-block;
+  }
+}

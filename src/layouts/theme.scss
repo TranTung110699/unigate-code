@@ -1,0 +1,57 @@
+@import "./themes/theme-default.scss";
+@import "./themes/theme-sb.scss";
+@import "./themes/theme-evn.scss";
+@import "./themes/theme-msi.scss";
+@import "./themes/theme-vt.scss";
+@import "./themes/theme-blue.scss";
+@import "./themes/theme-hpu2.scss";
+@import "./themes/theme-gj.scss";
+
+$themes: map-merge(map-merge(map-merge(map-merge(map-merge(map-merge(map-merge($default, $sb), $evn), $msi), $vt), $blue), $hpu2), $gj);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+@mixin get-border-learn() {
+  @include themify($themes) {
+    border: solid 1px themed('l-zone-border');
+  }
+}
+
+//@mixin border-radius($radius) {
+//  @include themify($themes) {
+//    border-radius: themed('border-radius') !important;
+//    -webkit-border-radius: themed('border-radius') !important;
+//    -moz-border-radius: themed('border-radius') !important;
+//  }
+//}
+
+@mixin styleScrollBar($width:2px, $trackColor: white, $thumbColor: rgb(81, 193, 214), $thumbHover: rgb(5,183,214) ) {
+  ::-webkit-scrollbar {
+    width: $width;
+  }
+  ::-webkit-scrollbar-track {
+    background: $trackColor;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $thumbColor;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $thumbHover;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../defined.scss';
+@import '../../../layouts/theme.scss';
+@import 'layouts/themes/NEW_UI_JULY_2019-theme.scss';
+
+.ui-learn-nav-control {
+  @include themify($themes) {
+    background-color: themed('l-main-bg');
+  }
+
+  padding: 12px 0;
+
+  .btn.next {
+    padding: 10px 6px 6px 17px;
+    > svg {
+      transform: rotateY(180deg);
+    }
+  }
+  .btn:hover {
+    @include themify($themes) {
+      background-color: themed('l-button-nav-bg-hover-2');
+      color: themed('l-button-nav-cl-hover');
+    }
+  }
+  .btn {
+    padding: 10px 17px 5px 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    top: -1px;
+    margin-bottom: 0;
+    line-height: 20px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 40px;
+    &.disabled {
+      cursor: not-allowed;
+      @include themify($themes) {
+        background-color: themed('l-button-nav-bg-hover-1');
+        color: themed('l-button-nav-cl-hover-1');
+      }
+    }
+    @include themify($themes) {
+      background-color: themed('l-button-nav-bg');
+      color: themed('l-button-nav-cl');
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .ui-learn-nav-control {
+    height: unset;
+    padding-right: unset;
+  }
+}

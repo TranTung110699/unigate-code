@@ -1,0 +1,21 @@
+.ui-syllabus-menu {
+  ul.top-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li.item {
+      display: inline-block;
+      i.ti-angle-right {
+        font-size: 12px !important;
+      }
+      i {
+        font-size: 15px;
+      }
+      span {
+        text-transform: none !important;
+      }
+    }
+
+  }
+}

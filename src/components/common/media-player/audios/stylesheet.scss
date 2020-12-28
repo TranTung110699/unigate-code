@@ -1,0 +1,8 @@
+.media-audios {
+  display: flex;
+  flex-direction: column;
+
+  &__audio {
+    margin-bottom: 10px;
+  }
+}

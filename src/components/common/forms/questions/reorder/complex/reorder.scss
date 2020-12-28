@@ -1,0 +1,33 @@
+@import 'layouts/theme.scss';
+
+.reorder-question-type-complex {
+  &__answer-item {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px !important;
+
+    &.default-match {
+      @include themify($themes) {
+        background-color: themed('bg-match') !important;
+      }
+    }
+
+    &.default-not-match {
+      @include themify($themes) {
+        background-color: themed('bg-not-match') !important;
+      }
+    }
+  }
+
+  &__answer-item-avatar {
+    width: 150px;
+    flex-shrink: 0;
+  }
+
+  &__answer-item-content {
+    padding: 0 10px;
+  }
+}

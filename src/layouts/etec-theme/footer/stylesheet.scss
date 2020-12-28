@@ -1,0 +1,32 @@
+.footer-wrapper {
+  padding: 48px 0;
+  background-color: #242c42;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  .logo {
+    height: 35px;
+    width: 86px;
+  }
+  .title {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .company-name {
+    font-size: 16px;
+  }
+  .item {
+    font-size: 14px;
+  }
+  img {
+    margin-right: 7px;
+  }
+  .social-icons {
+    img {
+      margin-right: 25px;
+    }
+  }
+  .text-left{
+    padding-bottom: 20px;
+  }
+}

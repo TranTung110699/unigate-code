@@ -1,0 +1,415 @@
+@import '../../../layouts/theme.scss';
+
+$white: #fff;
+$background_color: #292929;
+$progress_color: #f5f5f5;
+$progress_bar_color: #92c36a;
+$btn_hover_color: #222;
+$btn_color: #dca918;
+$background_btn_color: #f0f0f0;
+$passed_color: #009045;
+$rejected_color: #db332a;
+
+.course-outline-wrapper {
+  .price {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .bg-dark {
+    background: $background_color;
+  }
+  .overview-header {
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  .course-overview-content {
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 15px;
+  }
+  section {
+    padding: 96px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .title-progress {
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .image-bg {
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 300;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $white;
+    }
+
+    p,
+    span,
+    li {
+      @include themify($themes) {
+        color: themed('l-course-overview-content-cl');
+      }
+    }
+  }
+
+  .progress {
+    height: auto;
+    box-shadow: none;
+  }
+
+  .progress {
+    overflow: hidden;
+    background-color: $progress_color;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    .passed-title {
+      text-transform: uppercase;
+      padding-left: 10px;
+    }
+  }
+
+  .progress-1 {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .progress-1 {
+    height: 32px;
+    margin-bottom: 8px;
+    border-radius: 0;
+    border: none;
+  }
+
+  .progress-1 .progress-bar {
+    text-align: right;
+    padding-right: 12px;
+    line-height: 32px;
+    border-radius: 0;
+  }
+
+  .progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: $white;
+    text-align: center;
+    @include themify($themes) {
+      background: themed('progress-color-learn');
+    }
+    box-shadow: none !important;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+  }
+
+  .course-status-wrapper {
+    padding: 18px 30px;
+    background-color: #f0f0f0;
+  }
+
+  .continue-course,
+  .ggg-continue-course,
+  .passed-course,
+  .reject-course,
+  .join-course {
+    a {
+      border: 1px solid $btn_color;
+      padding: 0 26px;
+      height: 40px;
+      min-width: 150px;
+      line-height: 36px;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 0;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-right: 8px;
+      white-space: nowrap;
+      vertical-align: middle;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      color: $btn_color;
+
+      &:hover {
+        background: $btn_color;
+        color: $white;
+      }
+    }
+  }
+
+  .continue-course {
+    a {
+      background: none;
+      transition: 0.3s;
+      @include themify($themes) {
+        border: 2px solid themed('btn-primary-bg');
+        background-color: #fff;
+        color: themed('btn-primary-bg');
+      }
+
+      &:hover {
+        @include themify($themes) {
+          border: 2px solid themed('btn-primary-bg');
+          background: themed('btn-primary-bg');
+          color: #fff;
+        }
+      }
+    }
+
+    a.button {
+      @include themify($themes) {
+        background-color: themed('btn-primary-bg');
+        color: #fff;
+      }
+    }
+  }
+
+  .course-overview-name {
+    @include themify($themes) {
+      color: themed('l-button-nav-cl');
+    }
+  }
+
+  .ggg-continue-course {
+    float: right;
+    a {
+      background: $btn_color;
+      border: none;
+      color: $white;
+
+      &:hover {
+        border: 1px solid $btn_color;
+        background: $white;
+        color: $btn_color;
+      }
+    }
+  }
+
+  .join-course {
+    a {
+      background: $btn_color;
+      margin-left: 10px;
+      color: $white;
+
+      &:hover {
+        background: $background_btn_color;
+      }
+    }
+  }
+
+  .passed-wrapper {
+    color: $passed_color;
+    .text {
+      font-weight: bold;
+    }
+
+    .passed-course {
+      display: none;
+      a {
+        background: $passed_color;
+        margin-left: 10px;
+        color: $white;
+        border: none;
+      }
+    }
+    &:hover {
+      .text {
+        display: none;
+      }
+      .passed-course {
+        display: block;
+      }
+    }
+  }
+  .passed-wrapper,
+  .rejected-wrapper {
+    padding: 5px 20px;
+    text-transform: uppercase;
+    .point {
+      text-align: right;
+    }
+  }
+
+  .rejected-wrapper {
+    .rejected-title {
+      text-align: right;
+      color: $rejected_color;
+    }
+  }
+
+  .lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  .lesson-title {
+    margin-bottom: 16px !important;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+    color: $white;
+  }
+
+  .course-overview-wrapper {
+    img {
+      height: 257px;
+      object-fit: cover;
+    }
+  }
+
+  .ggg-course-overview-wrapper {
+    h3 {
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+    img {
+      height: 258px;
+      object-fit: cover;
+    }
+    .course-overview-item {
+      color: #8c8c8c;
+      .title {
+        padding: 40px 0 2px 0;
+      }
+      .title-border-wrapper {
+        position: relative;
+        height: 2px;
+        display: block;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 2px;
+        margin: 0px;
+        overflow: hidden;
+
+        .title-border-inner {
+          height: 100%;
+          background-color: #caa429;
+          transition: width 0.3s linear 0ms;
+          width: 169px;
+        }
+      }
+      .teacher-list-wrapper {
+        .teacher {
+          margin-top: 30px;
+          .name {
+            text-transform: uppercase;
+          }
+          img {
+            height: 68px;
+            width: 68px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .lecture-list-wrapper {
+        margin-top: 5px;
+        .lecture {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+.ggg-theme {
+  .course-outline-panel {
+    .menu-top-wrapper {
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .ui-fly-panel {
+      border-bottom: 1px solid #e1e1e1;
+      .menu-top-wrapper {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .course-outline-wrapper {
+    .course-overview-wrapper {
+      img {
+        margin-top: 40px;
+        height: 257px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .course-outline-wrapper {
+    .sessions-of-course-wrapper {
+      margin-top: 10px;
+      .session-list {
+        padding-left: 10px;
+        padding-right: 10px;
+        .session-item {
+          margin-top: 15px;
+          .learning-items {
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 30px;
+            .learning-item {
+              display: flex;
+            }
+          }
+          .session-info {
+            width: 100%;
+            padding: 10px;
+            .session-name {
+              width: 100%;
+            }
+            .session-location-info {
+              width: 100%;
+              .item {
+                display: flex;
+                .label {
+                  width: auto;
+                  margin-right: 10px;
+                  float: left;
+                }
+                .value {
+                  float: left;
+                }
+              }
+            }
+            .status-wrapper {
+              width: 100%;
+              float: left;
+              text-align: left;
+            }
+          }
+          .attendance-status {
+          }
+        }
+      }
+    }
+  }
+}

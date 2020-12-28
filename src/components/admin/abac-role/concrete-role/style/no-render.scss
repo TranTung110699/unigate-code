@@ -1,0 +1,14 @@
+.admin-show-abstract-list {
+  .action-item {
+    clear: both;
+    display: block;
+  }
+
+  .apply_all {
+    padding-top: 15px;
+  }
+
+  td:first-letter {
+    text-transform:capitalize;
+  }
+}

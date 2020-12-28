@@ -1,0 +1,52 @@
+.skills-progress {
+  .signature {
+    display: none;
+  }
+  input[type='checkbox'] {
+    cursor: default;
+  }
+}
+@media print {
+  .skills-progress {
+    //page-break-before: avoid;
+    //page-break-after: avoid;
+    font: {
+      size: 14px;
+    }
+    border: none !important;
+    .skill-level,
+    .skill-level-row {
+      padding-left: 10px;
+    }
+    .header-img {
+      margin-bottom: 0.5cm;
+    }
+    .skill-level-row {
+      //white-space: nowrap;
+      page-break-inside: avoid;
+    }
+    .signature {
+      display: block;
+    }
+
+    img {
+      display: block;
+    }
+
+    .user-avatar {
+      height: 100px !important;
+      max-height: 100px !important;
+    }
+    .skill-level-name {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  @page {
+    @top-left {
+      content: element(pageHeader);
+    }
+    size: A4;
+    margin: 0.5cm 1.5cm 1cm;
+  }
+}

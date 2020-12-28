@@ -1,0 +1,24 @@
+.text-input-wrapper {
+  .input-text-label {
+    color: #B2B2B2;
+    line-height: 36px;
+    margin-bottom: -8px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+    .full-width {
+      width: 100%
+    }
+    *:-webkit-autofill,
+    *:-webkit-autofill:active,
+    *:-webkit-autofill:focus,
+    *:-webkit-autofill:hover {
+      outline: 0;
+      border: 1px solid #40a9ff !important;
+      background-color: inherit !important;
+      -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+    }
+  }
+}

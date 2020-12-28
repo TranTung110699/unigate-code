@@ -1,0 +1,54 @@
+.question-skill-learning-suggestion {
+  &__title {
+    font-weight: 700;
+  }
+
+  &__video-suggestions {
+    margin-top: 10px;
+  }
+}
+
+.question-learning-video-suggestions {
+  &__video-list {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  &__video {
+    height: 94px;
+    width: 168px;
+    cursor: pointer;
+    margin-left: 10px;
+    flex-shrink: 0;
+
+    &--first {
+      margin-left: 0;
+    }
+  }
+}
+
+.video-thumbnail-with-info {
+  &__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__thumbnail {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    background-color: rgba(8, 8, 8, 0.75);
+    font-size: 12px;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+  }
+}

@@ -1,0 +1,13 @@
+var APP_SERVER_API_URL='https://elearning-api.evn.com.vn';
+var APP_MEDIA_SERVER_URL='https://elearning-api.evn.com.vn';
+var APP_AUDIO_MEDIA_SERVER_URL='http://api.lotuslms.com/dictaudio';
+var APP_USER_LOCAL_STORAGE_KEY='user';
+var APP_FB_APP_ID=1158087994254227
+var APP_THEME='evn';
+var APP_TITLE='EVN Elearning';
+var APP_SCHOOL='ve';
+var APP_STATIC_CDN='https://elearning-statics.evn.com.vn/';
+var APP_CHAT_URL='https://elearning.evn.com.vn:8080';
+var APP_ASSETS_CDN='https://elearning-api.evn.com.vn/assets/';
+var APP_LIVE_URL='http://live.vieted.com/demo/demo3.jsp';
+var APP_ENABLED_FEATURES = ["NEW_UI_JULY_2019"];

@@ -1,0 +1,27 @@
+.setting-language {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: inherit;
+  li {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__item {
+    font-size: 13px;
+    img {
+      max-height: 15px;
+      margin-right: 2px;
+    }
+    color: rgba(178, 178, 177, 0.26);
+    &:hover, &:active {
+      color: white;
+    }
+  }
+  &__item.active {
+    color: white;
+  }
+}
+

@@ -1,0 +1,26 @@
+.survey {
+  background: white;
+
+  &__display {
+    height: 100%;
+  }
+  .rating {
+    width: 100%;
+  }
+  .question-panel {
+    margin-top: 10px;
+    color: #000;
+    &__content {
+      padding: 0;
+      .question-content {
+        margin-top: 10px;
+        margin-bottom: 0;
+        h1, h2, h3, h4, h5, h6 {
+          margin-bottom: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+    padding-bottom: 0;
+  }
+}

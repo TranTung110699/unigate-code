@@ -1,0 +1,4 @@
+.popup-ant-time-picker
+{
+  z-index: 1501 !important;//Now add this code to fix bug hide modal coz MU modal always set z-index is 1500
+}

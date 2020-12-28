@@ -1,0 +1,35 @@
+$borderColor: #E1E1E1;
+.children-of-parent-wrapper {
+  margin-bottom: 30px;
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .table {
+    border: 1px solid #DDD;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    th {
+      text-align: left;
+      padding: 8px;
+    }
+    tr td {
+      padding: 8px;
+      border-top: 1px solid #ddd;
+      color: rgb(102, 102, 102);
+      font-size: 15px;
+      vertical-align: middle !important;
+
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .children-of-parent-wrapper {
+    margin-top: 20px;
+  }
+}

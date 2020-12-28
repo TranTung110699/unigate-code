@@ -1,0 +1,57 @@
+.table-dashboard-report-content {
+  &__fixed {
+    overflow: visible;
+  }
+  &__viewer {
+    overflow-x: scroll;
+  }
+  &__viewer > div {
+    overflow: initial !important;
+  }
+  &--iid {
+    width: 60px;
+  }
+  &--name {
+    width: 120px;
+  }
+  &--progress {
+    width: 60px;
+  }
+  &--pass {
+    width: 60px;
+  }
+  table, th, td {
+    border: 1px solid rgb(224, 224, 224);
+  }
+  table {
+    thead {
+      th {
+        text-align: center !important;
+        padding-left: inherit !important;
+        padding-right: inherit !important;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding-left: inherit !important;
+          padding-right: inherit !important;
+          text-align: center !important;
+          //button {
+          //  min-width: inherit !important;
+          //}
+          min-width: 60px !important;
+        }
+        .table-dashboard-report-content--name {
+          text-align: left !important;
+          padding-left: 5px !important;
+          i {
+            font-size: 24px;
+            cursor: pointer;
+            color: rgba(0, 188, 212, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

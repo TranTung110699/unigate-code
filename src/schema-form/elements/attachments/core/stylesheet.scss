@@ -1,0 +1,55 @@
+$background-muted-color: #EEEEEE;
+
+.attachment-container {
+  &-dropzone {
+    background: #fff;
+    border-radius: 5px;
+    box-sizing: initial;
+    padding-top: 3%;
+
+    &__drag {
+      &__title {
+        margin-bottom: 10px;
+      }
+    }
+
+    .ant-result {
+      &-title {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 24px;
+        line-height: 1.8;
+        text-align: center;
+      }
+
+      &-icon {
+        > .anticon {
+          color: #f5222d;
+          font-size: 40px;
+        }
+      }
+    }
+
+    &__footer {
+      padding: 10px 0;
+      margin-top: 20px;
+      background: $background-muted-color;
+
+      p {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .attachment-list{
+    background: #fff!important;
+    span.rieinput-attachment {
+      border-bottom: 1px dashed !important;
+    }
+    .attachment-item{
+      &-compact{
+        .ant-list-item-action{
+          margin-left: unset!important;
+        }
+      }
+    }
+  }
+}

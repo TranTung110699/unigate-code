@@ -1,0 +1,47 @@
+.change-exercise-theme-container {
+  .ant-radio-button-wrapper {
+    outline: none !important;
+    border-radius: 50px;
+    &.ant-radio-button-wrapper-checked {
+      &:after {
+        content: '';
+        display: inline-block;
+        transform: rotate(45deg);
+        height: 18px;
+        width: 10px;
+        border-bottom: 3px solid #1890ff;
+        border-right: 3px solid #1890ff;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+      }
+    }
+    &:before {
+      content: none !important;
+    }
+  }
+}
+.change-exercise-font-size-container{
+  .font-size-button {
+    background: #e8e8e8;
+    border: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+    outline: none;
+    margin-left: 5px;
+    transition: .3s;
+    box-sizing: border-box;
+    &:hover{
+      color: #1890ff
+    }
+    &:disabled{
+      cursor: not-allowed;
+      color: #adadad;
+    }
+  }
+}

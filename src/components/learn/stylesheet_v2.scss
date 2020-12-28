@@ -1,0 +1,380 @@
+@import './defined.scss';
+@import '../../layouts/theme.scss';
+
+.ui-learn-nav {
+  background-color: $learning-bg-color;
+}
+
+.course-name-wrapper {
+  padding: 0 !important;
+  border-bottom: 0.5px solid #dddddd;
+  margin-bottom: 0 !important;
+  background: #fff !important;
+  height: initial;
+  line-height: inherit;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+  .close {
+    color: #9c9c9c;
+  }
+}
+
+.course-extra-info {
+  background: #fff;
+}
+
+.ui-learn-panel {
+  @include themify($themes) {
+    background-color: themed('l-main-bg');
+  }
+  padding: 20px 0 0 0;
+  .learn-full-screen {
+    //height: $l-screen-body-height !important; // = 560 - 60 of header
+    width: 100% !important;
+  }
+  .learn-content {
+    //height: $l-zone-content !important;
+    width: 100% !important;
+    background-color: #ffffff;
+    .question-content {
+      a {
+        color: #3a8104;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .learn-content-border {
+    @include get-border-learn();
+  }
+
+  .nav-panel {
+    height: $l-nav-content-height; // = 560 - 60 of header
+  }
+  .learn-screen {
+    height: 100%;
+
+    &--normal-exercise {
+      height: auto;
+    }
+
+    &--vocabset {
+      height: auto;
+    }
+
+    .learn-exercise-exam {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      @media screen and (max-width: 768px) {
+        overflow-y: scroll;
+      }
+    }
+  }
+  .nav-item-panel {
+    height: $l-nav-content-to-make-scroll;
+  }
+
+  .learn-zone {
+    min-height: calc(100vh - 130px);
+    background-color: #666666;
+    padding: 0;
+    @include themify($themes) {
+      background-color: themed('l-main-bg');
+    }
+  }
+  .learn-control {
+    @include themify($themes) {
+      background-color: themed('l-control');
+    }
+  }
+  .nav-zone {
+    padding: 0;
+  }
+}
+
+.exam-info-wrapper,
+.start-exam-wrapper,
+.test-result-wrapper {
+  .loading-text {
+    font-size: 36px;
+    margin-top: 20%;
+  }
+  .height-auto {
+    height: auto !important;
+  }
+  .quiz-content {
+    @include themify($themes) {
+      background-color: themed('l-exercise-overview');
+      height: themed('l-question-height');
+    }
+    //background-color: black;
+    /*height: 0;*/
+    //padding: 52px 85px 422px 85px;
+    &.finish-course {
+      //padding: 52px 85px 422px 85px;
+    }
+    position: relative;
+    .icon {
+      font-size: 50px;
+      @include themify($themes) {
+        color: themed('l-quiz-conent-icon');
+      }
+    }
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include themify($themes) {
+        color: themed('l-quiz-conent-h3');
+      }
+    }
+    .duration,
+    .result {
+      font-size: 16px;
+      color: #92c36a;
+      padding-right: 5px;
+    }
+    .result {
+      font-size: 20px;
+    }
+    .mention {
+      text-transform: uppercase;
+      .icon {
+        font-size: 24px;
+        color: #92c36a;
+        padding-right: 5px;
+      }
+    }
+    .btn {
+      background-color: transparent;
+      border: 2px solid theme-color();
+      padding: 0 26px;
+      height: 40px;
+      min-width: 150px;
+      line-height: 36px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 0;
+      color: #92c36a;
+      text-align: center;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      margin-right: 8px;
+      margin-bottom: 24px;
+      &:last-child,
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .btn-filled {
+      @include themify($themes) {
+        background-color: themed('l-button-filled-bg');
+        color: themed('l-button-filled-cl');
+        border: solid 2px themed('l-button-filled-border');
+        border-radius: themed('l-button-filled-border-radius-dimen');
+      }
+      margin-top: 30px;
+
+      &:hover {
+        @include themify($themes) {
+          background-color: themed('l-button-filled-hover-bg');
+          border-color: themed('l-button-filled-hover-border');
+          color: themed('l-button-filled-hover-cl');
+        }
+      }
+    }
+    span {
+      display: block;
+      @include themify($themes) {
+        color: themed('l-quiz-conent-h3');
+      }
+    }
+    p {
+      @include themify($themes) {
+        color: themed('l-quiz-conent-h3');
+      }
+    }
+    .exam-regulations {
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      line-height: 17px;
+      max-height: 178px;
+      -webkit-line-clamp: 7;
+      p {
+        color: #333;
+        span {
+          color: #333;
+        }
+      }
+    }
+    .exam-regulations-content {
+      li {
+        color: white;
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+.exam-shift-wrapper {
+  .contest-invalid-wrapper {
+    text-align: center;
+    padding-top: 20%;
+    h3 {
+      color: #757575;
+      font-size: 22pt;
+      font-weight: 600;
+    }
+  }
+  background-color: white;
+  width: 100%;
+  &__loading {
+    background-color: black;
+  }
+  .exam-info-wrapper {
+    padding-top: 50px;
+    /*background: url(./exam/images/site_bg.png) #ffffff;*/
+    min-height: calc(100vh - 88px);
+    .quiz-content {
+      padding: 0;
+      .competition {
+        color: #e2ba40;
+        font-size: 150px;
+      }
+      .duration {
+        //  background: #ff3a3a;
+      }
+      .exam-rules {
+        display: block;
+        border: solid 1px #867474;
+        padding: 23px;
+        text-align: start;
+        margin: 50px auto;
+        max-width: 800px;
+        div {
+          padding: 8px 0;
+        }
+        h3 {
+          font-size: 20pt;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+    .info-start {
+      &--title {
+        font-size: 25px;
+        i {
+          font-size: 25px;
+          color: #e2ba40;
+        }
+      }
+      &--label p {
+        text-align: right;
+      }
+      &--content {
+        p {
+          text-align: left;
+        }
+        .highlights {
+          color: red;
+        }
+      }
+    }
+    button.disabled {
+      pointer-events: none;
+      border: 2px solid #7b7b7b;
+      color: #7b7b7b;
+    }
+
+    &__locked {
+      position: fixed;
+      > div {
+        position: inherit !important;
+      }
+    }
+  }
+  .exam-violate {
+    .learn-exam-confirm__icon {
+      color: #e4e454;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .ui-learn-panel {
+    .learn-full-screen {
+      height: unset !important;
+      div:first-child {
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        width: unset;
+        height: unset;
+
+        iframe {
+          border: 0;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+    .learn-screen {
+      height: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ui-learn-panel {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    transition: all 0.5s;
+    &.active {
+      left: 200px;
+    }
+  }
+  .normal-exercise {
+    display: block;
+  }
+  .test-result-wrapper {
+    .quiz-content.result-with-skills {
+      padding: 10px;
+    }
+  }
+}
+.ui-learn-panel {
+  //min-height: 94vh;
+}
+
+.secondary-button {
+  min-height: 2.2rem;
+  @include themify($themes) {
+    border: 2px solid themed('btn-primary-bg');
+    color: themed('btn-primary-bg');
+  }
+  background: none;
+  transition: all 0.3s;
+  border-radius: 5px;
+  min-width: 5em;
+  outline: none;
+  &:hover {
+    @include themify($themes) {
+      background: themed('btn-primary-bg');
+    }
+    color: #fff;
+  }
+}

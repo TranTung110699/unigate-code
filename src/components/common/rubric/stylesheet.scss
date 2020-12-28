@@ -1,0 +1,37 @@
+.rubric-marking{
+  cursor: pointer;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #0088cc;
+  .button-making{
+    cursor: pointer;
+  }
+}
+
+.table-rubric {
+  margin: 10px;
+  .rubric-name {
+    font-weight: bold;
+  }
+  .table{
+    border: 1px solid #e6e6e6;
+  }
+  .footer{
+    text-align: right;
+  }
+  .border-right{
+    border-right: 1px solid #e0e0e0;
+  }
+  .cell-relative{
+    position: relative;
+  }
+  .info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: gray;
+    cursor: pointer;
+    &:hover{
+      color: #15bcd5;
+    }
+  }
+}

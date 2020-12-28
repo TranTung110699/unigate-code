@@ -1,0 +1,32 @@
+.link {
+  fill: none;
+  stroke: gray;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+.node {
+  cursor: pointer;
+  circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  text {
+    font-size: 10px;
+    font: 15px sans-serif;
+  }
+}
+
+.node--internal {
+  circle {
+    fill: white;
+  }
+}
+
+.node--root {
+  text {
+    font: 24px sans-serif !important;
+    color: green !important;
+  }
+}

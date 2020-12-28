@@ -1,0 +1,26 @@
+.role-play-pop-up {
+  height: 100%;
+
+  &__close-area {
+    height: 30%;
+    width: 100%;
+    border: none;
+  }
+
+  &__visible {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: solid 1px lightgrey;
+  }
+
+  &__close {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}
